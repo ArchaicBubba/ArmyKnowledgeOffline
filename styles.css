@@ -1,0 +1,497 @@
+/* Main Body and text*/
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("assets/AKOffBackground.png");
+    }
+
+h1 {
+    position: relative;
+    justify-content: center;
+    }
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    }
+
+details > p {
+    margin: 0px;
+    }
+
+section > p {
+    font-family: Tahoma;
+    font-weight: bold;
+    color: rgb(30, 30, 30);
+    }
+
+red {
+    color: rgb(184, 15, 10);
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    }
+
+.spacing {
+    margin: 0px 0px 20px;
+    }
+
+.noSpacing {
+    margin: 0px;
+    text-indent: 25px;
+    }
+
+.indent {
+    text-indent: 50px;
+    }
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9;
+    }
+
+/* Navigation bar */
+ul {
+    list-style-type: none;
+    margin: 0px 0px 15px;
+    padding: 0px;
+    background-color: rgb(255, 193, 7);
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 5;
+}
+li {
+    float: left;
+    border-right: 1px solid black;
+    }
+li:last-child {
+    border-right: none;
+    }
+li a {
+    display: block;
+    color: rgb(30, 30, 30);
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    z-index: 7;
+    }
+li a:hover:not(.active) {
+    background-color: rgb(216, 150, 6);
+    cursor: pointer;
+    }
+
+.navi {
+    background-color: rgb(255, 193, 7);
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 5;
+    float: left;
+    display: block;
+    font-family: Tahoma;
+    }
+.navi a {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+    padding: 10px 12px;
+    text-decoration: none;
+    z-index: 7;
+    border-right: 1px solid black;
+    }
+.navi a:hover:not(.active) {
+    background-color: rgb(216, 150, 6);
+    cursor: pointer;
+    }
+.navi:last-child {
+    border-right: none;
+    }
+.naviCentered {
+    position: relative;
+    left: 50%;
+    margin-top: auto;
+    width: 100%;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 193, 7);
+    border-bottom: 1px solid black;
+    top: 19px;
+    font-family: Tahoma;
+    }
+	
+    /* Text descriptions */
+.hideMarquee {
+    opacity: 1;
+    }
+
+.hideMarquee p {
+    animation-play-state: paused;
+    opacity: 0;
+    }
+
+.hideMarquee:hover p {
+    opacity: 1;
+    background-color: rgb(216, 150, 6, 0.80);
+    z-index: 1;
+    animation-play-state: running;
+    }
+
+.marquee {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    text-transform: initial;
+    transform: translateY(100%);
+    animation: scroll-up 25s linear infinite;
+    }
+
+.disclaimer {
+    width: 100%;
+    text-align: center;
+    font-family: Tahoma;
+    background-color: rgb(255, 193, 7);
+    border-top: 1px solid black;
+    padding: 4px;
+    bottom: 0;
+    z-index: 10;
+    position: fixed;
+}
+
+@-moz-keyframes scroll-up {
+    0% {
+        -moz-transform: translateY(0%);
+        }
+
+    100% {
+		-moz-transform: translateY(-190%);
+        }
+    }
+
+@-webkit-keyframes scroll-up {
+    0% {
+        -webkit-transform: translateY(0%);
+        }
+
+    100% {
+        -webkit-transform: translateY(-190%);
+        }
+    }
+
+@keyframes scroll-up {
+    0% {
+        -moz-transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+        }
+
+    100% {
+        -moz-transform: translateY(-190%);
+        -webkit-transform: translateY(-190%);
+        transform: translateY(-190%);
+        }
+    }
+
+    /* Styles for site announcements */
+.paperBoy {
+    display: block;
+    color: rgb(30, 30, 30);
+    text-align: center;
+    padding: 10px 12px;
+    white-space: pre;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    }
+
+    /* .buglePlayer {
+    position: absolute;
+    margin: 0;
+    text-transform: initial;
+    transform: translateX(100%);
+    animation: scroll-down 15s linear infinite;
+    animation-play-state: running;
+}
+
+@-moz-keyframes scroll-down {
+    0% {
+        -moz-transform: translateX(75%);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-down {
+    0% {
+        -webkit-transform: translateX(75%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-down {
+    0% {
+        -moz-transform: translateX(75%);
+        -webkit-transform: translateX(75%);
+        transform: translateX(75%);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+} */
+
+    /* Hide elements */
+.hidden {
+    display: none;
+    }
+
+    /* Category Selection */
+.dropDownBox {
+    appearance: menulist-button;
+    position: relative;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    left: 0%;
+    margin: -3px 0px;
+    }
+
+    /* AKO Cards */
+.column {
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 350px;
+    max-height: 300px;
+    width: 50%;
+    margin: auto auto 20px;
+    padding: 0px 5px;
+    }
+
+.deck {
+    width: 100%;
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: auto;
+    }
+
+.cardImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 319px;
+    }
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+    padding: 16px;
+    text-align: center;
+    background-color: rgb(255, 193, 7);
+    background: rgb(255, 193, 7);
+    }
+
+.card:hover:not(.active) {
+    background-color: rgb(216, 150, 6);
+    background: rgb(216, 150, 6);
+    cursor: pointer;
+    }
+
+.armyCard {
+    background: rgb(255, 193, 7);
+    color: rgb(30, 30, 30);
+    border-radius: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    word-break: normal;
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    }
+
+.title {
+    white-space: pre-line;
+    overflow-wrap: normal;
+    overflow: hidden;
+    border-radius: 15px;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 13px;
+    opacity: 1;
+    background: rgb(255, 193, 7);
+    position: absolute;
+    width: 100%;
+    min-width: 80px;
+    max-width: 294px;
+    left: 0%;
+    bottom: 0px;
+    z-index: 3;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.armyCardContainer {
+    position: relative;
+    border-radius: 25px;
+    }
+
+.active {
+    background-color: rgb(216, 150, 6);
+    }
+
+    /* Dropdown boxes */
+.dropdown {
+    appearance: menulist-button;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    left: 0%;
+    margin-bottom: -1px;
+    margin-top: -1px;
+    }
+
+.dropbtn {
+    background-color: rgb(255, 193, 7);
+    color: rgb(30, 30, 30);
+    padding: 10px 12px;
+    font-size: 16px;
+    border: none;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 193, 7);
+    max-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    overflow: visible;
+    }
+
+.dropdown-content a {
+    color: rgb(30, 30, 30);
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    overflow: visible;
+    width: 86px;
+    }
+
+.dropdown-content a:hover {
+    background-color: rgb(216, 150, 6);
+    }
+ .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(216, 150, 6);
+    }
+
+    /* This is for Overlays to select Quick links*/
+.cardInputElement {
+    display: none;
+    }
+
+.cardInputElement:checked + .card {
+    box-shadow: 0 0 3px 3px #2ecc71;
+    }
+
+.content {
+    list-style-type: none;
+    margin: 60px auto 60px;
+    padding: 15px;
+    overflow: hidden;
+    background-color: rgb(255, 193, 7);
+    max-width: 1000px;
+    text-align: justify;
+    }
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    top: 50%;
+    transform: translate3d(0px, -3px, 0px);
+    transform-style: preserve-3d;
+    }
+
+.sectionfloat {
+    display: inline-block;
+    top: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    left: 0px;
+    }
+
+.switch {
+    position: relative;
+    width: 42px;
+    height: 21px;
+    margin: -6px 0px;
+    }
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+
+.slider {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 193, 7);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-style: solid;
+    border-color: rgb(30, 30, 30);
+    border-width: 1px;
+    }
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(216, 150, 6);
+    -webkit-transition: .4s;
+    transition: .4s;
+    }
+
+input:checked + .slider {
+    }
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+    }
