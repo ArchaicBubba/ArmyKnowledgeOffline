@@ -345,7 +345,7 @@
 	  document.getElementById('catUsGov').style.display='none';
 	
     } else if (document.getElementById("DropDownBox").value == "Family") {
-	  // Switch to  Catagory
+	  // Switch to Family Links Catagory
 	  document.getElementById('catFamily').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -364,7 +364,7 @@
 	  document.getElementById('catUsGov').style.display='none';
 	  
     } else if (document.getElementById("DropDownBox").value == "Finance") {
-	  // Switch to  Catagory
+	  // Switch to Finance Catagory
 	  document.getElementById('catFinance').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -383,7 +383,7 @@
 	  document.getElementById('catUsGov').style.display='none';
 	  
     } else if (document.getElementById("DropDownBox").value == "Health") {
-	  // Switch to  Catagory
+	  // Switch to health Catagory
 	  document.getElementById('catHealth').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -402,7 +402,7 @@
 	  document.getElementById('catUsGov').style.display='none';
 	
     } else if (document.getElementById("DropDownBox").value == "Human") {
-	  // Switch to  Catagory
+	  // Switch to Human Catagory
 	  document.getElementById('catHuman').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -421,7 +421,7 @@
 	  document.getElementById('catUsGov').style.display='none';
 	  
     } else if (document.getElementById("DropDownBox").value == "Legal") {
-	  // Switch to  Catagory
+	  // Switch to Legal Catagory
 	  document.getElementById('catLegal').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -440,7 +440,7 @@
 	  document.getElementById('catUsGov').style.display='none';
 	  
     } else if (document.getElementById("DropDownBox").value == "Professional-Development") {
-	  // Switch to  Catagory
+	  // Switch to Professional Development Catagory
 	  document.getElementById('catProDev').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -459,7 +459,7 @@
 	  document.getElementById('catUsGov').style.display='none';
 	
     } else if (document.getElementById("DropDownBox").value == "Technologies") {
-	  // Switch to  Catagory
+	  // Switch to Technologies Catagory
 	  document.getElementById('catTech').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -478,7 +478,7 @@
 	  document.getElementById('catUsGov').style.display='none';
 	
     } else if (document.getElementById("DropDownBox").value == "US-Gov") {
-	  // Switch to  Catagory
+	  // Switch to Us Government Links Catagory
 	  document.getElementById('catUsGov').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
