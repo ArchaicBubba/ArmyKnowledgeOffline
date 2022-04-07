@@ -3,334 +3,6 @@
     
 <head>
   <link rel="icon" href="assets/icon.png">
-  <script src="jquery.js"></script> <!-- jQuery v3.5.1 -->
-  <script>
-  $(document).ready(function() {
-  
-  // Declaration of site variables 
-  // Sites that begin with A
-  var jsA00 = $("#A00").html(); // Air Force Weather Agency
-  var jsA01 = $("#A01").html(); // AMEDD Command Management System
-  var jsA02 = $("#A02").html(); // Anti-Terrorism Enterprise Portal
-  var jsA03 = $("#A03").html(); // Antivirus Home Use Program (AV HUP)
-  var jsA04 = $("#A04").html(); // Army 365 Teams
-  var jsA05 = $("#A05").html(); // Army Accident Reporting System
-  var jsA06 = $("#A06").html(); // Army Acquisition Support Center
-  var jsA07 = $("#A07").html(); // Army Benefits Center
-  var jsA08 = $("#A08").html(); // Army Career Tracker
-  var jsA09 = $("#A09").html(); // Army Combat Readiness Center
-  var jsA10 = $("#A10").html(); // Army Community Service Staff System
-  var jsA11 = $("#A11").html(); // Army Credentialing Opportunities On-Line (COOL)
-  var jsA12 = $("#A12").html(); // Army Criminal Investigation Command
-  var jsA13 = $("#A13").html(); // Army Disaster Personnel Accountability and Assessment System (ADPAAS)
-  var jsA14 = $("#A14").html(); // Army E-Learning
-  var jsA15 = $("#A15").html(); // Army Email (@army.mil)
-  var jsA16 = $("#A16").html(); // Army Email (@mail.mil)
-  var jsA17 = $("#A17").html(); // Army Enterprise Service Desk (AESD)
-  var jsA18 = $("#A18").html(); // Army Enterprise Systems Integration Program
-  var jsA19 = $("#A19").html(); // Army Family and Moral, Welfare and Recreation Programs
-  var jsA20 = $("#A20").html(); // Army Family Readiness Group (FRG)
-  var jsA21 = $("#A21").html(); // Army Fit
-  var jsA22 = $("#A22").html(); // Army Housing Online User Services
-  var jsA23 = $("#A23").html(); // Army Human Resources Command
-  var jsA24 = $("#A24").html(); // Army Ideas for Innovation (AI2)
-  var jsA25 = $("#A25").html(); // Army Learning Management System (ALMS)
-  var jsA26 = $("#A26").html(); // Army Maintenance Application (ArMA)
-  var jsA27 = $("#A27").html(); // Army National Guard GI Personnel Gateway
-  var jsA28 = $("#A28").html(); // Army Public Health Center
-  var jsA29 = $("#A29").html(); // Army Publications
-  var jsA30 = $("#A30").html(); // Army Readiness Assessment Program
-  var jsA31 = $("#A31").html(); // Army Senior Leadership
-  var jsA32 = $("#A32").html(); // Army SkillSoft
-  var jsA33 = $("#A33").html(); // Army Substance Abuse Program (ASAP)
-  var jsA34 = $("#A34").html(); // Army Sustainment
-  var jsA35 = $("#A35").html(); // Army Training and Certification Tracking System
-  var jsA36 = $("#A36").html(); // Army Training Information System
-  var jsA37 = $("#A37").html(); // Army Training Network
-  var jsA38 = $("#A38").html(); // Army Training Requirements and Resources System (ATRRS)
-  var jsA39 = $("#A39").html(); // Army Veterinary Corps
-  var jsA40 = $("#A40").html(); // Assignment Satisfaction Key
-  var jsA41 = $("#A41").html(); // Automated Personal Clothing Request
-  var jsA42 = $("#A42").html(); // Army 365 Azure Portal
-  var jsA43 = $("#A43").html(); // Army 365 Home
-  var jsA44 = $("#A44").html(); // Army 365 Information Hub
-  var jsA45 = $("#A45").html(); // Army Records Information Management System (ARIMS)
-  // Sites that begin with C
-  var jsC00 = $("#C00").html(); // Career Acquisition Management Portal
-  var jsC01 = $("#C01").html(); // Center for the Army Profession and Leadership (CAPL)
-  var jsC02 = $("#C02").html(); // Central Army Registry (CAR)
-  var jsC03 = $("#C03").html(); // Combined Arms Center
-  var jsC04 = $("#C04").html(); // Comprehensive Soldier and Family Fitness
-  var jsC05 = $("#C05").html(); // Computer Hardware Enterprise Software and Solutions (CHESS)
-  var jsC06 = $("#C06").html(); // Cyber Awareness Challenge
-  // Sites that begin with D
-  var jsD00 = $("#D00").html(); // Defense Acquisition University
-  var jsD01 = $("#D01").html(); // Defense Civilian Personnel Data System
-  var jsD02 = $("#D02").html(); // Defense Enrollment Eligibility Readiness
-  var jsD03 = $("#D03").html(); // Defense Finance and Accounting Service (DFAS)
-  var jsD04 = $("#D04").html(); // Defense Information Systems Agency
-  var jsD05 = $("#D05").html(); // Defense Logistics Agency
-  var jsD06 = $("#D06").html(); // Defense Manpower Data Center
-  var jsD07 = $("#D07").html(); // Defense Travel Management System
-  var jsD08 = $("#D08").html(); // Defense Travel System
-  var jsD09 = $("#D09").html(); // Department of the Army Photo Management Information System (DAPMIS)
-  var jsD10 = $("#D10").html(); // Deployed Digital Training Campus (DDTC)
-  var jsD11 = $("#D11").html(); // Deployment Health Assessment Program (DHAP)
-  var jsD12 = $("#D12").html(); // Digital Training Facility (DTF)
-  var jsD13 = $("#D13").html(); // Digital Training Management System (DTMS)
-  var jsD14 = $("#D14").html(); // DoD Automated Time Attendance and Production System
-  var jsD15 = $("#D15").html(); // DOD CAC Reference Center
-  var jsD16 = $("#D16").html(); // DOD MWR Libraries Overdrive
-  var jsD17 = $("#D17").html(); // DS Login Registration
-  // Sites that begin with E
-  var jsE00 = $("#E00").html(); // EagleCash
-  var jsE01 = $("#E01").html(); // eBenefits
-  var jsE02 = $("#E02").html(); // electronic Financial Liability Investigations of Property Loss
-  var jsE03 = $("#E03").html(); // eMILPO
-  var jsE04 = $("#E04").html(); // Evaluation Entry System
-  // Sites that begin with F
-  var jsF00 = $("#F00").html(); // Federal Voting Assistance Program
-  var jsF01 = $("#F01").html(); // FEDLOG
-  var jsF02 = $("#F02").html(); // FEDLOG LITE
-  var jsF03 = $("#F03").html(); // FEDMALL
-  var jsF04 = $("#F04").html(); // Financial Disclosure Management
-  var jsF05 = $("#F05").html(); // Force Management System (FMSWeb)
-  // Sites that begin with G
-  var jsG00 = $("#G00").html(); // GENERAL FUND ENTERPRISE BUSINESS SYSTEM
-  var jsG01 = $("#G01").html(); // GI Suicide Prevention
-  var jsG02 = $("#G02").html(); // Global Combat Support System - Army (GCSS-Army)
-  var jsG03 = $("#G03").html(); // Global Electronic Approval Routing System (GEARS Purple)
-  var jsG04 = $("#G04").html(); // Global Electronic Approval Routing System 5 (GEARS Yellow)
-  var jsG05 = $("#G05").html(); // Global Electronic Approval Routing System V (GEARS Red)
-  var jsG06 = $("#G06").html(); // Ground Risk Assessment Tool (GRAT)
-  var jsG07 = $("#G07").html(); // Guard Knowledge Online (GKO)
-  var jsG08 = $("#G08").html(); // Green To Gold Access Portal
-  var jsG09 = $("#G09").html(); // Global Federated User Directory (GFUD)
-  // Sites that begin with H
-  var jsH00 = $("#H00").html(); // Health.mil
-  // Sites that begin with I
-  var jsI00 = $("#I00").html(); // Identity Management Portal
-  var jsI01 = $("#I01").html(); // IgnitED
-  var jsI02 = $("#I02").html(); // Installation Support Module
-  var jsI03 = $("#I03").html(); // Integrated Personnel and Pay System Army
-  var jsI04 = $("#I04").html(); // iPerms
-  var jsI05 = $("#I05").html(); // iSALUTE
-  // Sites that begin with J
-  var jsJ00 = $("#J00").html(); // JAG Corps
-  var jsJ01 = $("#J01").html(); // JAG University
-  var jsJ02 = $("#J02").html(); // Joint Improvised Treat Defeat Organization
-  var jsJ03 = $("#J03").html(); // Joint Knowledge Online (JKO)
-  var jsJ04 = $("#J04").html(); // Joint Risk Assessment Tool
-  var jsJ05 = $("#J05").html(); // Joint Service Transcript (JST)
-  // Sites that begin with L
-  var jsL00 = $("#L00").html(); // LHI Appointment Scheduling
-  var jsL01 = $("#L01").html(); // LandWarNet eUniversity
-  // Sites that begin with M
-  var jsM00 = $("#M00").html(); // Medical Operational Data System
-  var jsM01 = $("#M01").html(); // MEDLine Plus
-  var jsM02 = $("#M02").html(); // Medpros (ADMIN)
-  var jsM03 = $("#M03").html(); // MHS Genesis
-  var jsM04 = $("#M04").html(); // milConnect
-  var jsM05 = $("#M05").html(); // MILGAMING
-  var jsM06 = $("#M06").html(); // Military Auxiliary Radio System
-  var jsM07 = $("#M07").html(); // Military OneSource
-  var jsM08 = $("#M08").html(); // MilitaryCAC
-  var jsM09 = $("#M09").html(); // MilSuite
-  var jsM10 = $("#M10").html(); // MOBCOP
-  var jsM11 = $("#M11").html(); // Mobile Digital Training Facility (MDTF)
-  var jsM12 = $("#M12").html(); // My Army Benefits
-  var jsM13 = $("#M13").html(); // My Clothing Record
-  var jsM14 = $("#M14").html(); // My Enlisted Record Brief (ERB)
-  var jsM15 = $("#M15").html(); // My Enlisted/Officer Record Brief (National Guard)
-  var jsM16 = $("#M16").html(); // My Enlisted/Officer Record Brief (Reserve)
-  var jsM17 = $("#M17").html(); // My MEDPROS Medical Readiness Portal
-  var jsM18 = $("#M18").html(); // MY Officer Record Brief (ORB) 
-  var jsM19 = $("#M19").html(); // MY RFO (Request for Orders)
-  var jsM20 = $("#M20").html(); // My Training Tab
-  var jsM21 = $("#M21").html(); // MyPay
-  var jsM22 = $("#M22").html(); // MyMEB
-  var jsM23 = $("#M23").html(); // Military Child Care
-  // Sites that begin with N
-  var jsN00 = $("#N00").html(); // NCO Leader Center for Excellence
-  var jsN01 = $("#N01").html(); // NCO Worldwide
-  var jsN02 = $("#N02").html(); // NETCOM
-  // Sites that begin with O
-  var jsO00 = $("#O00").html(); // Office of Personnel Management
-  // Sites that begin with P
-  var jsP00 = $("#P00").html(); // Preventative Maintenance Monthly (P.S. Magazine)
-  var jsP01 = $("#P01").html(); // Procurement Integrated Enterprise Environment (PIEE)
-  var jsP02 = $("#P02").html(); // Promotion Point Worksheet
-  var jsP03 = $("#P03").html(); // Psychological Health Center of Excellence
-  var jsP04 = $("#P04").html(); // Protected Internet eXchange (PiX)
-  // Sites that begin with R
-  var jsR00 = $("#R00").html(); // Risk Management Information System (RMIS)
-  var jsR01 = $("#R01").html(); // RAPIDS
-  // Sites that begin with S
-  var jsS00 = $("#S00").html(); // Service members' Group Life Insurance (SGLI)
-  var jsS01 = $("#S01").html(); // Sexual Harassment Assault Response and Prevention
-  var jsS02 = $("#S02").html(); // Soldier Enhancement Program
-  var jsS03 = $("#S03").html(); // Soldier For Life Transition Assistance Program (SFL-TAP)
-  var jsS04 = $("#S04").html(); // Supply and Maintenance Assistance Review Team (SMART)
-  var jsS05 = $("#S05").html(); // Survivor OutReach Services
-  var jsS06 = $("#S06").html(); // S1Net
-  var jsS07 = $("#S07").html(); // Soldier For life
-  // Sites that begin with T
-  var jsT00 = $("#T00").html(); // Thrift Savings Plan
-  var jsT01 = $("#T01").html(); // TRADOC Application GateWay (TAG)
-  var jsT02 = $("#T02").html(); // Travel Risk Planing System (TRiPS)
-  var jsT03 = $("#T03").html(); // Trial Defense Service
-  var jsT04 = $("#T04").html(); // Tricare Dental Readiness
-  var jsT05 = $("#T05").html(); // Tricare Online
-  var jsT06 = $("#T06").html(); // Trusted End Node Security (TENS)
-  // Sites that begin with U
-  var jsU00 = $("#U00").html(); // U.S. Armed Forces Legal Assistance
-  var jsU01 = $("#U01").html(); // United Services Military Apprenticeship Program (USMAP)
-  var jsU02 = $("#U02").html(); // Unit Commander’s Finance Report (UCFR)
-
-  // Sites that begin with V
-  var jsV00 = $("#V00").html(); // Visual Information Ordering Site
-  var jsV01 = $("#V01").html(); // Volunteer Management Information System (VMIS)
-  // Sites that begin with Y
-  var jsY00 = $("#Y00").html(); // Yellow Ribbon Reintegration Program (YRRP)
-
-  const myQuickLinks = JSON.parse(localStorage.getItem("customQuickLinks"));
-
-  // Site listings
-  if (localStorage.getItem("customQuickLinks") == null) {
-    document.getElementById("catQuickLinks").innerHTML = (jsG01 + jsM17 + jsA21 + jsM14 + jsM07 + jsA15 + jsA16 + jsM21 + jsA08 + jsD13 + jsM13 + jsA43 + jsT05 + jsA26 + jsV01);
-  } else {
-    document.getElementById("catQuickLinks").innerHTML = (document.getElementById(myQuickLinks[0]).innerHTML + document.getElementById(myQuickLinks[1]).innerHTML + document.getElementById(myQuickLinks[2]).innerHTML + document.getElementById(myQuickLinks[3]).innerHTML + document.getElementById(myQuickLinks[4]).innerHTML + document.getElementById(myQuickLinks[5]).innerHTML + document.getElementById(myQuickLinks[6]).innerHTML + document.getElementById(myQuickLinks[7]).innerHTML + document.getElementById(myQuickLinks[8]).innerHTML + document.getElementById(myQuickLinks[9]).innerHTML + document.getElementById(myQuickLinks[10]).innerHTML + document.getElementById(myQuickLinks[11]).innerHTML + document.getElementById(myQuickLinks[12]).innerHTML + document.getElementById(myQuickLinks[13]).innerHTML + document.getElementById(myQuickLinks[14]).innerHTML + document.getElementById(myQuickLinks[15]).innerHTML);
-  };
-    $("#catAllSites").html('<div id="section-A"></div>' + jsA00 + jsA01 + jsA02 + jsA03 + jsA42 + jsA04 + jsA43 + jsA44 + jsA05 + jsA06 + jsA07 + jsA08 + jsA09 + jsA10 + jsA11 + jsA12 + jsA13 + jsA14 + jsA15 + jsA16 + jsA17 + jsA18 + jsA19 + jsA20 + jsA21 + jsA22 + jsA23 + jsA24 + jsA25 + jsA26 + jsA27 + jsA28 + jsA29 + jsA30 + jsA45 + jsA31 + jsA32 + jsA33 + jsA34 + jsA35 + jsA36 + jsA37 + jsA38 + jsA39 + jsA40 + jsA41 + '<div id="section-C"><br><hr><br></div>' + jsC00 + jsC01 + jsC02 + jsC03 + jsC04 + jsC05 + jsC06 + '<div id="section-D"><br><hr><br></div>' + jsD00 + jsD01 + jsD02 + jsD03 + jsD04 + jsD05 + jsD06 + jsD07 + jsD08 + jsD09 + jsD10 + jsD11 + jsD12 + jsD13 + jsD14 + jsD15 + jsD16 + jsD17 + '<div id="section-E"><br><hr><br></div>' + jsE00 + jsE01 + jsE02 + jsE03 + jsE04 + '<div id="section-F"><br><hr><br></div>' + jsF00 + jsF01 + jsF02 + jsF03 + jsF04 + jsF05 + '<div id="section-G"><br><hr><br></div>' + jsG00 + jsG01 + jsG02 + jsG03 + jsG04 + jsG05 + jsG08 + jsG06 + jsG07 + '<div id="section-H"><br><hr><br></div>' + jsH00 + '<div id="section-I"><br><hr><br></div>' + jsI00 + jsI01 + jsI02 + jsI03 + jsI04 + jsI05 + '<div id="section-J"><br><hr><br></div>' + jsJ00 + jsJ01 + jsJ02 + jsJ03 + jsJ04 + jsJ05 + '<div id="section-L"><br><hr><br></div>' + jsL01 + jsL00 + '<div id="section-M"><br><hr><br></div>' + jsM00 + jsM01 + jsM02 + jsM03 + jsM04 + jsM05 + jsM06 + jsM23 + jsM07 + jsM08 + jsM09 + jsM10 + jsM11 + jsM12 + jsM13 + jsM14 + jsM15 + jsM16 + jsM22 + jsM17 + jsM18 + jsM19 + jsM20 + jsM22 + jsM21 + '<div id="section-N"><br><hr><br></div>' + jsN00 + jsN01 + jsN02 + '<div id="section-O"><br><hr><br></div>' + jsO00 + '<div id="section-P"><br><hr><br></div>' + jsP00 + jsP01 + jsP02 + jsP04 + jsP03 + '<div id="section-R"><br><hr><br></div>' + jsR01 + jsR00 + '<div id="section-S"><br><hr><br></div>' + jsS06 + jsS00 + jsS01 + jsS02 + jsS07 + jsS03 + jsS04 + jsS05 + '<div id="section-T"><br><hr><br></div>' + jsT00 + jsT01 + jsT02 + jsT03 + jsT04 + jsT05 + jsT06 + '<div id="section-U"><br><hr><br></div>' + jsU00 + jsU02 + jsU01 + '<div id="section-V"><br><hr><br></div>' + jsV00 + jsV01 + '<div id="section-Y"><br><hr><br></div>' + jsY00);
-    $("#catArmySites").html(jsA02 + jsA04 + jsA06 + jsA07 + jsA14 + jsA15 + jsA16 + jsA18 + jsA19 + jsA24 + jsA26 + jsA29 + jsA31 + jsA33 + jsA34 + jsA40 + jsC05 + jsD09 + jsD11 + jsD13 + jsF04 + jsF05 + jsG07 + jsI05 + jsJ00 + jsJ01 + jsM04 + jsM12 + jsM13 + jsM14 + jsM22 + jsM18 + jsM19 + jsN02 + jsS01 + jsS02 + jsS04 + jsT03);
-    $("#catCombatReadiness").html(jsA05 + jsA09 + jsA21 + jsA30 + jsD11 + jsG02 + jsG06 + jsM10 + jsR00 + jsS02);
-    $("#catDod").html(jsA00 + jsD03 + jsD05 + jsD07 + jsD08 + jsD17 + jsF01 + jsF02 + jsF03 + jsI05 + jsJ02 + jsJ03 + jsJ04 + jsM07 + jsM09 + jsM21 + jsP01 + jsU00);
-    $("#catCivEd").html(jsA11 + jsA14 + jsA32 + jsI01 + jsJ05 + jsS03);
-    $("#catMilEd").html(jsA14 + jsA25 + jsA35 + jsA36 + jsA37 + jsA38 + jsC00 + jsC02 + jsC03 + jsC06 + jsD00 + jsD10 + jsD12 + jsJ03 + jsJ05 + jsM05 + jsM11 + jsM20 + jsT01);
-    $("#catFamily").html(jsA10 + jsA19 + jsA20 + jsA22 + jsC04 + jsD02 + jsD16 + jsG01 + jsM07 + jsS05 + jsT05 + jsV01);
-    $("#catFinance").html(jsD03 + jsE00 + jsF04 + jsG00 + jsM07 + jsM21 + jsT00);
-    $("#catHealth").html(jsA01 + jsA28 + jsA33 + jsA39 + jsC04 + jsD11 + jsE01 + jsG01 + jsH00 + jsL00 + jsM00 + jsM01 + jsM02 + jsM03 + jsM07 + jsM22 + jsM17 + jsP03 + jsS00 + jsS01 + jsS05 + jsT04 + jsT05);
-    $("#catHuman").html(jsA13 + jsA23 + jsA29 + jsA40 + jsA41 + jsD01 + jsD02 + jsD05 + jsD06 + jsE01 + jsE02 + jsE03 + jsE04 + jsG03 + jsG04 + jsG05 + jsI00 + jsI02 + jsI03 + jsI04 + jsM13 + jsM14 + jsM15 + jsM16 + jsM18 + jsM19 + jsO00 + jsP02 + jsS06 + jsS03 + jsT02);
-    $("#catLegal").html(jsA12 + jsF04 + jsJ00 + jsJ01 + jsU00);
-    $("#catProDev").html(jsA08 + jsA14 + jsA27 + jsA32 + jsA38 + jsA40 + jsC01 + jsE04 + jsJ01 + jsN00 + jsN01 + jsP00 + jsP02 + jsS03 + jsV00 + jsV01);
-    $("#catTech").html(jsA03 + jsA17 + jsC05 + jsC06 + jsD04 + jsD14 + jsD15 + jsM06 + jsM08 + jsT06);
-    $("#catUsGov").html(jsA03 + jsE00 + jsF00 + jsI05 + jsM01 + jsT00);
-    
-    // Category Selection
-    $("select").change(function() {
-      $("select option:selected").each(function() {
-        if ($(this).attr("value") == "Quick-Links") {
-            $(".hidden").hide();
-            $("#catQuickLinks").show();
-          }
-          if ($(this).attr("value") == "All-Sites") {
-            $(".hidden").hide();
-            $("#ddmAllSites").show();
-            $("#catAllSites").show();
-          }
-          if ($(this).attr("value") == "Army-Sites") {
-            $(".hidden").hide();
-            $("#catArmySites").show();
-          }
-          if ($(this).attr("value") == "Combat-Readiness") {
-            $(".hidden").hide();
-            $("#catCombatReadiness").show();
-          }
-          if ($(this).attr("value") == "DOD") {
-            $(".hidden").hide();
-            $("#catDod").show();
-          }
-          if ($(this).attr("value") == "MilEd") {
-            $(".hidden").hide();
-            $("#catMilEd").show();
-          }
-          if ($(this).attr("value") == "CivEd") {
-            $(".hidden").hide();
-            $("#catCivEd").show();
-          }
-          if ($(this).attr("value") == "Family") {
-            $(".hidden").hide();
-            $("#catFamily").show();
-          }
-          if ($(this).attr("value") == "Finance") {
-            $(".hidden").hide();
-            $("#catFinance").show();
-          }
-          if ($(this).attr("value") == "Health") {
-            $(".hidden").hide();
-            $("#catHealth").show();
-          }
-          if ($(this).attr("value") == "Human") {
-            $(".hidden").hide();
-            $("#catHuman").show();
-          }
-          if ($(this).attr("value") == "Legal") {
-            $(".hidden").hide();
-            $("#catLegal").show();
-          }
-          if ($(this).attr("value") == "Professional-Development") {
-            $(".hidden").hide();
-            $("#catProDev").show();
-          }
-          if ($(this).attr("value") == "Technologies") {
-            $(".hidden").hide();
-            $("#catTech").show();
-          }
-          if ($(this).attr("value") == "US-Gov") {
-            $(".hidden").hide();
-            $("#catUsGov").show();
-          }
-        });
-      }).change();
-
-      // Calls the Daily Bugle when dates are specified. 
-      let dt = new Date();
-      let m = dt.getMonth();
-      let d = dt.getDate();
-      let y = dt.getYear();
-      var AOTD;
-      if (m == 0 && d == 1) { // New Year's Day
-          AOTD = "Happy New Year";
-      } else if (m == 0 && d == 14) { // Martin Luther King Jr Day (NEEDS TO BE CHANGED YEARLY)
-          AOTD = "It is currently Martin Luther King Jr Day";
-      } else if (m == 1) { // African American Black History Month
-          AOTD = "It is currently African American Black History Month";
-      } else if (m == 2) { // Women's History Month
-          AOTD = "It is currently Women's History Month";
-      } else if (m == 3 && d == 28) { // Days of Remembrance of the Victims of the Holocaust (NEEDS TO BE CHANGED YEARLY)
-          AOTD = "Days of Remembrance of the Victims of the Holocaust";
-      } else if (m == 4) { // Asian American Pacific Islander Heritage Month
-          AOTD = "It is currently Asian American Pacific Islander Heritage Month";
-      } else if (m == 4 && d == 30) { // Memorial Day
-          AOTD = "It is currently Memorial Day";
-      } else if (m == 5 && d != 19) { // LGPT Pride Month
-          AOTD = "It is currently LGPT Pride Month";
-      } else if (m == 5 && d == 19) { // Juneteenth
-          AOTD = "Happy Juneteenth and LGPT Pride Month";
-      } else if (m == 6 && d == 4) { // Independence Day
-          AOTD = "Happy Independence Day";
-      } else if (m == 7 && d == 26) { // Women's Equality Day
-          AOTD = "It is currently Women's Equality Day";
-      } else if (m == 8 && d == 11) { // September 11th
-          AOTD = "September 11th";
-      } else if ((m == 8 && d >= 15) || (m == 9 && d <= 15)) { // Hispanic Heritage Month
-          AOTD = "It is currently Hispanic Heritage Month";
-      } else if (m == 10 && d != 11) { // Native American Heritage Month
-          AOTD = "It is currently Native American Heritage Month";
-      } else if (m == 10 && d == 11) { // Veterans Day (NEEDS TO BE CHANGED YEARLY)
-          AOTD = "It is currently Veterans Day";
-      } else if (m == 12 && d == 25) { // Yule
-          AOTD = "Happy Yule";
-      } else if (m == 12 && d == 31) { // New Years Eve
-          AOTD = "New Years Eve";
-      } else { // Normal Day
-          AOTD = "In every generation there is a chosen one... She alone will stand against the vampires, the demons and the forces of darkness. She is the slayer.";
-          $("#dailyBugle").hide();
-      }
-      document.getElementById("dailyBugle").innerHTML = AOTD;
-      
-  });
-  </script>
   <meta charset="utf-8">
   <meta name="description" content="Army Knowledge Offline is a link hub for most U.S. Army websites. Here you are able to find quick links to easy and hard to find Army sites alike">
   <meta name="keywords" content="AKO, Army Knowledge Offline, Army Knowledge Online, ArmyKnowledgeOffline, Army Links, AKOffline, AK-Offline">
@@ -344,7 +16,7 @@
         <a href="./ListedLinks.html">Listed Links</a>
         <!-- <a href="./CustomQuickLinks.html">Custom Quick Links Setup</a> -->
         <a href="./About_AKO.html">About AKOffline</a>
-        <a style="float: right; border-right: none;">
+        <a style="float: right; border-right: none; display: none;" id="looker">
             What are you looking for?
             <select id="DropDownBox" class="dropDownBox">
                 <option value="Quick-Links" selected="">Quick Links</option>
@@ -364,7 +36,7 @@
                 <option value="US-Gov">US Gov Web Sites</option>
             </select>
         </a>
-        <div style="float: right;" class="dropdown hidden" id="ddmAllSites">
+        <div style="float: right; display: block;" class="dropdown hidden" id="ddmAllSites">
             <button class="dropbtn">Jump To...</button>
             <div class="dropdown-content">
                 <a style="border-right: none;" href="#section-A"> Jump to -A- </a>
@@ -402,12 +74,12 @@
     <div style="margin: 10px auto 60px;">
         <div class="deck" style="max-width: 1920px; margin: auto;">
             <!-- Quick Links -->
-            <div class="hidden" id="catQuickLinks"></div>
+            <div style="display: none;" id="catQuickLinks"></div>
 
             <!-- All Web Sites A-Z -->
-            <div class="hidden" id="catAllSites">
+            <div style="display: block;" id="catAllSites">
                 <!-- A -->
-                <div id="A00">
+                <div class="column" id="A00">
                     <!-- Air Force Weather Agency - https://weather.af.mil/ -->
                     <a href="https://weather.af.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -423,7 +95,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A01">
+                <div class="column" id="A01">
                     <!-- AMEDD Command Management System - https://cms.mods.army.mil/cms/ -->
                     <a href="https://cms.mods.army.mil/cms/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -439,13 +111,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="A02">
+                <div class="column" id="A02">
                     <!-- Anti-Terrorism Enterprise Portal - https://army.deps.mil/army/sites/PMG/prog/ATEP/default.aspx -->
                     <a href="https://army.deps.mil/army/sites/PMG/prog/ATEP/default.aspx" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-004.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-004.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">Anti-Terrorism Enterprise Portal gives you resources on how to spot and report possible terrorist activity.</p>
                                 </div>
                                 <div class="title">
@@ -455,7 +127,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A03">
+                <div class="column" id="A03">
                     <!-- Antivirus Home Use Program (AV HUP) - http://disa.mil/Cybersecurity/Network-Defense/Antivirus/Home-Use -->
                     <a href="http://disa.mil/Cybersecurity/Network-Defense/Antivirus/Home-Use" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -471,7 +143,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A42">
+                <div class="column" id="A42">
                     <!-- Army 365 Azure Portal - https://portal.azure.us/#home -->
                     <a href="https://portal.azure.us/#home" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -487,7 +159,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A43">
+                <div class="column" id="A43">
                     <!-- Army 365 Home - https://www.ohome.apps.mil/ -->
                     <a href="https://www.ohome.apps.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -503,7 +175,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A44">
+                <div class="column" id="A44">
                     <!-- Army 365 Information Hub - https://armyeitaas.sharepoint-mil.us/ -->
                     <a href="https://armyeitaas.sharepoint-mil.us/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -519,7 +191,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A04">
+                <div class="column" id="A04">
                     <!-- Army 365 Teams - https://dod.teams.microsoft.us/ -->
                     <a href="https://dod.teams.microsoft.us/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -535,7 +207,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A05">
+                <div class="column" id="A05">
                     <!-- Army Accident Reporting System - https://reportit.safety.army.mil/ -->
                     <a href="https://reportit.safety.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -551,7 +223,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A06">
+                <div class="column" id="A06">
                     <!-- Army Acquisition Support Center - https://asc.army.mil/web/ -->
                     <a href="https://asc.army.mil/web/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -567,7 +239,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A07">
+                <div class="column" id="A07">
                     <!-- Army Benefits Center - https://wr.acpol.army.mil/abc/ -->
                     <a href="https://wr.acpol.army.mil/abc/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -583,13 +255,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="A08">
+                <div class="column" id="A08">
                     <!-- Army Career Tracker - https://actnow.army.mil/ -->
                     <a href="https://actnow.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-067.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-067.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">The Army Career Tracker is an Army leadership development web-based tool developed by U.S. Army Training and Doctrine Command's Institute for Non-Commissioned Officer Professional Development.</p>
                                 </div>
                                 <div class="title">
@@ -599,7 +271,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A09">
+                <div class="column" id="A09">
                     <!-- Army Combat Readiness Center - https://safety.army.mil/ -->
                     <a href="https://safety.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -615,7 +287,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A10">
+                <div class="column" id="A10">
                     <!-- Army Community Service Staff System - https://www.acsstaff.org/skins/ACS/default_secure.aspx -->
                     <a href="https://www.acsstaff.org/skins/ACS/default_secure.aspx" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -631,7 +303,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A11">
+                <div class="column" id="A11">
                     <!-- Army Credentialing Opportunities On-Line (COOL) - https://www.cool.osd.mil/army/ -->
                     <a href="https://www.cool.osd.mil/army/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -647,7 +319,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A12">
+                <div class="column" id="A12">
                     <!-- Army Criminal Investigation Command - https://www.cid.army.mil/ -->
                     <a href="https://www.cid.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -663,13 +335,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="A13">
+                <div class="column" id="A13">
                     <!-- Army Disaster Personnel Accountability and Assessment System (ADPAAS) - https://adpaas.army.mil/ -->
                     <a href="https://adpaas.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-120.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-120.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">Army Disaster Personnel Accountability and Assessment System (ADPAAS) standardizes a method for the Army to account, assess, manage, and monitor the recovery process for personnel and their families affected and/or scattered by a wide-spread catastrophic event. ADPAAS provides valuable information to all levels of the Army chain of command, allowing commanders to make strategic decisions which facilitate a return to stability.</p>
                                 </div>
                                 <div class="title">
@@ -679,7 +351,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A14">
+                <div class="column" id="A14">
                     <!-- Army E-Learning - https://www.dls.army.mil/Army_e-Learning.html -->
                     <a href="https://www.dls.army.mil/Army_e-Learning.html" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -695,7 +367,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A15">
+                <div class="column" id="A15">
                     <!-- Army Email (@army.mil) -  https://webmail.apps.mil -->
                     <a href="https://webmail.apps.mil" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -711,7 +383,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A16">
+                <div class="column" id="A16">
                     <!-- Army Email (@mail.mil) - https://web.mail.mil -->
                     <a href="https://web.mail.mil" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -727,7 +399,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A17">
+                <div class="column" id="A17">
                     <!-- Army Enterprise Service Desk (AESD) - https://snpro.aesd-w.army.mil/ -->
                     <a href="https://snpro.aesd-w.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -743,7 +415,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A18">
+                <div class="column" id="A18">
                     <!-- Army Enterprise Systems Integration Program - https://login.aesip.army.mil -->
                     <a href="https://login.aesip.army.mil" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -759,7 +431,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A19">
+                <div class="column" id="A19">
                     <!-- Army Family and Moral, Welfare and Recreation Programs - https://www.armymwr.com/ -->
                     <a href="https://www.armymwr.com/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -775,7 +447,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A20">
+                <div class="column" id="A20">
                     <!-- Army Family Readiness Group (FRG) - https://vsfrg.armyfamilywebportal.com/ -->
                     <a href="https://vsfrg.armyfamilywebportal.com/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -791,7 +463,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A21">
+                <div class="column" id="A21">
                     <!-- Army Fit - https://armyfit.army.mil/ -->
                     <a href="https://armyfit.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -807,7 +479,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A22">
+                <div class="column" id="A22">
                     <!-- Army Housing Online User Services - https://www.housing.army.mil/ -->
                     <a href="https://www.housing.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -823,7 +495,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A23">
+                <div class="column" id="A23">
                     <!-- Army Human Resources Command - https://www.hrc.army.mil/ -->
                     <a href="https://www.hrc.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -839,7 +511,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A24">
+                <div class="column" id="A24">
                     <!-- Army Ideas for Innovation (AI2) - https://www.milsuite.mil/book/community/spaces/ai2 -->
                     <a href="https://www.milsuite.mil/book/community/spaces/ai2" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -855,7 +527,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A25">
+                <div class="column" id="A25">
                     <!-- Army Learning Management System (ALMS) - https://www.lms.army.mil/ -->
                     <a href="https://www.lms.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -871,7 +543,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A26">
+                <div class="column" id="A26">
                     <!-- Army Maintenance Application (ArMA) - https://www.armymaintenance.com/arma -->
                     <a href="https://www.armymaintenance.com/arma" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -887,7 +559,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A27">
+                <div class="column" id="A27">
                     <!-- Army National Guard GI Personnel Gateway - https://arngg1.ngb.army.mil/SelfService/CareerCenter/Home.aspx -->
                     <a href="https://arngg1.ngb.army.mil/SelfService/CareerCenter/Home.aspx" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card" rel="noopener noreferrer">
@@ -903,7 +575,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A28">
+                <div class="column" id="A28">
                     <!-- Army Public Health Center - https://phc.amedd.army.mil/Pages/default.aspx/ -->
                     <a href="https://phc.amedd.army.mil/Pages/default.aspx/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -919,7 +591,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A29">
+                <div class="column" id="A29">
                     <!-- Army Publications - https://armypubs.army.mil/ -->
                     <a href="https://armypubs.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -935,7 +607,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A30">
+                <div class="column" id="A30">
                     <!-- Army Readiness Assessment Program - https://earap.safety.army.mil/ -->
                     <a href="https://earap.safety.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -951,7 +623,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A45">
+                <div class="column" id="A45">
                     <!-- Army Records Information Management System (ARIMS) - https://www.arims.army.mil/arims/Login.aspx -->
                     <a href="https://www.arims.army.mil/arims/Login.aspx" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -967,7 +639,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A31">
+                <div class="column" id="A31">
                     <!-- Army Senior Leadership - https://www.army.mil/leaders/sa/ -->
                     <a href="https://www.army.mil/leaders/sa/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -983,7 +655,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A32">
+                <div class="column" id="A32">
                     <!-- Army SkillSoft - https://usarmy.skillport.com/ -->
                     <a href="https://usarmy.skillport.com/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -999,7 +671,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A33">
+                <div class="column" id="A33">
                     <!-- Army Substance Abuse Program (ASAP) - https://sr2.army.mil/ -->
                     <a href="https://sr2.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1015,7 +687,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A34">
+                <div class="column" id="A34">
                     <!-- Army Sustainment - https://alu.army.mil/alog/ -->
                     <a href="https://alu.army.mil/alog/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1031,7 +703,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A35">
+                <div class="column" id="A35">
                     <!-- Army Training and Certification Tracking System - https://atc.us.army.mil/iastar/ -->
                     <a href="https://atc.us.army.mil/iastar/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1047,7 +719,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A36">
+                <div class="column" id="A36">
                     <!-- Army Training Information System - https://www.atis.army.mil/Index.html -->
                     <a href="https://www.atis.army.mil/Index.html" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1063,7 +735,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A37">
+                <div class="column" id="A37">
                     <!-- Army Training Network - https://atn.army.mil/ -->
                     <a href="https://atn.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1079,7 +751,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="A38">
+                <div class="column" id="A38">
                     <!-- Army Training Requirements and Resources System (ATRRS) - https://www.atrrs.army.mil/ -->
                     <a href="https://www.atrrs.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1095,13 +767,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="A39">
+                <div class="column" id="A39">
                     <!-- Army Veterinary Corps - https://medcoe.army.mil/amedd-veterinary-corps -->
                     <a href="https://medcoe.army.mil/amedd-veterinary-corps" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-005.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-005.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">The U.S. Army Veterinary Corps is a staff corps of the U.S. Army Medical Department consisting of commissioned veterinary officers and Health Professions Scholarship Program veterinary students.</p>
                                 </div>
                                 <div class="title">
@@ -1111,13 +783,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="A40">
+                <div class="column" id="A40">
                     <!-- Assignment Satisfaction Key - https://www.ask.army.mil/ask -->
                     <a href="https://www.ask.army.mil/ask" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-008.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-008.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee"><red>!ONLY WORKS ON DOD NETWORKS!</red><br>The Assignment Satisfaction Key provides Soldiers the capability for Soldiers to get their hopes up in selecting their assignment only to have their satisfaction fully dissatisfied and their branch manager an idea of where exactly not to send them.<br><red>!ONLY WORKS ON DOD NETWORKS!</red></p>
                                 </div>
                                 <div class="title">
@@ -1127,13 +799,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="A41">
+                <div class="column" id="A41">
                     <!-- Automated Personal Clothing Request - https://da3078.natick.army.mil/ -->
                     <a href="https://da3078.natick.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-082.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-082.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">The Automated Personal Clothing Request is a system for processing the DA Form 3078 electronically. It is used to request and authorize clothing bag items not issued during initial Entry Training, as well as replacements, exchanges, gratuitous issue, supplemental issue, and special issue clothing items.</p>
                                 </div>
                                 <div class="title">
@@ -1145,7 +817,7 @@
                 </div>
                 <!-- B -->
                 <!-- C -->
-                <div id="C00">
+                <div class="column" id="C00">
                     <!-- Career Acquisition Management Portal - https://apps.asc.army.mil/camp -->
                     <a href="https://apps.asc.army.mil/camp" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1161,7 +833,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="C01">
+                <div class="column" id="C01">
                     <!-- Center for the Army Profession and Leadership (CAPL) - https://capl.army.mil/ -->
                     <a href="https://capl.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card" rel="noopener noreferrer">
@@ -1177,7 +849,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="C02">
+                <div class="column" id="C02">
                     <!-- Central Army Registry (CAR) - https://atiam.train.army.mil/catalog/dashboard -->
                     <a href="https://atiam.train.army.mil/catalog/dashboard" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1193,9 +865,9 @@
                         </div>
                     </a>
                 </div>
-                <div id="C03">
+                <div class="column" id="C03">
                     <!-- Combined Arms Center - https://usacac.army.mil/ -->
-                    <a href="https://usacac.army.mil/organizations/cace/cgsc/cgss" rel="noopener noreferrer" class="column hideMarquee">
+                    <a href="https://usacac.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
@@ -1209,7 +881,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="C04">
+                <div class="column" id="C04">
                     <!-- Comprehensive Soldier and Family Fitness - https://www.usar.army.mil/CSF/ -->
                     <a href="https://www.usar.army.mil/CSF/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1225,7 +897,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="C05">
+                <div class="column" id="C05">
                     <!-- Computer Hardware Enterprise Software and Solutions (CHESS) - https://chess.army.mil/ -->
                     <a href="https://chess.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1241,13 +913,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="C06">
+                <div class="column" id="C06">
                     <!-- Cyber Awareness Challenge - https://cs.signal.army.mil -->
                     <a href="https://cs.signal.army.mil" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-093.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-093.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">The Cyber Awareness Challenge provides an overview of cybersecurity threats and best practices to keep information and information systems secure.</p>
                                 </div>
                                 <div class="title">
@@ -1258,7 +930,7 @@
                     </a>
                 </div>
                 <!-- D -->
-                <div id="D00">
+                <div class="column" id="D00">
                     <!-- Defense Acquisition University - https://www.dau.mil/ -->
                     <a href="https://www.dau.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1274,7 +946,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="D01">
+                <div class="column" id="D01">
                     <!-- Defense Civilian Personnel Advisory Service - https://www.dcpas.osd.mil/ -->
                     <a href="https://www.dcpas.osd.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1290,7 +962,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="D02">
+                <div class="column" id="D02">
                     <!-- Defense Enrollment Eligibility Readiness - https://www.tricare.mil/DEERS/ -->
                     <a href="https://www.tricare.mil/DEERS/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1306,7 +978,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="D03">
+                <div class="column" id="D03">
                     <!-- Defense Finance and Accounting Service (DFAS) - https://www.dfas.mil/ -->
                     <a href="https://www.dfas.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1322,7 +994,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="D04">
+                <div class="column" id="D04">
                     <!-- Defense Information Systems Agency - https://disa.deps.mil/ext/cop/mae/SitePages/Programs.aspx -->
                     <a href="https://disa.deps.mil/ext/cop/mae/CyberDefense/av-as/SitePages/Home.aspx" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1338,7 +1010,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="D05">
+                <div class="column" id="D05">
                     <!-- Defense Logistics Agency - https://business.dla.mil/landing/index.html -->
                     <a href="https://business.dla.mil/landing/index.html" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1354,7 +1026,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="D06">
+                <div class="column" id="D06">
                     <!-- Defense Manpower Data Center - https://dwp.dmdc.osd.mil/dwp/app/main -->
                     <a href="https://dwp.dmdc.osd.mil/dwp/app/main" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1370,7 +1042,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="D07">
+                <div class="column" id="D07">
                     <!-- Defense Travel Management System - https://www.defensetravel.dod.mil/ -->
                     <a href="https://www.defensetravel.dod.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1386,7 +1058,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="D08">
+                <div class="column" id="D08">
                     <!-- Defense Travel System - https://www.defensetravel.osd.mil/ -->
                     <a href="https://www.defensetravel.osd.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1402,13 +1074,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="D09">
+                <div class="column" id="D09">
                     <!-- Department of the Army Photo Management Information System (DAPMIS) - https://dapmis.hrc.army.mil/ImageAcceptProlog.action -->
                     <a href="https://dapmis.hrc.army.mil/ImageAcceptProlog.action" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-002.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-002.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">The Department of the Army Photograph Management Information System (DAPMIS) is a web-enabled, e-business system that receives digitized official photographs from DOD worldwide photo studios.</p>
                                 </div>
                                 <div class="title">
@@ -1418,7 +1090,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="D10">
+                <div class="column" id="D10">
                     <!-- Deployed Digital Training Campus (DDTC) - https://www.atis.army.mil/DDTC.html -->
                     <a href="https://www.atis.army.mil/DDTC.html" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1434,7 +1106,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="D11">
+                <div class="column" id="D11">
                     <!-- Deployment Health Assessment Program (DHAP) - http://www.usar.army.mil/Featured/Resources/DHAP.aspx -->
                     <a href="http://www.usar.army.mil/Featured/Resources/DHAP.aspx" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1450,7 +1122,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="D12">
+                <div class="column" id="D12">
                     <!-- Digital Training Facility (DTF) - https://www.atis.army.mil/DTF.html -->
                     <a href="https://www.atis.army.mil/DTF.html" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1466,7 +1138,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="D13">
+                <div class="column" id="D13">
                     <!-- Digital Training Management System (DTMS) - https://dtms.army.mil/ -->
                     <a href="https://dtms.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1482,7 +1154,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="D14">
+                <div class="column" id="D14">
                     <!-- DoD Automated Time Attendance and Production System - https://ataaps.csd.disa.mil/ -->
                     <a href="https://ataaps.csd.disa.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1498,7 +1170,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="D15">
+                <div class="column" id="D15">
                     <!-- DOD CAC Reference Center - http://www.cac.mil/ -->
                     <a href="http://www.cac.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1514,13 +1186,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="D16">
+                <div class="column" id="D16">
                     <!-- DOD MWR Libraries Overdrive - https://dod.overdrive.com/dod-armymwr/content -->
                     <a href="https://dod.overdrive.com/dod-armymwr/content" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-055.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-143.png" class="cardImage" loading="lazy">
                                     <p class="marquee">Army MWR Digital Library (Sign up at your on post library)</p>
                                 </div>
                                 <div class="title">
@@ -1530,7 +1202,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="D17">
+                <div class="column" id="D17">
                     <!-- DS Login Registration - https://myaccess.dmdc.osd.mil/identitymanagement/registration.do?execution=e1s1 -->
                     <a href="https://myaccess.dmdc.osd.mil/identitymanagement/registration.do?execution=e1s1" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1547,7 +1219,7 @@
                     </a>
                 </div>
                 <!-- E -->
-                <div id="E00">
+                <div class="column" id="E00">
                     <!-- EagleCash - https://fiscal.treasury.gov/eaglecash/ -->
                     <a href="https://fiscal.treasury.gov/eaglecash/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1563,7 +1235,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="E01">
+                <div class="column" id="E01">
                     <!-- eBenefits - https://www.ebenefits.va.gov/ebenefits -->
                     <a href="https://www.ebenefits.va.gov/ebenefits" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1579,13 +1251,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="E02">
+                <div class="column" id="E02">
                     <!-- electronic Financial Liability Investigations of Property Loss - https://eflipl.army.mil -->
                     <a href="https://eflipl.army.mil" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-118.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-118.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">Financial Liability Investigation of Property Loss, or FLIPL, is the procedure the Army uses to recover the cost of lost or damaged property. However, in certain cases, such as the loss of personal arms or equipment, or damage to government housing, a Soldier can be held liable for the entire loss.</p>
                                 </div>
                                 <div class="title">
@@ -1595,7 +1267,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="E03">
+                <div class="column" id="E03">
                     <!-- eMILPO - https://emilpo.ahrs.army.mil/ -->
                     <a href="https://emilpo.ahrs.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1611,7 +1283,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="E04">
+                <div class="column" id="E04">
                     <!-- Evaluation Entry System - https://evaluations.hrc.army.mil/ -->
                     <a href="https://evaluations.hrc.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1628,7 +1300,7 @@
                     </a>
                 </div>
                 <!-- F -->
-                <div id="F00">
+                <div class="column" id="F00">
                     <!-- Federal Voting Assistance Program - https://www.fvap.gov/ -->
                     <a href="https://www.fvap.gov/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1644,7 +1316,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="F01">
+                <div class="column" id="F01">
                     <!-- FEDLOG - https://www.us.army.mil/common/fedlog/FEDLOG.ZIP -->
                     <a href="https://www.us.army.mil/common/fedlog/FEDLOG.ZIP" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1660,7 +1332,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="F02">
+                <div class="column" id="F02">
                     <!-- FEDLOG LITE - https://www.us.army.mil/common/fedlog/FEDLOGLITE.ZIP -->
                     <a href="https://www.us.army.mil/common/fedlog/FEDLOGLITE.ZIP" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1676,7 +1348,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="F03">
+                <div class="column" id="F03">
                     <!-- FEDMALL - https://www.fedmall.mil/index.html -->
                     <a href="https://www.fedmall.mil/index.html" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1692,7 +1364,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="F04">
+                <div class="column" id="F04">
                     <!-- Financial Disclosure Management - https://www.fdm.army.mil/ -->
                     <a href="https://www.fdm.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1708,7 +1380,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="F05">
+                <div class="column" id="F05">
                     <!-- Force Management System (FMSWeb) - https://fmsweb.fms.army.mil/ -->
                     <a href="https://fmsweb.fms.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1725,7 +1397,7 @@
                     </a>
                 </div>
                 <!-- G -->
-                <div id="G00">
+                <div class="column" id="G00">
                     <!-- GENERAL FUND ENTERPRISE BUSINESS SYSTEM - https://prodep.gfebs-erp.army.mil -->
                     <a href="https://prodep.gfebs-erp.army.mil" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1741,13 +1413,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="G01">
+                <div class="column" id="G01">
                     <!-- GI Suicide Prevention - http://www.armyg1.army.mil/hr/suicide/default.asp -->
                     <a href="https://www.armyresilience.army.mil/suicide-prevention/index.html" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-005.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-005.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">The Army Suicide Prevention Program (ASPP), provides resources for suicide prevention, intervention skills, and support to those impacted by the loss of a loved one to suicide to develop healthy and resilient Soldiers, reduce stigma, and build awareness of suicide and related behaviors.</p>
                                 </div>
                                 <div class="title">
@@ -1757,7 +1429,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="G02">
+                <div class="column" id="G02">
                     <!-- Global Combat Support System - Army (GCSS-Army) - https://www.gcss-army.army.mil/irj/portal -->
                     <a href="https://www.gcss-army.army.mil/irj/portal" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1773,7 +1445,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="G03">
+                <div class="column" id="G03">
                     <!-- Global Electronic Approval Routing System (GEARS Purple) - https://army.deps.mil/netcom/sites/GEARS/Live -->
                     <a href="https://army.deps.mil/netcom/sites/GEARS/Live" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1789,7 +1461,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="G04">
+                <div class="column" id="G04">
                     <!-- Global Electronic Approval Routing System 5 (GEARS Yellow) - https://army.deps.mil/netcom/sites/GEARS5/Live -->
                     <a href="https://army.deps.mil/netcom/sites/GEARS5/Live" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1805,7 +1477,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="G05">
+                <div class="column" id="G05">
                     <!-- Global Electronic Approval Routing System V (GEARS Red) - https://army.deps.mil/netcom/sites/GEARSV/Live -->
                     <a href="https://army.deps.mil/netcom/sites/GEARSV/Live" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1821,13 +1493,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="G08">
+                <div class="column" id="G08">
                     <!-- Green To Gold Access Portal - https://gtg.usarmyrotc.com/ -->
                     <a href="https://gtg.usarmyrotc.com/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-132.jpeg" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-132.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">The Green to Gold Active Duty Option Program is a two-year program that provides eligible, Active Duty enlisted Soldiers an opportunity to complete a baccalaureate degree or a two-year graduate degree and earn a commission as an Army Officer. You can apply and monitor your application here.</p>
                                 </div>
                                 <div class="title">
@@ -1837,7 +1509,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="G06">
+                <div class="column" id="G06">
                     <!-- Ground Risk Assessment Tool (GRAT) - https://grat.safety.army.mil/GRAT/ -->
                     <a href="https://grat.safety.army.mil/GRAT/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1853,7 +1525,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="G07">
+                <div class="column" id="G07">
                     <!-- Guard Knowledge Online (GKO) - https://gko.portal.ng.mil/SitePages/Home.aspx -->
                     <a href="https://gko.portal.ng.mil/SitePages/Home.aspx" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1870,7 +1542,7 @@
                     </a>
                 </div>
                 <!-- H -->
-                <div id="H00">
+                <div class="column" id="H00">
                     <!-- Health.mil - https://health.mil/jmesi -->
                     <a href="https://health.mil/jmesi" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1887,7 +1559,7 @@
                     </a>
                 </div>
                 <!-- I -->
-                <div id="I00">
+                <div class="column" id="I00">
                     <!-- Identity, Credentialing and Access Management (ICAM) Portal - https://icamportal.us.army.mil -->
                     <a href="https://icamportal.us.army.mil" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1903,7 +1575,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="I01">
+                <div class="column" id="I01">
                     <!-- IgnitED - https://www.armyignited.com/app/ -->
                     <a href="https://www.armyignited.com/app/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1919,7 +1591,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="I02">
+                <div class="column" id="I02">
                     <!-- Installation Support Module - https://ism.army.mil/ism/guest/login.jsp -->
                     <a href="https://ism.army.mil/ism/guest/login.jsp" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1935,7 +1607,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="I03">
+                <div class="column" id="I03">
                     <!-- Integrated Personnel and Pay System Army - https://hr.ippsa.csd.disa.mil/ -->
                     <a href="https://hr.ippsa.csd.disa.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -1951,13 +1623,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="I04">
+                <div class="column" id="I04">
                     <!-- iPerms - https://iperms.hrc.army.mil/ -->
                     <a href="https://iperms.hrc.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-027.jpeg" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-027.png" class="cardImage" loading="lazy">
                                     <p class="marquee">An online information management system used for storing and managing military personnel records. It electronically stores evaluation reports, some medical documents, college and military transcripts, awards, diplomas, and more.</p>
                                 </div>
                                 <div class="title">
@@ -1967,13 +1639,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="I05">
+                <div class="column" id="I05">
                     <!-- iSALUTE - https://www.inscom.army.mil/isalute/ -->
                     <a href="https://www.inscom.army.mil/isalute/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-125.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-125.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">iSALUTE is an Army counterintelligence reporting program to assist in preventing espionage, sabotage, subversion, and international terrorism. The program supports the Army's counterintelligence policy established in AR 381‐12, Threat Awareness and Reporting Program</p>
                                 </div>
                                 <div class="title">
@@ -1984,13 +1656,13 @@
                     </a>
                 </div>
                 <!-- J -->
-                <div id="J00">
+                <div class="column" id="J00">
                     <!-- JAG Corps - https://www.goarmy.com/jag.html -->
                     <a href="https://www.goarmy.com/jag.html" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-010.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-010.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">The U.S. Army Judge Advocate General's Corps is a government organization that operates like a court system. Its practitioners, referred to as Judge Advocates, are licensed attorneys qualified to represent the Army and Army Soldiers in military legal matters.</p>
                                 </div>
                                 <div class="title">
@@ -2000,7 +1672,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="J01">
+                <div class="column" id="J01">
                     <!-- JAG University - https://jagu.army.mil/ -->
                     <a href="https://jagu.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2016,7 +1688,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="J02">
+                <div class="column" id="J02">
                     <!-- Joint Improvised Treat Defeat Organization - https://www.dtra.mil/Mission/JIDO -->
                     <a href="https://www.dtra.mil/Mission/JIDO" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2032,7 +1704,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="J03">
+                <div class="column" id="J03">
                     <!-- Joint Knowledge Online (JKO) - https://jkodirect.jten.mil/ -->
                     <a href="https://jkodirect.jten.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2048,7 +1720,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="J04">
+                <div class="column" id="J04">
                     <!-- Joint Risk Assessment Tool - https://jrat.safety.army.mil/ -->
                     <a href="https://jrat.safety.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2064,7 +1736,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="J05">
+                <div class="column" id="J05">
                     <!-- Joint Service Transcript (JST) - https://jst.doded.mil/jst/ -->
                     <a href="https://jst.doded.mil/jst/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2082,13 +1754,13 @@
                 </div>
                 <!-- K -->
                 <!-- L -->
-                <div id="L01">
+                <div class="column" id="L01">
                     <!-- LandWarNet eUniversity - https://lwn.army.mil -->
                     <a href="https://lwn.army.mil" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-138.png" loading="lazy">
+                                    <img src="assets/Card-138.jpg" loading="lazy">
                                     <p class="marquee">LandWarNet (LWN) is the United States Army’s contribution to the Global Information Grid that consists of all globally interconnected, end-to-end set of Army information capabilities, associated processes, and personnel for collecting, processing, storing, disseminating, and managing information on demand supporting warfighters, policy makers, and support personnel. It includes all Army (owned and leased) and leveraged Department of Defense (DOD)/Joint communications and computing systems and services, software (including applications), data security services, and other associated services. LandWarNet exists to enable the warfighter through Mission Command, previously described as Battle Command.</p>
                                 </div>
                                 <div class="title">
@@ -2098,7 +1770,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="L00">    
+                <div class="column" id="L00">    
                     <!-- LHI Appointment Scheduling - https://lhi.care/start/ -->
                     <a href="https://lhi.care/start/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2115,7 +1787,7 @@
                     </a>
                 </div>
                 <!-- M -->
-                <div id="M00">
+                <div class="column" id="M00">
                     <!-- Medical Operational Data System - https://www.mods.army.mil/ -->
                     <a href="https://www.mods.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2131,7 +1803,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M01">
+                <div class="column" id="M01">
                     <!-- MEDLine Plus - https://medlineplus.gov/ -->
                     <a href="https://medlineplus.gov/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2147,7 +1819,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M02">
+                <div class="column" id="M02">
                     <!-- Medpros (ADMIN) - https://medpros.mods.army.mil/medprosnew/ -->
                     <a href="https://medpros.mods.army.mil/medprosnew/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2163,7 +1835,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M03">
+                <div class="column" id="M03">
                     <!-- MHS Genesis - https://patientportal.mhsgenesis.health.mil/ -->
                     <a href="https://patientportal.mhsgenesis.health.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2179,7 +1851,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M04">
+                <div class="column" id="M04">
                     <!-- milConnect - https://milconnect.dmdc.osd.mil/milconnect/ -->
                     <a href="https://milconnect.dmdc.osd.mil/milconnect/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2195,7 +1867,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M05">
+                <div class="column" id="M05">
                     <!-- MILGAMING - https://milgaming.army.mil/ -->
                     <a href="https://milgaming.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2211,7 +1883,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M06">
+                <div class="column" id="M06">
                     <!-- Military Auxiliary Radio System - https://netcom.army.mil/MARS/default.aspx -->
                     <a href="https://netcom.army.mil/MARS/default.aspx" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2227,7 +1899,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M07">
+                <div class="column" id="M07">
                     <!-- Military OneSource - http://www.militaryonesource.mil/ -->
                     <a href="http://www.militaryonesource.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2243,7 +1915,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M08">
+                <div class="column" id="M08">
                     <!-- MilitaryCAC - https://militarycac.com/ -->
                     <a href="https://militarycac.com/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2259,7 +1931,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M23">
+                <div class="column" id="M23">
                     <!-- Military Child Care - https://public.militarychildcare.csd.disa.mil/mccu/ui/ -->
                     <a href="https://public.militarychildcare.csd.disa.mil/mccu/ui/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2275,7 +1947,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M09">
+                <div class="column" id="M09">
                     <!-- MilSuite - https://www.milsuite.mil/ -->
                     <a href="https://www.milsuite.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2291,7 +1963,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M10">
+                <div class="column" id="M10">
                     <!-- MOBCOP - https://mobcop.aoc.army.pentagon.mil/ -->
                     <a href="https://mobcop.aoc.army.pentagon.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2307,7 +1979,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M11">
+                <div class="column" id="M11">
                     <!-- Mobile Digital Training Facility (MDTF) - https://www.atis.army.mil/MDTF.html -->
                     <a href="https://www.atis.army.mil/MDTF.html" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2323,7 +1995,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M12">
+                <div class="column" id="M12">
                     <!-- My Army Benefits - https://myarmybenefits.us.army.mil/ -->
                     <a href="https://myarmybenefits.us.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2339,13 +2011,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="M13">
+                <div class="column" id="M13">
                     <!-- My Clothing Record - https://ism.army.mil/ism/SelfServiceServlet?nav.nav_id=ssMyClothing -->
                     <a href="https://ism.army.mil/ism/SelfServiceServlet?nav.nav_id=ssMyClothing" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-082.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-082.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">An online portal allowing Soldiers to manage their organizational clothing and individual equipment</p>
                                 </div>
                                 <div class="title">
@@ -2355,14 +2027,14 @@
                         </div>
                     </a>
                 </div>
-                <div id="M14">
+                <div class="column" id="M14">
                     <!-- My Enlisted Record Brief (ERB) - https://myerb.ahrs.army.mil/soldierLogin.do -->
                     <a href="https://myerb.ahrs.army.mil/soldierLogin.do" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
                                     <img src="assets/Card-081.jpeg" class="cardImage" loading="lazy">
-                                    <p class="marquee">The Soldier Record Brief (SRB/ORB/ERB) is a new multi‐Component report that provides a snapshot of a Soldier's military career information. It details a Soldiers career in the military by listing all courses taken, duty stations, ASVAB scores and much more!</p>
+                                    <p class="marquee"><red>CURRENTLY ONLY AVAILABLE ON DOD NETWORKS!</red><br>The Soldier Record Brief (SRB/ORB/ERB) is a new multi‐Component report that provides a snapshot of a Soldier's military career information. It details a Soldiers career in the military by listing all courses taken, duty stations, ASVAB scores and much more!<br><red>CURRENTLY ONLY AVAILABLE ON DOD NETWORKS!</red> </p>
                                 </div>
                                 <div class="title">
                                     <span>My Enlisted Record Brief (ERB)</span>
@@ -2371,7 +2043,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M15">
+                <div class="column" id="M15">
                     <!-- My Enlisted/Officer Record Brief (National Guard) - https://arngg1.ngb.army.mil/SelfService/CareerCenter/Home.aspx -->
                     <a href="https://arngg1.ngb.army.mil/SelfService/CareerCenter/Home.aspx" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2387,7 +2059,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M16">
+                <div class="column" id="M16">
                     <!-- My Enlisted/Officer Record Brief (Reserve) - https://selfservice.rcms.usar.army.mil/SelfService/home/selfservice -->
                     <a href="https://selfservice.rcms.usar.army.mil/SelfService/home/selfservice" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2403,7 +2075,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M22">
+                <div class="column" id="M22">
                     <!-- MyMEB - https://cms.mods.army.mil/cms/protected/report/soldierDashboard.aspx -->
                     <a href="https://cms.mods.army.mil/cms/protected/report/soldierDashboard.aspx" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2419,7 +2091,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M17">
+                <div class="column" id="M17">
                     <!-- My MEDPROS Medical Readiness Portal - https://medpros.mods.army.mil/portal -->
                     <a href="https://medpros.mods.army.mil/portal" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2435,7 +2107,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M18">
+                <div class="column" id="M18">
                     <!-- MY Officer Record Brief (ORB) - https://myorb.hrc.army.mil/ -->
                     <a href="https://myorb.hrc.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2451,7 +2123,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M19">
+                <div class="column" id="M19">
                     <!-- MY RFO (Request for Orders) - https://aim.hrc.army.mil/ -->
                     <a href="https://aim.hrc.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2467,7 +2139,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M20">
+                <div class="column" id="M20">
                     <!-- My Training Tab - https://atiam.train.army.mil/mthp/ -->
                     <a href="https://atiam.train.army.mil/mthp/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2483,7 +2155,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="M21">
+                <div class="column" id="M21">
                     <!-- MyPay - https://mypay.dfas.mil/mypay.aspx -->
                     <a href="https://mypay.dfas.mil/mypay.aspx" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2500,13 +2172,13 @@
                     </a>
                 </div>
                 <!-- N -->
-                <div id="N00">
+                <div class="column" id="N00">
                     <!-- NCO Leader Center for Excellence - http://ncolcoe.armylive.dodlive.mil/ -->
                     <a href="http://ncolcoe.armylive.dodlive.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-003.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-003.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">NCO Leader Center for Excellence provides professional military education that develops holistically fit, disciplined, well-educated professionals capable of meeting the challenges of large-scale combat operations in a multi-domain environment.</p>
                                 </div>
                                 <div class="title">
@@ -2516,7 +2188,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="N01">
+                <div class="column" id="N01">
                     <!-- NCO Worldwide - https://www.ncoworldwide.army.mil/ -->
                     <a href="https://www.ncoworldwide.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2532,7 +2204,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="N02">
+                <div class="column" id="N02">
                     <!-- NETCOM - https://netcom.army.mil/ -->
                     <a href="https://netcom.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2549,7 +2221,7 @@
                     </a>
                 </div>
                 <!-- O -->
-                <div id="O00">
+                <div class="column" id="O00">
                     <!-- Office of Personnel Management - https://www.opm.gov/ -->
                     <a href="https://www.opm.gov/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2566,13 +2238,13 @@
                     </a>
                 </div>
                 <!-- P -->
-                <div id="P00">
+                <div class="column" id="P00">
                     <!-- Preventative Maintenance Monthly (P.S. Magazine) - https://www.psmagazine.army.mil/ -->
                     <a href="https://www.psmagazine.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-104.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-104.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">Preventative Maintenance Monthly is intended to enhance materiel readiness by emphasizing preventive maintenance and promoting proper maintenance and supply procedures. Review of PS Magazine will be a regular part of unit readiness initiatives. A reader service is available to answer maintenance and supply questions.</p>
                                 </div>
                                 <div class="title">
@@ -2582,7 +2254,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="P01">
+                <div class="column" id="P01">
                     <!-- Procurement Integrated Enterprise Environment (PIEE) - https://wawf.eb.mil/ -->
                     <a href="https://wawf.eb.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2598,13 +2270,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="P02">
+                <div class="column" id="P02">
                     <!-- Promotion Point Worksheet - https://www.hrcapps.army.mil/PPW/ -->
                     <a href="https://www.hrcapps.army.mil/PPW/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-008.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-008.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">Pulls your Promotion Point Worksheet from HRC. The Promotion Point Worksheet displays your current promotion point brake down for promotions to SGT and SSG.</p>
                                 </div>
                                 <div class="title">
@@ -2614,7 +2286,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="P04">
+                <div class="column" id="P04">
                     <!-- Protected Internet eXchange (PiX) - https://pixtoday.net/ -->
                     <a href="https://pixtoday.net/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2630,7 +2302,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="P03">
+                <div class="column" id="P03">
                     <!-- Psychological Health Center of Excellence - http://www.pdhealth.mil/ -->
                     <a href="http://www.pdhealth.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2648,13 +2320,13 @@
                 </div>
                 <!-- Q -->
                 <!-- R -->
-                <div id="R01">
+                <div class="column" id="R01">
                     <!-- RAPIDS ID Card Office - https://idco.dmdc.osd.mil/idco/ -->
                     <a href="https://idco.dmdc.osd.mil/idco/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-142.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-142.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">RAPIDS ID Card Office allows you to schedule any CAC or ID card services appointment as well as manage some of your CAC information (Such as current address).</p>
                                 </div>
                                 <div class="title">
@@ -2664,7 +2336,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="R00">
+                <div class="column" id="R00">
                     <!-- Risk Management Information System (RMIS) - https://rmis.safety.army.mil/ -->
                     <a href="https://rmis.safety.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2681,13 +2353,13 @@
                     </a>
                 </div>
                 <!-- S -->
-                <div id="S06">
+                <div class="column" id="S06">
                     <!-- S1Net - https://www.milsuite.mil/book/community/spaces/apf/s1net -->
                     <a href="https://www.milsuite.mil/book/community/spaces/apf/s1net" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-008.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-008.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">S1Net connects HR professionals with a common focus of solving critical problems faced by the professional in the field, and in doing so, develop and archive the tools, insights and approaches needed by members.</p>
                                 </div>
                                 <div class="title">
@@ -2697,7 +2369,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="S00">
+                <div class="column" id="S00">
                     <!-- Service members' Group Life Insurance (SGLI) - https://milconnect-pki.dmdc.osd.mil/milconnect/public/goto/soes -->
                     <a href="https://milconnect-pki.dmdc.osd.mil/milconnect/public/goto/soes" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2713,7 +2385,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="S01">
+                <div class="column" id="S01">
                     <!-- Sexual Harassment Assault Response and Prevention - https://www.armyresilience.army.mil/sharp/ -->
                     <a href="https://www.armyresilience.army.mil/sharp/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2729,7 +2401,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="S02">
+                <div class="column" id="S02">
                     <!-- Soldier Enhancement Program - http://www.peosoldier.army.mil/Resources/Soldier-Enhancement-Program/ -->
                     <a href="http://www.peosoldier.army.mil/Resources/Soldier-Enhancement-Program/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2745,7 +2417,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="S07">
+                <div class="column" id="S07">
                     <!-- Soldier For life - https://soldierforlife.army.mil/ -->
                     <a href="https://soldierforlife.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2761,13 +2433,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="S04">
+                <div class="column" id="S04">
                     <!-- Supply and Maintenance Assistance Review Team (SMART) - https://www.milsuite.mil/book/docs/DOC-101393 -->
                     <a href="https://www.milsuite.mil/book/docs/DOC-101393" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-011.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-011.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">Supply and Maintenance Assistance Review Team (SMART) is made to streamline and improve unit level logistics support through a single source logistics suggestion program. Submit a suggestion with them to receive help on unit level logistics.</p>
                                 </div>
                                 <div class="title">
@@ -2777,7 +2449,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="S05">
+                <div class="column" id="S05">
                     <!-- Survivor OutReach Services - https://www.armymwr.com/programs-and-services/personal-assistance/survivor-outreach -->
                     <a href="https://www.armymwr.com/programs-and-services/personal-assistance/survivor-outreach" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2794,7 +2466,7 @@
                     </a>
                 </div>
                 <!-- T -->
-				<div id="S03">
+				<div class="column" id="S03">
                     <!-- Transition Assistance Program (TAP)- https://www.sfl-tap.army.mil/ -->
                     <a href="https://www.sfl-tap.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2810,7 +2482,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="T01">
+                <div class="column" id="T01">
                     <!-- TRADOC Application GateWay (TAG) - https://public.tag.army.mil/catalog/tag/home -->
                     <a href="https://public.tag.army.mil/catalog/tag/home" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2826,7 +2498,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="T02">
+                <div class="column" id="T02">
                     <!-- Travel Risk Planing System (TRiPS) - https://trips.safety.army.mil/ -->
                     <a href="https://trips.safety.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2842,7 +2514,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="T03">
+                <div class="column" id="T03">
                     <!-- Trial Defense Service - http://www.mdwhome.mdw.army.mil/sja_nav/trial-defense -->
                     <a href="http://www.mdwhome.mdw.army.mil/sja_nav/trial-defense" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2858,7 +2530,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="T00">
+                <div class="column" id="T00">
                     <!-- Thrift Savings Plan - https://www.tsp.gov/ -->
                     <a href="https://www.tsp.gov/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2874,8 +2546,7 @@
                         </div>
                     </a>
                 </div>
-
-                <div id="T04">
+                <div class="column" id="T04">
                     <!-- Tricare Dental Readiness - https://tricare.mil/CoveredServices/Dental/NGRDental/DentalReadiness -->
                     <a href="https://tricare.mil/CoveredServices/Dental/NGRDental/DentalReadiness" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2891,7 +2562,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="T05">
+                <div class="column" id="T05">
                     <!-- Tricare Online - https://tricare.mil/ -->
                     <a href="https://tricare.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2907,7 +2578,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="T06">
+                <div class="column" id="T06">
                     <!-- Trusted End Node Security (TENS) - https://www.spi.dod.mil/lipose.htm -->
                     <a href="https://www.spi.dod.mil/lipose.htm" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2924,7 +2595,7 @@
                     </a>
                 </div>
                 <!-- U -->
-                <div id="U00">
+                <div class="column" id="U00">
                     <!-- U.S. Armed Forces Legal Assistance - https://legalassistance.law.af.mil/ -->
                     <a href="https://legalassistance.law.af.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2940,7 +2611,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="U02">
+                <div class="column" id="U02">
                     <!-- Unit Commander’s Finance Report (UCFR) - https://lt-apps-priv.dfas.mil/ucfr/ -->
                     <a href="https://lt-apps-priv.dfas.mil/ucfr/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2956,7 +2627,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="U01">
+                <div class="column" id="U01">
                     <!-- United Services Military Apprenticeship Program (USMAP) - https://usmap.osd.mil/index.htm -->
                     <a href="https://usmap.osd.mil/index.htm" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2973,7 +2644,7 @@
                     </a>
                 </div>
                 <!-- V -->
-                <div id="V00">
+                <div class="column" id="V00">
                     <!-- Visual Information Ordering Site - https://vios.army.mil/ -->
                     <a href="https://vios.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -2989,13 +2660,13 @@
                         </div>
                     </a>
                 </div>
-                <div id="V01">
+                <div class="column" id="V01">
                     <!-- Volunteer Management Information System (VMIS) - https://vmis.armyfamilywebportal.com/ -->
                     <a href="https://vmis.armyfamilywebportal.com/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
                             <div class="armyCard">
                                 <div>
-                                    <img src="assets/Card-085.png" class="cardImage" loading="lazy">
+                                    <img src="assets/Card-085.jpg" class="cardImage" loading="lazy">
                                     <p class="marquee">The Volunteer Management Information System (VMIS) assists the Army Volunteer Corps and Organization Point of Contact (OPOC) in managing these dedicated volunteers and allows volunteers a way track their hours, awards, trainings and certificates. Volunteers can apply for volunteer opportunities, record and track volunteer hours, and manage their volunteer service record.</p>
                                 </div>
                                 <div class="title">
@@ -3008,7 +2679,7 @@
                 <!-- W -->
                 <!-- X -->
                 <!-- Y -->
-                <div id="Y00">
+                <div class="column" id="Y00">
                     <!-- Yellow Ribbon Reintegration Program (YRRP) - https://www.yellowribbon.mil/ -->
                     <a href="https://www.yellowribbon.mil/" rel="noopener noreferrer" class="column hideMarquee">
                         <div class="armyCardContainer card">
@@ -3028,43 +2699,43 @@
             </div>
 
             <!-- Army Web Sites -->
-            <div class="hidden" id="catArmySites"></div>
+            <div style="display: none;" id="catArmySites"></div>
 
             <!-- Combat Readiness -->
-            <div class="hidden" id="catCombatReadiness"></div>
+            <div style="display: none;" id="catCombatReadiness"></div>
 
             <!-- DoD Resources -->
-            <div class="hidden" id="catDod"></div>
+            <div style="display: none;" id="catDod"></div>
 
             <!-- Education - Civilian -->
-            <div class="hidden" id="catCivEd"></div>
+            <div style="display: none;" id="catCivEd"></div>
 
             <!-- Education - Military -->
-            <div class="hidden" id="catMilEd"></div>
+            <div style="display: none;" id="catMilEd"></div>
 
             <!-- Family -->
-            <div class="hidden" id="catFamily"></div>
+            <div style="display: none;" id="catFamily"></div>
 
             <!-- Finance -->
-            <div class="hidden" id="catFinance"></div>
+            <div style="display: none;" id="catFinance"></div>
 
             <!-- Health -->
-            <div class="hidden" id="catHealth"></div>
+            <div style="display: none;" id="catHealth"></div>
 
             <!-- Human -->
-            <div class="hidden" id="catHuman"></div>
+            <div style="display: none;" id="catHuman"></div>
 
             <!-- Legal -->
-            <div class="hidden" id="catLegal"></div>
+            <div style="display: none;" id="catLegal"></div>
 
             <!-- Professional Development -->
-            <div class="hidden" id="catProDev"></div>
+            <div style="display: none;" id="catProDev"></div>
 
             <!-- Resources/Information Technology -->
-            <div class="hidden" id="catTech"></div>
+            <div style="display: none;" id="catTech"></div>
 
             <!-- US Gov Web Sites -->
-            <div class="hidden" id="catUsGov"></div>
+            <div style="display: none;" id="catUsGov"></div>
 
         </div>
     </div>
@@ -3072,10 +2743,8 @@
         <span style="position:sticky"><i><b>DISCLAIMER!</b></i> This is a <u>Third Party Site</u>. While <b>most</b> (not ALL) links on this website link to Official U.S. Army/Military/Government websites; it is not endorsed or maintained by the U.S. Army. For more information please see the <a href="./About_AKO.html">About AKOffline</a>.<br>Found a missing/broken link or have any suggestions? Email them to <a href="mailto:suggestions@armyknowledgeoffline.com">suggestions@armyknowledgeoffline.com</a>!</span>
     </div>
 
-
-
 </body>
 
-
+<script src="main.js"></script>
 
 </html>
