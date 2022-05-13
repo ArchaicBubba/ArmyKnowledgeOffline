@@ -520,10 +520,10 @@
   } else if (m == 3 && d == 28) { // Days of Remembrance of the Victims of the Holocaust (NEEDS TO BE CHANGED YEARLY)
     AOTD = "Days of Remembrance of the Victims of the Holocaust";
   // May
-  } else if (m == 4) { // Asian American Pacific Islander Heritage Month
+  } else if (m == 4 && d != 30) { // Asian American Pacific Islander Heritage Month
     AOTD = "It is currently Asian American Pacific Islander Heritage Month";
   } else if (m == 4 && d == 30) { // Memorial Day
-    AOTD = "It is currently Memorial Day";
+    AOTD = "It is currently Memorial Day and Asian American Pacific Islander Heritage Month";
   // June
   } else if (m == 5 && (d != 19 || d != 14) ) { // LGPT Pride Month
     AOTD = "It is currently LGPT Pride Month";
