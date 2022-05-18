@@ -1,3 +1,6 @@
+  window.onload = phaseShift;
+  document.getElementById("DropDownBox").onchange = phaseShift;
+
   // Category Selection
   document.getElementById('looker').style.display="block";
   function phaseShift() {
@@ -288,9 +291,6 @@
     }
   }
 
-  window.onload = phaseShift;
-  document.getElementById("DropDownBox").onchange = phaseShift;
-
   // Declaration of site variables 
   // Sites that begin with A
   var jsA00 = document.getElementById("A00").innerHTML; // Air Force Weather Agency
@@ -339,6 +339,8 @@
   var jsA43 = document.getElementById("A43").innerHTML; // Army 365 Home
   var jsA44 = document.getElementById("A44").innerHTML; // Army 365 Information Hub
   var jsA45 = document.getElementById("A45").innerHTML; // Army Records Information Management System (ARIMS)
+  var jsA46 = document.getElementById("A46").innerHTML; // Aircraft and Personnel Automated Clearance System (APACS)
+  var jsA47 = document.getElementById("A47").innerHTML; // Army Emergency Relief (AER)
   // Sites that begin with C
   var jsC00 = document.getElementById("C00").innerHTML; // Career Acquisition Management Portal
   var jsC01 = document.getElementById("C01").innerHTML; // Center for the Army Profession and Leadership (CAPL)
@@ -366,6 +368,10 @@
   var jsD15 = document.getElementById("D15").innerHTML; // DOD CAC Reference Center
   var jsD16 = document.getElementById("D16").innerHTML; // DOD MWR Libraries Overdrive
   var jsD17 = document.getElementById("D17").innerHTML; // DS Login Registration
+  var jsD18 = document.getElementById("D18").innerHTML; // Defense Civilian Interlligence Personnel System (DCIPS)
+  var jsD19 = document.getElementById("D19").innerHTML; // DOD CAC Cert Repository
+  var jsD20 = document.getElementById("D20").innerHTML; // DoD Cyber Exchange (NIPR)
+  var jsD21 = document.getElementById("D21").innerHTML; // DoD Cyber Exchange (Public)
   // Sites that begin with E
   var jsE00 = document.getElementById("E00").innerHTML; // EagleCash
   var jsE01 = document.getElementById("E01").innerHTML; // eBenefits
@@ -434,6 +440,7 @@
   var jsM21 = document.getElementById("M21").innerHTML; // MyPay
   var jsM22 = document.getElementById("M22").innerHTML; // MyMEB
   var jsM23 = document.getElementById("M23").innerHTML; // Military Child Care
+  var jsM24 = document.getElementById("M24").innerHTML; // Move.Mil
   // Sites that begin with N
   var jsN00 = document.getElementById("N00").innerHTML; // NCO Leader Center for Excellence
   var jsN01 = document.getElementById("N01").innerHTML; // NCO Worldwide
@@ -446,6 +453,7 @@
   var jsP02 = document.getElementById("P02").innerHTML; // Promotion Point Worksheet
   var jsP03 = document.getElementById("P03").innerHTML; // Psychological Health Center of Excellence
   var jsP04 = document.getElementById("P04").innerHTML; // Protected Internet eXchange (PiX)
+  var jsP05 = document.getElementById("P05").innerHTML; // Patient Portal Tricare Online
   // Sites that begin with R
   var jsR00 = document.getElementById("R00").innerHTML; // Risk Management Information System (RMIS)
   var jsR01 = document.getElementById("R01").innerHTML; // RAPIDS
@@ -480,23 +488,23 @@
 
   // Site listings
   if (localStorage.getItem("customQuickLinks") == null) {
-    document.getElementById("catQuickLinks").innerHTML = (jsG01 + jsM17 + jsA21 + jsM14 + jsM07 + jsA15 + jsI04 + jsM21 + jsA08 + jsD13 + jsM13 + jsA43 + jsT05 + jsA26 + jsV01);
+    document.getElementById("catQuickLinks").innerHTML = (jsG01 + jsM17 + jsA21 + jsM14 + jsM07 + jsA15 + jsI04 + jsM21 + jsA08 + jsD13 + jsM13 + jsA43 + jsP05 + jsA26 + jsV01);
   } else {
     document.getElementById("catQuickLinks").innerHTML = (document.getElementById(myQuickLinks[0]).innerHTML + document.getElementById(myQuickLinks[1]).innerHTML + document.getElementById(myQuickLinks[2]).innerHTML + document.getElementById(myQuickLinks[3]).innerHTML + document.getElementById(myQuickLinks[4]).innerHTML + document.getElementById(myQuickLinks[5]).innerHTML + document.getElementById(myQuickLinks[6]).innerHTML + document.getElementById(myQuickLinks[7]).innerHTML + document.getElementById(myQuickLinks[8]).innerHTML + document.getElementById(myQuickLinks[9]).innerHTML + document.getElementById(myQuickLinks[10]).innerHTML + document.getElementById(myQuickLinks[11]).innerHTML + document.getElementById(myQuickLinks[12]).innerHTML + document.getElementById(myQuickLinks[13]).innerHTML + document.getElementById(myQuickLinks[14]).innerHTML);
   };
-  document.getElementById("catAllSites").innerHTML = ('<div id="section-A"></div>' + jsA00 + jsA01 + jsA02 + jsA03 + jsA42 + jsA43 + jsA44 + jsA04 + jsA05 + jsA06 + jsA07 + jsA08 + jsA09 + jsA10 + jsA11 + jsA12 + jsA13 + jsA14 + jsA15 + jsA17 + jsA18 + jsA19 + jsA20 + jsA21 + jsA22 + jsA23 + jsA24 + jsA25 + jsA26 + jsA27 + jsA28 + jsA29 + jsA30 + jsA45 + jsA31 + jsA32 + jsA33 + jsA34 + jsA35 + jsA36 + jsA37 + jsA38 + jsA39 + jsA40 + jsA41 + '<div id="section-C"><br><hr><br></div>' + jsC00 + jsC01 + jsC02 + jsC03 + jsC04 + jsC05 + jsC06 + '<div id="section-D"><br><hr><br></div>' + jsD00 + jsD01 + jsD02 + jsD03 + jsD04 + jsD05 + jsD06 + jsD07 + jsD08 + jsD09 + jsD10 + jsD11 + jsD12 + jsD13 + jsD14 + jsD15 + jsD16 + jsD17 + '<div id="section-E"><br><hr><br></div>' + jsE00 + jsE01 + jsE02 + jsE03 + jsE04 + '<div id="section-F"><br><hr><br></div>' + jsF00 + jsF01 + jsF02 + jsF03 + jsF04 + jsF05 + '<div id="section-G"><br><hr><br></div>' + jsG00 + jsG01 + jsG02 + jsG03 + jsG04 + jsG05 + jsG08 + jsG06 + jsG07 + '<div id="section-H"><br><hr><br></div>' + jsH00 + '<div id="section-I"><br><hr><br></div>' + jsI00 + jsI01 + jsI02 + jsI03 + jsI04 + jsI05 + '<div id="section-J"><br><hr><br></div>' + jsJ00 + jsJ01 + jsJ02 + jsJ03 + jsJ04 + jsJ05 + jsL01 + jsL00 + '<div id="section-M"><br><hr><br></div>' + jsM00 + jsM01 + jsM02 + jsM03 + jsM04 + jsM05 + jsM06 + jsM23 + jsM07 + jsM08 + jsM09 + jsM10 + jsM11 + jsM12 + jsM13 + jsM14 + jsM15 + jsM16 + jsM17 + jsM18 + jsM19 + jsM20 + jsM22 + jsM21 + '<div id="section-N"><br><hr><br></div>' + jsN00 + jsN01 + jsN02 + '<div id="section-O"><br><hr><br></div>' + jsO00 + '<div id="section-P"><br><hr><br></div>' + jsP00 + jsP01 + jsP02 + jsP04 + jsP03 + '<div id="section-R"><br><hr><br></div>' + jsR01 + jsR00 + '<div id="section-S"><br><hr><br></div>' + jsS06 + jsS00 + jsS01 + jsS02 + jsS07 + jsS04 + jsS05 + '<div id="section-T"><br><hr><br></div>' + jsT00 + jsT01 + jsS03 + jsT02 + jsT03 + jsT04 + jsT05 + jsT06 + '<div id="section-U"><br><hr><br></div>' + jsU00 + jsU02 + jsU01 + '<div id="section-V"><br><hr><br></div>' + jsV00 + jsV01 + '<div id="section-Y"><br><hr><br></div>' + jsY00);
-  document.getElementById("catArmySites").innerHTML = (jsA02 + jsA42 + jsA43 + jsA44 + jsA04 + jsA06 + jsA07 + jsA14 + jsA15 + jsA18 + jsA19 + jsA24 + jsA26 + jsA29 + jsA31 + jsA33 + jsA34 + jsA40 + jsC05 + jsD09 + jsD11 + jsD13 + jsF04 + jsF05 + jsG07 + jsI05 + jsJ00 + jsJ01 + jsM04 + jsM12 + jsM13 + jsM14 + jsM18 + jsM19 + jsM22 + jsN02 + jsS01 + jsS02 + jsS04 + jsT03 + jsU02);
+  document.getElementById("catAllSites").innerHTML = ('<div id="section-A"></div>' + jsA00 + jsA46 + jsA01 + jsA02 + jsA03 + jsA42 + jsA43 + jsA44 + jsA04 + jsA05 + jsA06 + jsA07 + jsA08 + jsA09 + jsA10 + jsA11 + jsA12 + jsA13 + jsA14 + jsA15 + jsA16 + jsA47 + jsA17 + jsA18 + jsA19 + jsA20 + jsA21 + jsA22 + jsA23 + jsA24 + jsA25 + jsA26 + jsA27 + jsA28 + jsA29 + jsA30 + jsA45 + jsA31 + jsA32 + jsA33 + jsA34 + jsA35 + jsA36 + jsA37 + jsA38 + jsA39 + jsA40 + jsA41 + '<div id="section-C"><br><hr><br></div>' + jsC00 + jsC01 + jsC02 + jsC03 + jsC04 + jsC05 + jsC06 + '<div id="section-D"><br><hr><br></div>' + jsD00 + jsD18 + jsD01 + jsD02 + jsD03 + jsD04 + jsD05 + jsD06 + jsD07 + jsD08 + jsD09 + jsD10 + jsD11 + jsD12 + jsD13 + jsD14 + jsD19 + jsD15 + jsD20 + jsD21 + jsD16 + jsD17 + '<div id="section-E"><br><hr><br></div>' + jsE00 + jsE01 + jsE02 + jsE03 + jsE04 + '<div id="section-F"><br><hr><br></div>' + jsF00 + jsF01 + jsF02 + jsF03 + jsF04 + jsF05 + '<div id="section-G"><br><hr><br></div>' + jsG00 + jsG01 + jsG02 + jsG03 + jsG04 + jsG05 + jsG08 + jsG06 + jsG07 + '<div id="section-H"><br><hr><br></div>' + jsH00 + '<div id="section-I"><br><hr><br></div>' + jsI00 + jsI01 + jsI02 + jsI03 + jsI04 + jsI05 + '<div id="section-J"><br><hr><br></div>' + jsJ00 + jsJ01 + jsJ02 + jsJ03 + jsJ04 + jsJ05 + '<div id="section-L"><br><hr><br></div>' + jsL01 + jsL00 + '<div id="section-M"><br><hr><br></div>' + jsM00 + jsM01 + jsM02 + jsM03 + jsM04 + jsM05 + jsM06 + jsM23 + jsM07 + jsM08 + jsM09 + jsM10 + jsM11 + jsM24 + jsM12 + jsM13 + jsM14 + jsM15 + jsM16 + jsM17 + jsM18 + jsM19 + jsM20 + jsM22 + jsM21 + '<div id="section-N"><br><hr><br></div>' + jsN00 + jsN01 + jsN02 + '<div id="section-O"><br><hr><br></div>' + jsO00 + '<div id="section-P"><br><hr><br></div>' + jsP05 + jsP00 + jsP01 + jsP02 + jsP04 + jsP03 + '<div id="section-R"><br><hr><br></div>' + jsR01 + jsR00 + '<div id="section-S"><br><hr><br></div>' + jsS06 + jsS00 + jsS01 + jsS02 + jsS07 + jsS04 + jsS05 + '<div id="section-T"><br><hr><br></div>' + jsT00 + jsT01 + jsS03 + jsT02 + jsT03 + jsT04 + jsT05 + jsT06 + '<div id="section-U"><br><hr><br></div>' + jsU00 + jsU02 + jsU01 + '<div id="section-V"><br><hr><br></div>' + jsV00 + jsV01 + '<div id="section-Y"><br><hr><br></div>' + jsY00);
+  document.getElementById("catArmySites").innerHTML = (jsA42 + jsA43 + jsA44 + jsA04 + jsA06 + jsA07 + jsA14 + jsA15 + jsA16 + jsA47 + jsA18 + jsA19 + jsA24 + jsA26 + jsA29 + jsA31 + jsA33 + jsA34 + jsA40 + jsC05 + jsD09 + jsD11 + jsD13 + jsF04 + jsF05 + jsG07 + jsI05 + jsJ00 + jsJ01 + jsM04 + jsM12 + jsM13 + jsM14 + jsM18 + jsM19 + jsM22 + jsN02 + jsS01 + jsS02 + jsS04 + jsT03 + jsU02);
   document.getElementById("catCombatReadiness").innerHTML = (jsA05 + jsA09 + jsA21 + jsA30 + jsD11 + jsG02 + jsG06 + jsM10 + jsR00 + jsS02);
-  document.getElementById("catDod").innerHTML = (jsA00 + jsD03 + jsD05 + jsD07 + jsD08 + jsD17 + jsF01 + jsF02 + jsF03 + jsI05 + jsJ02 + jsJ03 + jsJ04 + jsL01 + jsM23 + jsM07 + jsM09 + jsM21 + jsP01 + jsP04 + jsR01 + jsU00);
+  document.getElementById("catDod").innerHTML = (jsA00 + jsD03 + jsD05 + jsD07 + jsD08 + jsD19 + jsD15 + jsD20 + jsD21 + jsD17 + jsF01 + jsF02 + jsF03 + jsI05 + jsJ02 + jsJ03 + jsJ04 + jsL01 + jsM23 + jsM07 + jsM09 + jsM24 + jsM21 + jsP01 + jsP04 + jsR01 + jsU00);
   document.getElementById("catCivEd").innerHTML = (jsA11 + jsA14 + jsA32 + jsI01 + jsJ05 + jsS07 + jsS03 + jsU01 + jsY00);
   document.getElementById("catMilEd").innerHTML = (jsA14 + jsA25 + jsA35 + jsA36 + jsA37 + jsA38 + jsC00 + jsC02 + jsC03 + jsC06 + jsD00 + jsD10 + jsD12 + jsJ03 + jsJ05 + jsL01 + jsM05 + jsM11 + jsM20 + jsT01);
   document.getElementById("catFamily").innerHTML = (jsA10 + jsA19 + jsA20 + jsA22 + jsC04 + jsD02 + jsD16 + jsG01 + jsM23 + jsM07 + jsS05 + jsT05 + jsV01);
   document.getElementById("catFinance").innerHTML = (jsD03 + jsE00 + jsF04 + jsG00 + jsM07 + jsM21 + jsT00 + jsU02);
-  document.getElementById("catHealth").innerHTML = (jsA01 + jsA28 + jsA33 + jsA39 + jsC04 + jsD11 + jsE01 + jsG01 + jsH00 + jsL00 + jsM00 + jsM01 + jsM02 + jsM03 + jsM07 + jsM17 + jsM22 + jsP03 + jsS06 + jsS00 + jsS01 + jsS05 + jsT04 + jsT05);
-  document.getElementById("catHuman").innerHTML = (jsA13 + jsA23 + jsA29 + jsA45 + jsA40 + jsA41 + jsD01 + jsD02 + jsD05 + jsD06 + jsE01 + jsE02 + jsE03 + jsE04 + jsG03 + jsG04 + jsG05 + jsG08 + jsI00 + jsI02 + jsI03 + jsI04 + jsM13 + jsM14 + jsM15 + jsM16 + jsM18 + jsM19 + jsO00 + jsP02 + jsR01 + jsS06 + jsS07 + jsS03 + jsT02 + jsU02 + jsY00);
+  document.getElementById("catHealth").innerHTML = (jsA01 + jsA28 + jsA33 + jsA39 + jsC04 + jsD11 + jsE01 + jsG01 + jsH00 + jsL00 + jsM00 + jsM01 + jsM02 + jsM03 + jsM07 + jsM17 + jsM22 + jsP05 + jsP03 + jsS06 + jsS00 + jsS01 + jsS05 + jsT04 + jsT05);
+  document.getElementById("catHuman").innerHTML = (jsA46 + jsA13 + jsA23 + jsA29 + jsA45 + jsA40 + jsA41 + jsD01 + jsD02 + jsD05 + jsD06 + jsE01 + jsE02 + jsE03 + jsE04 + jsG03 + jsG04 + jsG05 + jsG08 + jsI00 + jsI02 + jsI03 + jsI04 + jsM13 + jsM14 + jsM15 + jsM16 + jsM18 + jsM19 + jsO00 + jsP02 + jsR01 + jsS06 + jsS07 + jsS03 + jsT02 + jsU02 + jsY00);
   document.getElementById("catLegal").innerHTML = (jsA12 + jsF04 + jsJ00 + jsJ01 + jsU00);
   document.getElementById("catProDev").innerHTML = (jsA08 + jsA14 + jsA27 + jsA32 + jsA38 + jsA40 + jsC01 + jsE04 + jsG08 + jsJ01 + jsN00 + jsN01 + jsP00 + jsP02 + jsS07 + jsS03 + jsU01 + jsV00 + jsV01 + jsY00);
-  document.getElementById("catTech").innerHTML = (jsA03 + jsA42 + jsA43 + jsA44 + jsA04 + jsA17 + jsC05 + jsC06 + jsD04 + jsD14 + jsD15 + jsM06 + jsM08 + jsR01 + jsT06);
+  document.getElementById("catTech").innerHTML = (jsA03 + jsA42 + jsA43 + jsA44 + jsA04 + jsA17 + jsC05 + jsC06 + jsD04 + jsD14 + jsD19 + jsD15 + jsD20 + jsD21 + jsM06 + jsM08 + jsR01 + jsT06);
   document.getElementById("catUsGov").innerHTML = (jsA03 + jsE00 + jsF00 + jsI05 + jsM01 + jsP04 + jsT00 + jsU01);
   
   // Calls the Daily Bugle when dates are specified. 
@@ -505,7 +513,7 @@
   let d = dt.getDate();
   let y = dt.getYear();
   var AOTD;
-  // January Months
+  // January
   if (m == 0 && d == 1) { // New Year's Day
     AOTD = "Happy New Year";
   } else if (m == 0 && d == 14) { // Martin Luther King Jr Day (NEEDS TO BE CHANGED YEARLY)
@@ -528,30 +536,30 @@
   } else if (m == 5 && (d != 19 || d != 14) ) { // LGPT Pride Month
     AOTD = "It is currently LGPT Pride Month";
   } else if (m == 5 && d == 14) { // Army Birthday
-    AOTD = "Happy Birthday Army and LGPT Pride Month";
+    AOTD = "Happy Birthday Army! It is currently LGPT Pride Month";
   } else if (m == 5 && d == 19) { // Juneteenth
-    AOTD = "Happy Juneteenth and LGPT Pride Month";
+    AOTD = "Happy Juneteenth! It is currently LGPT Pride Month";
   // July
   } else if (m == 6 && d == 4) { // Independence Day
     AOTD = "Happy Independence Day";
   // August
   } else if (m == 7 && d == 26) { // Women's Equality Day
-    AOTD = "It is currently Women's Equality Day";
+    AOTD = "Happy Women's Equality Day";
   // September
   } else if (m == 8 && d == 11) { // September 11th
     AOTD = "September 11th";
   } else if (m == 8 && d == 18) { // Air Force Birthday
-    AOTD = "Happy Birthday Airforce";
+    AOTD = "Happy Birthday Air Force";
   } else if (((m == 8 && d >= 15) || (m == 9 && d <= 15)) && (m == 8 && d !=18)) { // Hispanic Heritage Month
     AOTD = "It is currently Hispanic Heritage Month";
   // October
   } else if (m == 9 && d == 13) { // Navy Birthday
-    AOTD = "Happy Birthday Navy and it is currently Hispanic Heritage Month";
+    AOTD = "Happy Birthday Navy! It is currently Hispanic Heritage Month";
   // November
   } else if (m == 10 && (d != 10 || d != 11)) { // Native American Heritage Month
     AOTD = "It is currently Native American Heritage Month";
   } else if (m == 10 && d == 10) { // Maines Birthday 
-    AOTD = ("Happy Birthday Marines and It is currently Native American Heritage Month");
+    AOTD = ("Happy Birthday Marines! It is currently Native American Heritage Month");
   } else if (m == 10 && d == 11) { // Veterans Day (NEEDS TO BE CHANGED YEARLY)
     AOTD = "It is currently Veterans Day";
   // December
