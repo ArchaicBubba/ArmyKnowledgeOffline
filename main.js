@@ -534,11 +534,11 @@
     AOTD = "It is currently Memorial Day and Asian American Pacific Islander Heritage Month";
   // June
   } else if (m == 5 && (d != 19 || d != 14) ) { // Pride Month
-    AOTD = "It is currently LGPTQ+ Pride Month";
+    AOTD = "It is currently LGBTQ+ Pride Month";
   } else if (m == 5 && d == 14) { // Army Birthday
-    AOTD = "Happy Birthday Army! It is currently LGPTQ+ Pride Month";
+    AOTD = "Happy Birthday Army! It is currently LGBTQ+ Pride Month";
   } else if (m == 5 && d == 19) { // Juneteenth
-    AOTD = "Happy Juneteenth! It is currently LGPTQ+ Pride Month";
+    AOTD = "Happy Juneteenth! It is currently LGBTQ+ Pride Month";
   // July
   } else if (m == 6 && d == 4) { // Independence Day
     AOTD = "Happy Independence Day";
