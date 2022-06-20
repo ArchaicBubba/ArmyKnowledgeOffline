@@ -508,67 +508,192 @@
   document.getElementById("catUsGov").innerHTML = (jsA03 + jsE00 + jsF00 + jsI05 + jsM01 + jsP04 + jsT00 + jsU01);
   
   // Calls the Daily Bugle when dates are specified. 
-  let dt = new Date();
-  let m = dt.getMonth();
-  let d = dt.getDate();
-  let y = dt.getYear();
+  const dt = new Date();
+  // dt.setFullYear(2022, 5, 23); // for testing Daily Bugle (Year, Month, Day)
+  const m = dt.getMonth();
+  const d = dt.getDate();
+  const y = dt.getFullYear();
   var AOTD;
   // January
-  if (m == 0 && d == 1) { // New Year's Day
-    AOTD = "Happy New Year";
-  } else if (m == 0 && d == 14) { // Martin Luther King Jr Day (NEEDS TO BE CHANGED YEARLY)
-    AOTD = "It is currently Martin Luther King Jr Day";
+  if (m == 0) {
+    // New Year's Day
+    if (d == 1) { 
+      AOTD = "Happy New Year";
+	// Martin Luther King Jr Day (NEEDS TO BE CHANGED YEARLY)
+	} else if ((d == 16 && y == 2023) || (d == 15 && y == 2024) || (d == 20 && y == 2025)) { 
+	  AOTD = "It is currently Martin Luther King Jr Day";
+	  
+	} else {
+	  AOTD = "No Holiday Detected";
+      document.getElementById("dailyBugle").style.display="none";
+	}
+	
   // February
-  } else if (m == 1) { // African American Black History Month
-    AOTD = "It is currently African American Black History Month";
+  } else if (m == 1) {
+    // African American Black History Month
+	AOTD = "It is currently African American Black History Month";
+
   // March
-  } else if (m == 2) { // Women's History Month
+  } else if (m == 2) {
+	// Women's History Month
     AOTD = "It is currently Women's History Month";
+
   // April
-  } else if (m == 3 && d == 28) { // Days of Remembrance of the Victims of the Holocaust (NEEDS TO BE CHANGED YEARLY)
-    AOTD = "Days of Remembrance of the Victims of the Holocaust";
+  } else if (m == 3) {
+	// Gold Star Spouses Day
+    if (d == 5) { 
+      AOTD = "It is Gold Star Spouses Day";
+	
+	// Volunteer Appreciation Week
+    } else if (d == 2) { 
+      AOTD = "It is Volunteer Appreciation Week";
+	
+	// Earth Day
+    } else if (d == 22) { 
+      AOTD = "It is Earth Day!";
+	
+	// Today is the Army Reserves' birthday
+    } else if (d == 23) { 
+      AOTD = "Happy Birthday Army Reserves!";
+	
+	// Days of Remembrance of the Victims of the Holocaust (NEEDS TO BE CHANGED YEARLY)
+    } else if (d == 28) { 
+      AOTD = "Days of Remembrance of the Victims of the Holocaust";
+
+	// Month of the Military Child and National Sexual Assault Awareness and Prevention Month
+	} else {
+	  AOTD = "It is the Month of the Military Child and National Sexual Assault Awareness and Prevention Month.";
+	}
+
   // May
-  } else if (m == 4 && d != 30) { // Asian American Pacific Islander Heritage Month
-    AOTD = "It is currently Asian American Pacific Islander Heritage Month";
-  } else if (m == 4 && d == 30) { // Memorial Day
-    AOTD = "It is currently Memorial Day and Asian American Pacific Islander Heritage Month";
+  } else if (m == 4) {
+    // Military Spouse Appreciation Day (NEEDS TO BE CHANGED YEARLY)
+    if (d == 6) { 
+      AOTD = "It is Military Spouse Appreciation Day! It is currently Asian American Pacific Islander Heritage Month";
+	  
+    // National Day of Prayer (NEEDS TO BE CHANGED YEARLY)
+	} else if (d == 4) { 
+      AOTD = "It is currently National Day of Prayer and Asian American Pacific Islander Heritage Month";
+
+    // Memorial Day (NEEDS TO BE CHANGED YEARLY)
+	} else if (d == 30) { 
+      AOTD = "It is currently Memorial Day and Asian American Pacific Islander Heritage Month";
+
+    // Asian American Pacific Islander Heritage Month
+	} else {
+      AOTD = "It is currently Asian American Pacific Islander Heritage Month";
+	}
+
   // June
-  } else if (m == 5 && (d != 19 || d != 14) ) { // Pride Month
-    AOTD = "It is currently LGBTQ+ Pride Month";
-  } else if (m == 5 && d == 14) { // Army Birthday
-    AOTD = "Happy Birthday Army! It is currently LGBTQ+ Pride Month";
-  } else if (m == 5 && d == 19) { // Juneteenth
-    AOTD = "Happy Juneteenth! It is currently LGBTQ+ Pride Month";
+  } else if (m == 5) {	  
+	// Army Birthday
+    if (d == 14) { 
+      AOTD = "Happy Birthday Army! It is currently Army Heritage and LGBTQ+ Pride Month";
+
+	// Juneteenth
+    } else if (d == 19) { 
+      AOTD = "Happy Juneteenth! It is currently Army Heritage and LGBTQ+ Pride Month";
+	
+	// LGBTQ+ Pride and Army Heritage Month
+	} else {
+      AOTD = "It is currently Army Heritage and LGBTQ+ Pride Month";
+	}
+
   // July
-  } else if (m == 6 && d == 4) { // Independence Day
-    AOTD = "Happy Independence Day";
+  } else if (m == 6) {
+    // Independence Day
+    if (d == 4) { 
+      AOTD = "Happy Independence Day";
+	  
+	// No Day Detected
+	} else {
+	  AOTD = "No Parameters Detected";
+      document.getElementById("dailyBugle").style.display="none";
+	}
+
   // August
-  } else if (m == 7 && d == 26) { // Women's Equality Day
-    AOTD = "Happy Women's Equality Day";
+  } else if (m == 7) {
+    // Women's Equality Day
+    if (d == 26) {
+      AOTD = "Happy Women's Equality Day! It is Currently Antiterrorism Awareness Awareness Month";
+	  
+	// Antiterrorism Awareness Awareness
+	} else {
+	  AOTD = "It is Currently Antiterrorism Awareness Awareness Month";
+	}
+
   // September
-  } else if (m == 8 && d == 11) { // September 11th
-    AOTD = "September 11th";
-  } else if (m == 8 && d == 18) { // Air Force Birthday
-    AOTD = "Happy Birthday Air Force";
-  } else if (((m == 8 && d >= 15) || (m == 9 && d <= 15)) && (m == 8 && d !=18)) { // Hispanic Heritage Month
-    AOTD = "It is currently Hispanic Heritage Month";
+  } else if (m == 8) {
+    // September 11th/Patriot Day
+    if (d == 11) {
+      AOTD = "It is currently Patriot day";
+	
+	// Air Force Birthday
+    } else if ( d == 18) { 
+    AOTD = "Happy Birthday Air Force! It is currently Hispanic Heritage and Suicide Prevention Month";
+    
+	// Hispanic Heritage Month
+    } else if (d >= 15) { 
+    AOTD = "It is currently Hispanic Heritage and Suicide Prevention Month";
+	  
+	// Suicide Prevention Month
+	} else {
+	  AOTD = "It is currently Suicide Prevention Month";
+	}
+
   // October
-  } else if (m == 9 && d == 13) { // Navy Birthday
-    AOTD = "Happy Birthday Navy! It is currently Hispanic Heritage Month";
+  } else if (m == 9) {
+    // Navy Birthday
+    if (d == 13) { // 
+      AOTD = "Happy Birthday Navy! It is currently Hispanic Heritage, Army Cybersecurity Awarenes, National Energy Action, and Disability Awareness Month Month";
+	
+	//Hispanic Heritage Month
+	} else if (d <= 15) { 
+	  AOTD = "It is currently Hispanic Heritage, Army Cybersecurity Awarenes, National Energy Action, and Disability Awareness Month";
+	  
+	// Army Cybersecurity Awarenes, National Energy Action, and Disability Awareness Month
+	} else {
+	  AOTD = "It is currently Army Cybersecurity Awarenes, National Energy Action, and Disability Awareness Month";
+	}
+
   // November
-  } else if (m == 10 && (d != 10 || d != 11)) { // Native American Heritage Month
-    AOTD = "It is currently Native American Heritage Month";
-  } else if (m == 10 && d == 10) { // Maines Birthday 
-    AOTD = ("Happy Birthday Marines! It is currently Native American Heritage Month");
-  } else if (m == 10 && d == 11) { // Veterans Day (NEEDS TO BE CHANGED YEARLY)
-    AOTD = "It is currently Veterans Day";
+  } else if (m == 10) {
+	// Maines Birthday 
+    if (d == 10) { 
+      AOTD = ("Happy Birthday Marines! It is currently Miltary Family, Native American and Alaskan Heritage Month");
+	
+	// Veterans Day (NEEDS TO BE CHANGED YEARLY)
+    } else if (d == 11) { 
+      AOTD = "It is currently Veterans Day! It is currently Miltary Family, Native American and Alaskan Heritage Month";
+	  
+	// Native American Heritage Month
+	} else {
+	  AOTD = "It is currently Miltary Family, Native American and Alaskan Heritage Month";
+	}
+
   // December
-  } else if (m == 11 && d == 25) { // Yule
-    AOTD = "Happy Yule";
-  } else if (m == 11 && d == 31) { // New Years Eve
-    AOTD = "New Years Eve";
-  } else { // Normal Day
-    AOTD = "In every generation there is a chosen one... She alone will stand against the vampires, the demons and the forces of darkness. She is the slayer.";
+  } else if (m == 11) {
+	// National Guard Birthday
+	if (d == 13) { 
+	  AOTD = "Happy Birthday National Guard!";
+	  
+	// Space Force Birthday
+	} else if (d == 20) { 
+	  AOTD = "Happy Birthday Space Force!";
+	
+	// New Years Eve
+	} else if (d == 31) { 
+	  AOTD = "New Years Eve";
+	  
+	// No Day Detected
+	} else {
+	  AOTD = "No Parameters Detected";
+      document.getElementById("dailyBugle").style.display="none";
+	}
+
+  // Error, No month detected
+  } else {
+    AOTD = "Error, No Month Detected";
     document.getElementById("dailyBugle").style.display="none";
-  }
+	}  
   document.getElementById("dailyBugle").innerHTML = AOTD;
