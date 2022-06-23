@@ -681,6 +681,9 @@
 	} else if (d == 20) { 
 	  AOTD = "Happy Birthday Space Force!";
 	
+	// Happy Holidays!
+	} else if (d == 24 || d == 25) {
+	  AOTD = "Happy Holidays!";
 	// New Years Eve
 	} else if (d == 31) { 
 	  AOTD = "New Years Eve";
