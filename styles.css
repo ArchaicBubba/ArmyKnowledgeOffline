@@ -6,7 +6,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url("assets/AKOffBackground.png");
+    background-image: url("assets/Background-AKOffline-OCP.svg");
     }
 
 h1 {
@@ -36,6 +36,18 @@ red {
     text-align: center;
     text-transform: capitalize;
     }
+
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 10px;
+  float: right;
+  font-style: italic;
+  background-color: rgb(255, 193, 7);
+  overflow-y: auto;
+  height: 89.2vh;
+  max-width: 255px;
+}
 
 .spacing {
     margin: 0px 0px 20px;
@@ -95,6 +107,19 @@ li a:hover:not(.active) {
     cursor: pointer;
     }
 
+.link {
+    color: rgb(30, 30, 30);
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    z-index: 7;
+		border: 1px solid black;
+    }
+.link:hover:not(.active) {
+    background-color: rgb(216, 150, 6);
+    cursor: pointer;
+    }
+
 .navi {
     background-color: rgb(255, 193, 7);
     border-bottom: 1px solid black;
@@ -131,7 +156,6 @@ li a:hover:not(.active) {
     display: inline-block;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 193, 7);
-    border-bottom: 1px solid black;
     top: 19px;
     font-family: Tahoma;
     }
@@ -217,6 +241,7 @@ li a:hover:not(.active) {
     white-space: pre;
     margin-bottom: 0px;
     margin-top: 0px;
+    border-bottom: 1px solid black;
     }
 
     /* .buglePlayer {
@@ -287,6 +312,22 @@ li a:hover:not(.active) {
     padding: 0px 5px;
     }
 
+.cardSleeve {
+    box-sizing: border-box;
+    display: inline-table;
+    min-width: 200px;
+	  max-width: 270px;
+    min-height: 150px;
+    max-height: 255px;
+    margin: auto auto 20px;
+    padding: 0px 5px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 4px 8px 0px;
+    background-color: rgb(255, 193, 7);
+    background: rgb(255, 193, 7);
+	text-align: center;
+	
+  }
+
 .deck {
     width: 100%;
     text-align: center;
@@ -298,11 +339,11 @@ li a:hover:not(.active) {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 319px;
+    width: 308px;
     }
 
 .card {
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 4px 8px 0px;
     padding: 16px;
     text-align: center;
     background-color: rgb(255, 193, 7);
@@ -494,3 +535,101 @@ input:checked + .slider:before {
     -ms-transform: translateX(18px);
     transform: translateX(18px);
     }
+
+.loading {
+  height: 100vh; 
+  width: 100vw; 
+  z-index: 99; 
+  background-color: rgb(255, 193, 7); 
+  position: fixed;
+  display: none;
+  }
+
+.loadingText {
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  }
+
+/* Reduced cards for site settings */
+.ssCard {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 4px 8px 0px;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(255, 193, 7);
+    background: rgb(255, 193, 7);
+    }
+
+.ssCard:hover:not(.active) {
+    background-color: rgb(216, 150, 6);
+    background: rgb(216, 150, 6);
+    cursor: pointer;
+    }
+
+.ssCardImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 201px;
+    }
+		
+.ssArmyCard {
+    background: rgb(255, 193, 7);
+    color: rgb(30, 30, 30);
+    border-radius: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    word-break: normal;
+    height: 150px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    }
+		
+.ssTitle {
+    white-space: pre-line;
+    overflow-wrap: normal;
+    overflow: hidden;
+    border-radius: 15px;
+    padding-bottom: 7px;
+    opacity: 1;
+    background: rgb(255, 193, 7);
+    position: absolute;
+    width: 100%;
+    min-width: 60px;
+    max-width: 220px;
+    left: 0%;
+    bottom: 0px;
+    z-index: 3;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+/* open Folders */
+.folder {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.folder-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.folder .closebtn {
+  position: absolute;
+  top: 90px;
+  right: 90px;
+  font-size: 90px;
+}
