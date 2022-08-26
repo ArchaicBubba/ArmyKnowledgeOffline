@@ -22,9 +22,8 @@
 	  document.getElementById('catProDev').style.display='none';
 	  document.getElementById('catTech').style.display='none';
 	  document.getElementById('catUsGov').style.display='none';
-	  
+	  // Switch to All Sites A-Z Catagory	  
     } else if (document.getElementById("DropDownBox").value == "All-Sites") {
-	  // Switch to All Sites A-Z Catagory
 	  document.getElementById('catAllSites').style.display='block';
 	  document.getElementById('ddmAllSites').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
@@ -41,9 +40,8 @@
 	  document.getElementById('catProDev').style.display='none';
 	  document.getElementById('catTech').style.display='none';
 	  document.getElementById('catUsGov').style.display='none';
-	  
-    } else if (document.getElementById("DropDownBox").value == "Army-Sites") {
 	  // Switch to Army Sites Catagory
+    } else if (document.getElementById("DropDownBox").value == "Army-Sites") {
 	  document.getElementById('catArmySites').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -60,9 +58,8 @@
 	  document.getElementById('catProDev').style.display='none';
 	  document.getElementById('catTech').style.display='none';
 	  document.getElementById('catUsGov').style.display='none';
-	  
-    } else if (document.getElementById("DropDownBox").value == "Combat-Readiness") {
 	  // Switch to Combat Readiness Catagory
+    } else if (document.getElementById("DropDownBox").value == "Combat-Readiness") {
 	  document.getElementById('catCombatReadiness').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -79,9 +76,8 @@
 	  document.getElementById('catProDev').style.display='none';
 	  document.getElementById('catTech').style.display='none';
 	  document.getElementById('catUsGov').style.display='none';
-	  
-    } else if (document.getElementById("DropDownBox").value == "DOD") {
 	  // Switch to Dod Sites Catagory
+    } else if (document.getElementById("DropDownBox").value == "DOD") {
 	  document.getElementById('catDod').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -98,9 +94,8 @@
 	  document.getElementById('catProDev').style.display='none';
 	  document.getElementById('catTech').style.display='none';
 	  document.getElementById('catUsGov').style.display='none';
-	  
-    } else if (document.getElementById("DropDownBox").value == "MilEd") {
 	  // Switch to Military Education Catagory
+    } else if (document.getElementById("DropDownBox").value == "MilEd") {
 	  document.getElementById('catMilEd').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -117,9 +112,8 @@
 	  document.getElementById('catProDev').style.display='none';
 	  document.getElementById('catTech').style.display='none';
 	  document.getElementById('catUsGov').style.display='none';
-	  
-    } else if (document.getElementById("DropDownBox").value == "CivEd") {
 	  // Switch to Civilian Educiation Catagory
+    } else if (document.getElementById("DropDownBox").value == "CivEd") {
 	  document.getElementById('catCivEd').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -136,9 +130,8 @@
 	  document.getElementById('catProDev').style.display='none';
 	  document.getElementById('catTech').style.display='none';
 	  document.getElementById('catUsGov').style.display='none';
-	
-    } else if (document.getElementById("DropDownBox").value == "Family") {
 	  // Switch to Family Links Catagory
+    } else if (document.getElementById("DropDownBox").value == "Family") {
 	  document.getElementById('catFamily').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -155,9 +148,8 @@
 	  document.getElementById('catProDev').style.display='none';
 	  document.getElementById('catTech').style.display='none';
 	  document.getElementById('catUsGov').style.display='none';
-	  
-    } else if (document.getElementById("DropDownBox").value == "Finance") {
 	  // Switch to Finance Catagory
+    } else if (document.getElementById("DropDownBox").value == "Finance") {
 	  document.getElementById('catFinance').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -174,9 +166,8 @@
 	  document.getElementById('catProDev').style.display='none';
 	  document.getElementById('catTech').style.display='none';
 	  document.getElementById('catUsGov').style.display='none';
-	  
-    } else if (document.getElementById("DropDownBox").value == "Health") {
 	  // Switch to health Catagory
+    } else if (document.getElementById("DropDownBox").value == "Health") {
 	  document.getElementById('catHealth').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -193,9 +184,8 @@
 	  document.getElementById('catProDev').style.display='none';
 	  document.getElementById('catTech').style.display='none';
 	  document.getElementById('catUsGov').style.display='none';
-	
-    } else if (document.getElementById("DropDownBox").value == "Human") {
 	  // Switch to Human Catagory
+    } else if (document.getElementById("DropDownBox").value == "Human") {
 	  document.getElementById('catHuman').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -212,9 +202,8 @@
 	  document.getElementById('catProDev').style.display='none';
 	  document.getElementById('catTech').style.display='none';
 	  document.getElementById('catUsGov').style.display='none';
-	  
-    } else if (document.getElementById("DropDownBox").value == "Legal") {
 	  // Switch to Legal Catagory
+    } else if (document.getElementById("DropDownBox").value == "Legal") {
 	  document.getElementById('catLegal').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -231,9 +220,8 @@
 	  document.getElementById('catProDev').style.display='none';
 	  document.getElementById('catTech').style.display='none';
 	  document.getElementById('catUsGov').style.display='none';
-	  
-    } else if (document.getElementById("DropDownBox").value == "Professional-Development") {
 	  // Switch to Professional Development Catagory
+    } else if (document.getElementById("DropDownBox").value == "Professional-Development") {
 	  document.getElementById('catProDev').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -250,9 +238,8 @@
 	  document.getElementById('catLegal').style.display='none';
 	  document.getElementById('catTech').style.display='none';
 	  document.getElementById('catUsGov').style.display='none';
-	
-    } else if (document.getElementById("DropDownBox").value == "Technologies") {
 	  // Switch to Technologies Catagory
+    } else if (document.getElementById("DropDownBox").value == "Technologies") {
 	  document.getElementById('catTech').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -269,9 +256,8 @@
 	  document.getElementById('catLegal').style.display='none';
 	  document.getElementById('catProDev').style.display='none';
 	  document.getElementById('catUsGov').style.display='none';
-	
-    } else if (document.getElementById("DropDownBox").value == "US-Gov") {
 	  // Switch to Us Government Links Catagory
+    } else if (document.getElementById("DropDownBox").value == "US-Gov") {
 	  document.getElementById('catUsGov').style.display='block';
 	  document.getElementById('catQuickLinks').style.display='none';
 	  document.getElementById('catAllSites').style.display='none';
@@ -349,6 +335,7 @@
   var jsC04 = document.getElementById("C04").innerHTML; // Comprehensive Soldier and Family Fitness
   var jsC05 = document.getElementById("C05").innerHTML; // Computer Hardware Enterprise Software and Solutions (CHESS)
   var jsC06 = document.getElementById("C06").innerHTML; // Cyber Awareness Challenge
+  var jsC07 = document.getElementById("C07").innerHTML; // Citi Bank (GTCC)
   // Sites that begin with D
   var jsD00 = document.getElementById("D00").innerHTML; // Defense Acquisition University
   var jsD01 = document.getElementById("D01").innerHTML; // Defense Civilian Personnel Data System
@@ -483,23 +470,49 @@
   var jsV01 = document.getElementById("V01").innerHTML; // Volunteer Management Information System (VMIS)
   // Sites that begin with Y
   var jsY00 = document.getElementById("Y00").innerHTML; // Yellow Ribbon Reintegration Program (YRRP)
+  // Site Folders
+	var jsFolder00 = document.getElementById("folder00").innerHTML; // SRB
+	var jsFolder01 = document.getElementById("folder01").innerHTML; // Email
+	var jsFolder02 = document.getElementById("folder02").innerHTML; // GEARS
 
-  const myQuickLinks = JSON.parse(localStorage.getItem("customQuickLinks"));
-
+  const mySettings = JSON.parse(localStorage.getItem("siteSettings"));
+  // Change Background image on load
+  if (localStorage.getItem("siteSettings") == null) {
+	  document.body.style.backgroundImage = "url('assets/Background-AKOffline-OCP.svg')";
+  } else if (mySettings[0] == "0") {
+	  // Switch to AKOffline-OCP
+	  document.body.style.backgroundImage = "url('assets/Background-AKOffline-OCP.svg')";	  
+  } else if (mySettings[0] == "1") {
+	  // Switch to AKOffline-UCP
+	  document.body.style.backgroundImage = "url('assets/Background-AKOffline-UDP.svg')";
+  } else if (mySettings[0] == "2") {
+	  // Switch to AKOffline-BDU
+	  document.body.style.backgroundImage = "url('assets/Background-AKOffline-BDU.svg')";
+  } else if (mySettings[0] == "3") {
+	  // Switch to AKOffline-UCP
+	  document.body.style.backgroundImage = "url('assets/Background-AKOffline-Yellow.svg')";
+  } else if (mySettings[0] == "4") {
+	  // Switch to AKOriginal
+	  document.body.style.backgroundImage = "url('assets/Background-AKOriginal.jpg')";
+  } else if (mySettings[0] == "5") {
+	  // Switch to AKOriginal-Alt
+	  document.body.style.backgroundImage = "url('assets/Background-AKOriginal-Alt.jpg')";
+	}
+		
   // Site listings
-  if (localStorage.getItem("customQuickLinks") == null) {
-    document.getElementById("catQuickLinks").innerHTML = (jsG01 + jsM17 + jsA21 + jsM14 + jsM07 + jsA15 + jsI04 + jsM21 + jsA08 + jsD13 + jsM13 + jsA43 + jsP05 + jsA26 + jsV01);
+  if (localStorage.getItem("siteSettings") == null) {
+    document.getElementById("catQuickLinks").innerHTML = (jsG01 + jsM17 + jsA21 + jsFolder00 + jsM07 + jsFolder01 + jsI04 + jsM21 + jsA08 + jsD13 + jsM13 + jsA43 + jsM03 + jsA26 + jsV01);
   } else {
-    document.getElementById("catQuickLinks").innerHTML = (document.getElementById(myQuickLinks[0]).innerHTML + document.getElementById(myQuickLinks[1]).innerHTML + document.getElementById(myQuickLinks[2]).innerHTML + document.getElementById(myQuickLinks[3]).innerHTML + document.getElementById(myQuickLinks[4]).innerHTML + document.getElementById(myQuickLinks[5]).innerHTML + document.getElementById(myQuickLinks[6]).innerHTML + document.getElementById(myQuickLinks[7]).innerHTML + document.getElementById(myQuickLinks[8]).innerHTML + document.getElementById(myQuickLinks[9]).innerHTML + document.getElementById(myQuickLinks[10]).innerHTML + document.getElementById(myQuickLinks[11]).innerHTML + document.getElementById(myQuickLinks[12]).innerHTML + document.getElementById(myQuickLinks[13]).innerHTML + document.getElementById(myQuickLinks[14]).innerHTML);
+    document.getElementById("catQuickLinks").innerHTML = (document.getElementById(mySettings[1]).innerHTML + document.getElementById(mySettings[2]).innerHTML + document.getElementById(mySettings[3]).innerHTML + document.getElementById(mySettings[4]).innerHTML + document.getElementById(mySettings[5]).innerHTML + document.getElementById(mySettings[6]).innerHTML + document.getElementById(mySettings[7]).innerHTML + document.getElementById(mySettings[8]).innerHTML + document.getElementById(mySettings[9]).innerHTML + document.getElementById(mySettings[10]).innerHTML + document.getElementById(mySettings[11]).innerHTML + document.getElementById(mySettings[12]).innerHTML + document.getElementById(mySettings[13]).innerHTML + document.getElementById(mySettings[14]).innerHTML + document.getElementById(mySettings[15]).innerHTML);
   };
-  document.getElementById("catAllSites").innerHTML = ('<div id="section-A"></div>' + jsA00 + jsA46 + jsA01 + jsA02 + jsA03 + jsA42 + jsA43 + jsA44 + jsA04 + jsA05 + jsA06 + jsA07 + jsA08 + jsA09 + jsA10 + jsA11 + jsA12 + jsA13 + jsA14 + jsA15 + jsA16 + jsA47 + jsA17 + jsA18 + jsA19 + jsA20 + jsA21 + jsA22 + jsA23 + jsA24 + jsA25 + jsA26 + jsA27 + jsA28 + jsA29 + jsA30 + jsA45 + jsA31 + jsA32 + jsA33 + jsA34 + jsA35 + jsA36 + jsA37 + jsA38 + jsA39 + jsA40 + jsA41 + '<div id="section-C"><br><hr><br></div>' + jsC00 + jsC01 + jsC02 + jsC03 + jsC04 + jsC05 + jsC06 + '<div id="section-D"><br><hr><br></div>' + jsD00 + jsD18 + jsD01 + jsD02 + jsD03 + jsD04 + jsD05 + jsD06 + jsD07 + jsD08 + jsD09 + jsD10 + jsD11 + jsD12 + jsD13 + jsD14 + jsD19 + jsD15 + jsD20 + jsD21 + jsD16 + jsD17 + '<div id="section-E"><br><hr><br></div>' + jsE00 + jsE01 + jsE02 + jsE03 + jsE04 + '<div id="section-F"><br><hr><br></div>' + jsF00 + jsF01 + jsF02 + jsF03 + jsF04 + jsF05 + '<div id="section-G"><br><hr><br></div>' + jsG00 + jsG01 + jsG02 + jsG03 + jsG04 + jsG05 + jsG08 + jsG06 + jsG07 + '<div id="section-H"><br><hr><br></div>' + jsH00 + '<div id="section-I"><br><hr><br></div>' + jsI00 + jsI01 + jsI02 + jsI03 + jsI04 + jsI05 + '<div id="section-J"><br><hr><br></div>' + jsJ00 + jsJ01 + jsJ02 + jsJ03 + jsJ04 + jsJ05 + '<div id="section-L"><br><hr><br></div>' + jsL01 + jsL00 + '<div id="section-M"><br><hr><br></div>' + jsM00 + jsM01 + jsM02 + jsM03 + jsM04 + jsM05 + jsM06 + jsM23 + jsM07 + jsM08 + jsM09 + jsM10 + jsM11 + jsM24 + jsM12 + jsM13 + jsM14 + jsM15 + jsM16 + jsM17 + jsM18 + jsM19 + jsM20 + jsM22 + jsM21 + '<div id="section-N"><br><hr><br></div>' + jsN00 + jsN01 + jsN02 + '<div id="section-O"><br><hr><br></div>' + jsO00 + '<div id="section-P"><br><hr><br></div>' + jsP05 + jsP00 + jsP01 + jsP02 + jsP04 + jsP03 + '<div id="section-R"><br><hr><br></div>' + jsR01 + jsR00 + '<div id="section-S"><br><hr><br></div>' + jsS06 + jsS00 + jsS01 + jsS02 + jsS07 + jsS04 + jsS05 + '<div id="section-T"><br><hr><br></div>' + jsT00 + jsT01 + jsS03 + jsT02 + jsT03 + jsT04 + jsT05 + jsT06 + '<div id="section-U"><br><hr><br></div>' + jsU00 + jsU02 + jsU01 + '<div id="section-V"><br><hr><br></div>' + jsV00 + jsV01 + '<div id="section-Y"><br><hr><br></div>' + jsY00);
+  document.getElementById("catAllSites").innerHTML = ('<div id="section-A"></div>' + jsA00 + jsA46 + jsA01 + jsA02 + jsA03 + jsA42 + jsA43 + jsA44 + jsA04 + jsA05 + jsA06 + jsA07 + jsA08 + jsA09 + jsA10 + jsA11 + jsA12 + jsA13 + jsA14 + jsA15 + jsA16 + jsA47 + jsA17 + jsA18 + jsA19 + jsA20 + jsA21 + jsA22 + jsA23 + jsA24 + jsA25 + jsA26 + jsA27 + jsA28 + jsA29 + jsA30 + jsA45 + jsA31 + jsA32 + jsA33 + jsA34 + jsA35 + jsA36 + jsA37 + jsA38 + jsA39 + jsA40 + jsA41 + '<div id="section-C"><br><hr><br></div>' + jsC00 + jsC01 + jsC02 + jsC07 + jsC03 + jsC04 + jsC05 + jsC06 + '<div id="section-D"><br><hr><br></div>' + jsD00 + jsD18 + jsD01 + jsD02 + jsD03 + jsD04 + jsD05 + jsD06 + jsD07 + jsD08 + jsD09 + jsD10 + jsD11 + jsD12 + jsD13 + jsD14 + jsD19 + jsD15 + jsD20 + jsD21 + jsD16 + jsD17 + '<div id="section-E"><br><hr><br></div>' + jsE00 + jsE01 + jsE02 + jsE03 + jsE04 + '<div id="section-F"><br><hr><br></div>' + jsF00 + jsF01 + jsF02 + jsF03 + jsF04 + jsF05 + '<div id="section-G"><br><hr><br></div>' + jsG00 + jsG01 + jsG02 + jsG03 + jsG04 + jsG05 + jsG08 + jsG06 + jsG07 + '<div id="section-H"><br><hr><br></div>' + jsH00 + '<div id="section-I"><br><hr><br></div>' + jsI00 + jsI01 + jsI02 + jsI03 + jsI04 + jsI05 + '<div id="section-J"><br><hr><br></div>' + jsJ00 + jsJ01 + jsJ02 + jsJ03 + jsJ04 + jsJ05 + '<div id="section-L"><br><hr><br></div>' + jsL01 + jsL00 + '<div id="section-M"><br><hr><br></div>' + jsM00 + jsM01 + jsM02 + jsM03 + jsM04 + jsM05 + jsM06 + jsM23 + jsM07 + jsM08 + jsM09 + jsM10 + jsM11 + jsM24 + jsM12 + jsM13 + jsM14 + jsM15 + jsM16 + jsM17 + jsM18 + jsM19 + jsM20 + jsM22 + jsM21 + '<div id="section-N"><br><hr><br></div>' + jsN00 + jsN01 + jsN02 + '<div id="section-O"><br><hr><br></div>' + jsO00 + '<div id="section-P"><br><hr><br></div>' + jsP05 + jsP00 + jsP01 + jsP02 + jsP04 + jsP03 + '<div id="section-R"><br><hr><br></div>' + jsR01 + jsR00 + '<div id="section-S"><br><hr><br></div>' + jsS06 + jsS00 + jsS01 + jsS02 + jsS07 + jsS04 + jsS05 + '<div id="section-T"><br><hr><br></div>' + jsT00 + jsT01 + jsS03 + jsT02 + jsT03 + jsT04 + jsT05 + jsT06 + '<div id="section-U"><br><hr><br></div>' + jsU00 + jsU02 + jsU01 + '<div id="section-V"><br><hr><br></div>' + jsV00 + jsV01 + '<div id="section-Y"><br><hr><br></div>' + jsY00);
   document.getElementById("catArmySites").innerHTML = (jsA42 + jsA43 + jsA44 + jsA04 + jsA06 + jsA07 + jsA14 + jsA15 + jsA16 + jsA47 + jsA18 + jsA19 + jsA24 + jsA26 + jsA29 + jsA31 + jsA33 + jsA34 + jsA40 + jsC05 + jsD09 + jsD11 + jsD13 + jsF04 + jsF05 + jsG07 + jsI05 + jsJ00 + jsJ01 + jsM04 + jsM12 + jsM13 + jsM14 + jsM18 + jsM19 + jsM22 + jsN02 + jsS01 + jsS02 + jsS04 + jsT03 + jsU02);
   document.getElementById("catCombatReadiness").innerHTML = (jsA05 + jsA09 + jsA21 + jsA30 + jsD11 + jsG02 + jsG06 + jsM10 + jsR00 + jsS02);
   document.getElementById("catDod").innerHTML = (jsA00 + jsD03 + jsD05 + jsD07 + jsD08 + jsD19 + jsD15 + jsD20 + jsD21 + jsD17 + jsF01 + jsF02 + jsF03 + jsI05 + jsJ02 + jsJ03 + jsJ04 + jsL01 + jsM23 + jsM07 + jsM09 + jsM24 + jsM21 + jsP01 + jsP04 + jsR01 + jsU00);
   document.getElementById("catCivEd").innerHTML = (jsA11 + jsA14 + jsA32 + jsI01 + jsJ05 + jsS07 + jsS03 + jsU01 + jsY00);
   document.getElementById("catMilEd").innerHTML = (jsA14 + jsA25 + jsA35 + jsA36 + jsA37 + jsA38 + jsC00 + jsC02 + jsC03 + jsC06 + jsD00 + jsD10 + jsD12 + jsJ03 + jsJ05 + jsL01 + jsM05 + jsM11 + jsM20 + jsT01);
   document.getElementById("catFamily").innerHTML = (jsA10 + jsA19 + jsA20 + jsA22 + jsC04 + jsD02 + jsD16 + jsG01 + jsM23 + jsM07 + jsS05 + jsT05 + jsV01);
-  document.getElementById("catFinance").innerHTML = (jsD03 + jsE00 + jsF04 + jsG00 + jsM07 + jsM21 + jsT00 + jsU02);
+  document.getElementById("catFinance").innerHTML = (jsC07 + jsD03 + jsE00 + jsF04 + jsG00 + jsM07 + jsM21 + jsT00 + jsU02);
   document.getElementById("catHealth").innerHTML = (jsA01 + jsA28 + jsA33 + jsA39 + jsC04 + jsD11 + jsE01 + jsG01 + jsH00 + jsL00 + jsM00 + jsM01 + jsM02 + jsM03 + jsM07 + jsM17 + jsM22 + jsP05 + jsP03 + jsS06 + jsS00 + jsS01 + jsS05 + jsT04 + jsT05);
   document.getElementById("catHuman").innerHTML = (jsA46 + jsA13 + jsA23 + jsA29 + jsA45 + jsA40 + jsA41 + jsD01 + jsD02 + jsD05 + jsD06 + jsE01 + jsE02 + jsE03 + jsE04 + jsG03 + jsG04 + jsG05 + jsG08 + jsI00 + jsI02 + jsI03 + jsI04 + jsM13 + jsM14 + jsM15 + jsM16 + jsM18 + jsM19 + jsO00 + jsP02 + jsR01 + jsS06 + jsS07 + jsS03 + jsT02 + jsU02 + jsY00);
   document.getElementById("catLegal").innerHTML = (jsA12 + jsF04 + jsJ00 + jsJ01 + jsU00);
@@ -509,7 +522,7 @@
   
   // Calls the Daily Bugle when dates are specified. 
   const dt = new Date();
-  // dt.setFullYear(2022, 5, 23); // for testing Daily Bugle (Year, Month, Day)
+  // dt.setFullYear(2022, 0, 23); // for testing Daily Bugle (Year, Month, Day)
   const m = dt.getMonth();
   const d = dt.getDate();
   const y = dt.getFullYear();
@@ -519,184 +532,168 @@
     // New Year's Day
     if (d == 1) { 
       AOTD = "Happy New Year";
-	// Martin Luther King Jr Day (NEEDS TO BE CHANGED YEARLY)
-	} else if ((d == 16 && y == 2023) || (d == 15 && y == 2024) || (d == 20 && y == 2025)) { 
-	  AOTD = "It is currently Martin Luther King Jr Day";
-	  
-	} else {
-	  AOTD = "No Holiday Detected";
+	  // Martin Luther King Jr Day (NEEDS TO BE CHANGED YEARLY)
+	  } else if ((d == 16 && y == 2023) || (d == 15 && y == 2024) || (d == 20 && y == 2025)) { 
+	    AOTD = "It is currently Martin Luther King Jr Day"; 
+	  } else {
+	    AOTD = "No Holiday Detected";
       document.getElementById("dailyBugle").style.display="none";
-	}
-	
+	  }
   // February
   } else if (m == 1) {
     // African American Black History Month
-	AOTD = "It is currently African American Black History Month";
-
+	  AOTD = "It is currently African American Black History Month";
   // March
   } else if (m == 2) {
-	// Women's History Month
+	  // Women's History Month
     AOTD = "It is currently Women's History Month";
-
   // April
   } else if (m == 3) {
-	// Gold Star Spouses Day
+	  // Gold Star Spouses Day
     if (d == 5) { 
       AOTD = "It is Gold Star Spouses Day";
-	
-	// Volunteer Appreciation Week
+	  // Volunteer Appreciation Week
     } else if (d == 2) { 
       AOTD = "It is Volunteer Appreciation Week";
-	
-	// Earth Day
+	  // Earth Day
     } else if (d == 22) { 
       AOTD = "It is Earth Day!";
-	
-	// Today is the Army Reserves' birthday
+	  // Today is the Army Reserves' birthday
     } else if (d == 23) { 
       AOTD = "Happy Birthday Army Reserves!";
-	
-	// Days of Remembrance of the Victims of the Holocaust (NEEDS TO BE CHANGED YEARLY)
+	  // Days of Remembrance of the Victims of the Holocaust (NEEDS TO BE CHANGED YEARLY)
     } else if (d == 28) { 
       AOTD = "Days of Remembrance of the Victims of the Holocaust";
-
-	// Month of the Military Child and National Sexual Assault Awareness and Prevention Month
-	} else {
-	  AOTD = "It is the Month of the Military Child and National Sexual Assault Awareness and Prevention Month.";
-	}
-
+	  // Month of the Military Child and National Sexual Assault Awareness and Prevention Month
+	  } else {
+	    AOTD = "It is the Month of the Military Child and National Sexual Assault Awareness and Prevention Month.";
+	  }
   // May
   } else if (m == 4) {
     // Military Spouse Appreciation Day (NEEDS TO BE CHANGED YEARLY)
     if (d == 6) { 
-      AOTD = "It is Military Spouse Appreciation Day! It is currently Asian American Pacific Islander Heritage Month";
-	  
+      AOTD = "It is Military Spouse Appreciation Day! It is currently Asian American Pacific Islander Heritage Month"; 
     // National Day of Prayer (NEEDS TO BE CHANGED YEARLY)
-	} else if (d == 4) { 
+	  } else if (d == 4) { 
       AOTD = "It is currently National Day of Prayer and Asian American Pacific Islander Heritage Month";
 
     // Memorial Day (NEEDS TO BE CHANGED YEARLY)
-	} else if (d == 30) { 
+	  } else if (d == 30) { 
       AOTD = "It is currently Memorial Day and Asian American Pacific Islander Heritage Month";
 
     // Asian American Pacific Islander Heritage Month
-	} else {
+	  } else {
       AOTD = "It is currently Asian American Pacific Islander Heritage Month";
-	}
-
+	  }
   // June
   } else if (m == 5) {	  
-	// Army Birthday
+	  // Army Birthday
     if (d == 14) { 
       AOTD = "Happy Birthday Army! It is currently Army Heritage and LGBTQ+ Pride Month";
-
-	// Juneteenth
+	  // Juneteenth
     } else if (d == 19) { 
       AOTD = "Happy Juneteenth! It is currently Army Heritage and LGBTQ+ Pride Month";
-	
-	// LGBTQ+ Pride and Army Heritage Month
-	} else {
+	  // LGBTQ+ Pride and Army Heritage Month
+	  } else {
       AOTD = "It is currently Army Heritage and LGBTQ+ Pride Month";
-	}
-
+	  }
   // July
   } else if (m == 6) {
     // Independence Day
     if (d == 4) { 
-      AOTD = "Happy Independence Day";
-	  
-	// No Day Detected
-	} else {
-	  AOTD = "No Parameters Detected";
+      AOTD = "Happy Independence Day"; 
+	  // No Day Detected
+	  } else {
+	    AOTD = "No Parameters Detected";
       document.getElementById("dailyBugle").style.display="none";
-	}
-
+	  }
   // August
   } else if (m == 7) {
     // Women's Equality Day
     if (d == 26) {
-      AOTD = "Happy Women's Equality Day! It is Currently Antiterrorism Awareness Awareness Month";
-	  
-	// Antiterrorism Awareness Awareness
-	} else {
-	  AOTD = "It is Currently Antiterrorism Awareness Awareness Month";
-	}
-
+      AOTD = "Happy Women's Equality Day! It is Currently Antiterrorism Awareness Awareness Month"; 
+	  // Antiterrorism Awareness Awareness
+	  } else {
+	    AOTD = "It is Currently Antiterrorism Awareness Awareness Month";
+	  }
   // September
   } else if (m == 8) {
     // September 11th/Patriot Day
     if (d == 11) {
       AOTD = "It is currently Patriot day";
-	
-	// Air Force Birthday
+	  // Air Force Birthday
     } else if ( d == 18) { 
-    AOTD = "Happy Birthday Air Force! It is currently Hispanic Heritage and Suicide Prevention Month";
-    
-	// Hispanic Heritage Month
+      AOTD = "Happy Birthday Air Force! It is currently Hispanic Heritage and Suicide Prevention Month";
+	  // Hispanic Heritage Month
     } else if (d >= 15) { 
-    AOTD = "It is currently Hispanic Heritage and Suicide Prevention Month";
-	  
-	// Suicide Prevention Month
-	} else {
-	  AOTD = "It is currently Suicide Prevention Month";
-	}
-
+      AOTD = "It is currently Hispanic Heritage and Suicide Prevention Month";
+	  // Suicide Prevention Month
+	  } else {
+	    AOTD = "It is currently Suicide Prevention Month";
+	  }
   // October
   } else if (m == 9) {
     // Navy Birthday
     if (d == 13) { // 
       AOTD = "Happy Birthday Navy! It is currently Hispanic Heritage, Army Cybersecurity Awarenes, National Energy Action, and Disability Awareness Month Month";
-	
-	//Hispanic Heritage Month
-	} else if (d <= 15) { 
-	  AOTD = "It is currently Hispanic Heritage, Army Cybersecurity Awarenes, National Energy Action, and Disability Awareness Month";
-	  
-	// Army Cybersecurity Awarenes, National Energy Action, and Disability Awareness Month
-	} else {
-	  AOTD = "It is currently Army Cybersecurity Awarenes, National Energy Action, and Disability Awareness Month";
-	}
-
+  	// Hispanic Heritage Month
+	  } else if (d <= 15) { 
+	    AOTD = "It is currently Hispanic Heritage, Army Cybersecurity Awarenes, National Energy Action, and Disability Awareness Month";
+	  // Army Cybersecurity Awarenes, National Energy Action, and Disability Awareness Month
+	  } else {
+	    AOTD = "It is currently Army Cybersecurity Awarenes, National Energy Action, and Disability Awareness Month";
+    }
   // November
   } else if (m == 10) {
 	// Maines Birthday 
     if (d == 10) { 
       AOTD = ("Happy Birthday Marines! It is currently Miltary Family, Native American and Alaskan Heritage Month");
-	
-	// Veterans Day (NEEDS TO BE CHANGED YEARLY)
+	  // Veterans Day (NEEDS TO BE CHANGED YEARLY)
     } else if (d == 11) { 
       AOTD = "It is currently Veterans Day! It is currently Miltary Family, Native American and Alaskan Heritage Month";
-	  
-	// Native American Heritage Month
-	} else {
-	  AOTD = "It is currently Miltary Family, Native American and Alaskan Heritage Month";
-	}
-
+	  // Native American Heritage Month
+	  } else {
+	    AOTD = "It is currently Miltary Family, Native American and Alaskan Heritage Month";
+	  }
   // December
   } else if (m == 11) {
-	// National Guard Birthday
-	if (d == 13) { 
-	  AOTD = "Happy Birthday National Guard!";
-	  
-	// Space Force Birthday
-	} else if (d == 20) { 
-	  AOTD = "Happy Birthday Space Force!";
-	
-	// Happy Holidays!
-	} else if (d == 24 || d == 25) {
-	  AOTD = "Happy Holidays!";
-	// New Years Eve
-	} else if (d == 31) { 
-	  AOTD = "New Years Eve";
-	  
-	// No Day Detected
-	} else {
-	  AOTD = "No Parameters Detected";
+	  // National Guard Birthday
+	  if (d == 13) { 
+	    AOTD = "Happy Birthday National Guard!";
+	  // Space Force Birthday
+	  } else if (d == 20) { 
+	    AOTD = "Happy Birthday Space Force!";
+	  } else if (d == 25) {
+		  AOTD = "Happy Holidays";
+	  // New Years Eve
+	  } else if (d == 31) { 
+	    AOTD = "New Years Eve";
+	  // No Day Detected
+	  } else {
+	    AOTD = "No Parameters Detected";
       document.getElementById("dailyBugle").style.display="none";
-	}
-
+	  }
   // Error, No month detected
   } else {
     AOTD = "Error, No Month Detected";
     document.getElementById("dailyBugle").style.display="none";
+	document.getElementsByClassName("naviCentered").style.display="none";;
 	}  
   document.getElementById("dailyBugle").innerHTML = AOTD;
+
+// Open folder
+function openFolder(folder) {
+  document.getElementById("folder").style.width = "100%";
+	if (folder == "0") {
+		document.getElementById("catFolder").innerHTML = (jsM14 + jsM15 + "<br>" + jsM16 + jsM18);
+	} else if (folder == "1") {
+		document.getElementById("catFolder").innerHTML = (jsA15 + jsA16);
+	} else if (folder == "2") {
+		document.getElementById("catFolder").innerHTML = (jsG04 + jsG05 + jsG06);
+	}
+}
+
+// Close Folder
+function closeFolder(folder) {
+  document.getElementById("folder").style.width = "0%";
+} 
