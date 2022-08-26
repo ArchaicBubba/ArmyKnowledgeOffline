@@ -530,7 +530,7 @@ function setSettings() {
 			  }
       } 
     localStorage.setItem("siteSettings", JSON.stringify(mySettings));
-    alert("Settings saved to local storage");
+    alert("Settings Saved");
 
 		}
   };
