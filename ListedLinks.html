@@ -11,10 +11,35 @@
 </head>
 
 <body>
+  <script>
+	const mySettings = JSON.parse(localStorage.getItem("siteSettings"));
+  // Change Background image on load
+  if (localStorage.getItem("siteSettings") == null) {
+	  document.body.style.backgroundImage = "url('assets/Background-AKOffline-OCP.svg')";
+  } else if (mySettings[0] == "0") {
+	  // Switch to AKOffline-OCP
+	  document.body.style.backgroundImage = "url('assets/Background-AKOffline-OCP.svg')";	  
+  } else if (mySettings[0] == "1") {
+	  // Switch to AKOffline-UCP
+	  document.body.style.backgroundImage = "url('assets/Background-AKOffline-UDP.svg')";
+  } else if (mySettings[0] == "2") {
+	  // Switch to AKOffline-BDU
+	  document.body.style.backgroundImage = "url('assets/Background-AKOffline-BDU.svg')";
+  } else if (mySettings[0] == "3") {
+	  // Switch to AKOffline-UCP
+	  document.body.style.backgroundImage = "url('assets/Background-AKOffline-Yellow.svg')";
+  } else if (mySettings[0] == "4") {
+	  // Switch to AKOriginal
+	  document.body.style.backgroundImage = "url('assets/Background-AKOriginal.jpg')";
+  } else if (mySettings[0] == "5") {
+	  // Switch to AKOriginal-Alt
+	  document.body.style.backgroundImage = "url('assets/Background-AKOriginal-Alt.jpg')";
+	}
+  </script>
     <nav class="navi">
         <a href="./index.html">AKO Cards</a>
         <a class="active">Listed Links</a>
-        <!-- <a href="./CustomQuickLinks.html">Custom Quick Links Setup</a> -->
+        <a href="./SiteSettings.html">Site Settings</a>
         <a href="./About_AKO.html">About AKOffline</a>
         <div style="float: right; margin-right: 10px;" class="dropdown hidden" id="ddmAllSites">
             <button class="dropbtn">Jump To...</button>
@@ -48,7 +73,7 @@
             </div>
         </div>
     </nav>
-  <div class="content" style="margin: 10px auto 60px;"> <!-- • <a href="" rel="noopener noreferrer"></a><br>    <details class="noSpacing"><summary> </summary><p>DESCRIPTION HERE</p></details>  -->
+  <div class="content"> <!-- • <a href="" rel="noopener noreferrer"></a><br>    <details class="noSpacing"><summary> </summary><p>DESCRIPTION HERE</p></details>  -->
     <!-- Sites that begin with A --> <details open class="spacing" id="section-A"><summary><b>-A-</b></summary>
       <p>
         <details class="noSpacing"><!-- Air Force Weather Agency - https://weather.af.mil/ --> 
@@ -244,7 +269,7 @@
 		</details>
       </p>
     </details><hr>
-	<!-- Sites that begin with B --> <!-- <details open class="spacing" id="section-B"><summary><b>-B-</b></summary>
+		<!-- Sites that begin with B --> <!-- <details open class="spacing" id="section-B"><summary><b>-B-</b></summary>
       <p>
       </p><hr>
     </details> -->
@@ -262,7 +287,11 @@
 		  <summary>• <a href="https://atiam.train.army.mil/catalog/dashboard" rel="noopener noreferrer">Central Army Registry (CAR) - https://atiam.train.army.mil/catalog/dashboard</a></summary>
 		    <p>Central Army Registry (CAR) is your single access point to Army training resources, such as Field Manuals, Training Support Packages, Individual and Collective Tasks, Drills, Courseware and more.</p>
 		</details>
-        <details class="noSpacing"><!-- Combined Arms Center - https://usacac.army.mil/organizations/cace/cgsc/cgss --> 
+    <details class="noSpacing"><!-- Citi Bank (GTCC) - https://home.cards.citidirect.com/CommercialCard/login --> 
+		  <summary>• <a href="https://home.cards.citidirect.com/CommercialCard/login" rel="noopener noreferrer">Citi Bank (GTCC) - https://home.cards.citidirect.com/CommercialCard/login</a></summary>
+		    <p>Citi Bank Commercial Cards where Soldiers can log in to see the balance and make payments to their Government Travel Credit Card (GTCC).</p>
+		</details>
+    <details class="noSpacing"><!-- Combined Arms Center - https://usacac.army.mil/organizations/cace/cgsc/cgss --> 
 		  <summary>• <a href="URL_HERE" rel="noopener noreferrer">Combined Arms Center - https://usacac.army.mil/organizations/cace/cgsc/cgss</a></summary>
 		    <p>The US Army Combined Arms Center (CAC) is the force modernization proponent for unified land operations, combined arms operations at echelons above brigade (Division, Corps and Theater Army), mission command, airspace control, information operations, irregular warfare, knowledge management, personnel recovery, OPSEC, military deception, security force assistance, UAP interoperability, and the Army Profession. CAC is made up of more than 34,000 Soldiers and Army Civilian Corps employees stationed throughout the United States, Europe, Korea, and SW Asia and nine centers of excellence, 20 branch schools, and seven non-branch schools. The Combined Arms Center synchronizes 37 US Army schools through Army University educating and training more than 300,000 students annually, including nearly 5,000 students from 130 separate nations and more than 10,000 sailors, airmen, and Marines from the Joint Force.</p>
 		</details>
