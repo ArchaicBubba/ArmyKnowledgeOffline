@@ -14,6 +14,15 @@
 	<div id="sonic06" class="loading">
 		<p class="loadingText">Loading...</p>
 	</div>
+	<div class="alertOverlay" id="ActiveSiteAlert">
+	  <div class="alertBody">
+		  <h1 style="text-align: center;">Looks like we are moving!</h1><p>Starting in early Febuary, Army Knowledge Offline will be changing its primary domain to <a href="https://akoffline.us">AKOffline.us</a>! You can continue to use the original armyknowledgeOffline.com url after the change; but it will redirect you to the new domain. If you would like more information on this change feel free to reach out to me!</p><p style="text-align: center;">Thank you for using Army knowledge offine! - SGT Antonacci, Roman</p>
+			<div style="text-align: center;">
+			  <button type="button" class="link" style="margin-right: 30px; width: 140px"; onClick="document.getElementById('ActiveSiteAlert').style.display='none';">OK</button>
+				<button type="button" class="link" style="width: 140px;" onClick="ignoreMe(20230118)">Don't tell me again!</button> 
+			</div>
+		</div>
+	</div>
 	<script>document.getElementById("sonic06").style.display = "block";</script>
 	<nav class="navi">
 		<a class="active">AKO Cards</a>
@@ -24,7 +33,7 @@
 			What are you looking for?
 			<select id="DropDownBox" class="dropDownBox">
 				<option value="Quick-Links" selected="">Quick Links</option>
-				<option value="All-Sites">All Web Sites A-Z</option>
+				<option value="All-Sites">All Web Sit	es A-Z</option>
 				<option value="Army-Sites">Army Web Sites</option>
 				<option value="Combat-Readiness">Combat Readiness</option>
 				<option value="DOD">DOD Resources</option>
@@ -78,9 +87,9 @@
 	<div style="margin: 10px auto 60px;">
 		<div class="deck" style="max-width: 1920px; margin: auto;">
 			<!-- Quick Links -->
-			<div style="display: none;" id="catQuickLinks"></div>
+			<div class="category" style="display: none;" id="catQuickLinks"></div>
 			<!-- All Web Sites A-Z -->
-			<div style="display: block;" id="catAllSites">
+			<div class="category" style="display: block;" id="catAllSites">
 				<!-- A --> <div id="section-A"></div>
 				<!-- Air Force Weather Agency - https://weather.af.mil/ -->
 				<div class="column" id="A00">
@@ -690,9 +699,9 @@
 						</div>
 					</a>
 				</div>
-				<!-- Army SkillSoft - https://usarmy.skillport.com/ -->
+				<!-- Army SkillSoft - https://usarmy.percipio.com/ -->
 				<div class="column" id="A32">
-					<a href="https://usarmy.skillport.com/" rel="noopener noreferrer" class="column hideMarquee">
+					<a href="https://usarmy.percipio.com/" rel="noopener noreferrer" class="column hideMarquee">
 						<div class="armyCardContainer card">
 							<div class="armyCard">
 								<div>
@@ -700,7 +709,7 @@
 									<p class="marquee">With Army e-Learning you have access over 3,500 web-based courses in Information Technology, Business Leadership and Personal Development. These can be accessed through Skillport.</p>
 								</div>
 								<div class="title">
-									<span>Army SkillSoft</span>
+									<span>Army SkillSoft<br>Skillport</span>
 								</div>
 							</div>
 						</div>
@@ -1722,9 +1731,9 @@
 						</div>
 					</a>
 				</div>
-				<!-- Integrated Personnel and Pay System Army - https://hr.ippsa.csd.disa.mil/ -->
+				<!-- Integrated Personnel and Pay System Army - https://hr.ippsa.army.mil/ -->
 				<div class="column" id="I03">
-					<a href="https://hr.ippsa.csd.disa.mil/" rel="noopener noreferrer" class="column hideMarquee">
+					<a href="https://hr.ippsa.army.mil/" rel="noopener noreferrer" class="column hideMarquee">
 						<div class="armyCardContainer card">
 							<div class="armyCard">
 								<div>
@@ -2845,31 +2854,31 @@
 				<!-- Z <div id="section-"><br><hr><br></div> -->
 			</div>
 			<!-- Army Web Sites -->
-			<div style="display: none;" id="catArmySites"></div>
+			<div class="category" style="display: none;" id="catArmySites"></div>
 			<!-- Combat Readiness -->
-			<div style="display: none;" id="catCombatReadiness"></div>
+			<div class="category" style="display: none;" id="catCombatReadiness"></div>
 			<!-- DoD Resources -->
-			<div style="display: none;" id="catDod"></div>
+			<div class="category" style="display: none;" id="catDod"></div>
 			<!-- Education - Civilian -->
-			<div style="display: none;" id="catCivEd"></div>
+			<div class="category" style="display: none;" id="catCivEd"></div>
 			<!-- Education - Military -->
-			<div style="display: none;" id="catMilEd"></div>
+			<div class="category" style="display: none;" id="catMilEd"></div>
 			<!-- Family -->
-			<div style="display: none;" id="catFamily"></div>
+			<div class="category" style="display: none;" id="catFamily"></div>
 			<!-- Finance -->
-			<div style="display: none;" id="catFinance"></div>
+			<div class="category" style="display: none;" id="catFinance"></div>
 			<!-- Health -->
-			<div style="display: none;" id="catHealth"></div>
+			<div class="category" style="display: none;" id="catHealth"></div>
 			<!-- Human -->
-			<div style="display: none;" id="catHuman"></div>
+			<div class="category" style="display: none;" id="catHuman"></div>
 			<!-- Legal -->
-			<div style="display: none;" id="catLegal"></div>
+			<div class="category" style="display: none;" id="catLegal"></div>
 			<!-- Professional Development -->
-			<div style="display: none;" id="catProDev"></div>
+			<div class="category" style="display: none;" id="catProDev"></div>
 			<!-- Resources/Information Technology -->
-			<div style="display: none;" id="catTech"></div>
+			<div class="category" style="display: none;" id="catTech"></div>
 			<!-- US Gov Web Sites -->
-			<div style="display: none;" id="catUsGov"></div>
+			<div class="category" style="display: none;" id="catUsGov"></div>
 			<!-- Folders -->
 			<div style="display:none;" id="">
 				<!-- SRB/ORB/ERB (Folder) -->
