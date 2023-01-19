@@ -27,7 +27,7 @@ details > p {
 section > p {
     font-family: Tahoma;
     font-weight: bold;
-    color: rgb(30, 30, 30);
+    color: #1e1e1e;
     }
 
 red {
@@ -40,12 +40,10 @@ red {
 aside {
   width: 30%;
   padding-left: 15px;
-  margin-left: 10px;
   float: right;
   font-style: italic;
-  background-color: rgb(255, 193, 7);
+  background-color: #ffc107;
   overflow-y: auto;
-  height: 89.2vh;
   max-width: 255px;
 }
 
@@ -80,7 +78,7 @@ ul {
     list-style-type: none;
     margin: 0px 0px 15px;
     padding: 0px;
-    background-color: rgb(255, 193, 7);
+    background-color: #ffc107;
     border-bottom: 1px solid black;
     position: fixed;
     top: 0px;
@@ -96,32 +94,33 @@ li:last-child {
     }
 li a {
     display: block;
-    color: rgb(30, 30, 30);
+    color: #1e1e1e;
     text-align: center;
     padding: 10px 12px;
     text-decoration: none;
     z-index: 7;
     }
 li a:hover:not(.active) {
-    background-color: rgb(216, 150, 6);
+    background-color: #d89606;
     cursor: pointer;
     }
 
 .link {
-    color: rgb(30, 30, 30);
+    color: #1e1e1e;
     text-align: center;
     padding: 10px 12px;
     text-decoration: none;
     z-index: 7;
 		border: 1px solid black;
+    background-color: #d89606;
     }
 .link:hover:not(.active) {
-    background-color: rgb(216, 150, 6);
+    background-color: #FFD042;
     cursor: pointer;
     }
 
 .navi {
-    background-color: rgb(255, 193, 7);
+    background-color: #ffc107;
     border-bottom: 1px solid black;
     position: sticky;
     top: 0px;
@@ -135,14 +134,14 @@ li a:hover:not(.active) {
     float: left;
     text-align: center;
     text-decoration: none;
-    color: rgb(30, 30, 30);
+    color: #1e1e1e;
     padding: 10px 12px;
     text-decoration: none;
     z-index: 7;
     border-right: 1px solid black;
     }
 .navi a:hover:not(.active) {
-    background-color: rgb(216, 150, 6);
+    background-color: #d89606;
     cursor: pointer;
     }
 .navi:last-child {
@@ -155,7 +154,7 @@ li a:hover:not(.active) {
     width: 100%;
     display: inline-block;
     transform: translate(-50%, -50%);
-    background-color: rgb(255, 193, 7);
+    background-color: #ffc107;
     top: 19px;
     font-family: Tahoma;
     }
@@ -172,7 +171,6 @@ li a:hover:not(.active) {
 
 .hideMarquee:hover p {
     opacity: 1;
-    background-color: rgb(216, 150, 6, 0.80);
     z-index: 1;
     animation-play-state: running;
     }
@@ -180,9 +178,11 @@ li a:hover:not(.active) {
 .marquee {
     position: absolute;
     width: 100%;
+		min-height: 140px;
     margin: 0;
+		text-align: center;
     text-transform: initial;
-    transform: translateY(100%);
+    transform: translateY(000%);
     animation: scroll-up 25s linear infinite;
     }
 
@@ -190,7 +190,7 @@ li a:hover:not(.active) {
     width: 100%;
     text-align: center;
     font-family: Tahoma;
-    background-color: rgb(255, 193, 7);
+    background-color: #ffc107;
     border-top: 1px solid black;
     padding: 4px;
     bottom: 0;
@@ -198,44 +198,24 @@ li a:hover:not(.active) {
     position: fixed;
 }
 
-@-moz-keyframes scroll-up {
-    0% {
-        -moz-transform: translateY(0%);
-        }
-
-    100% {
-		-moz-transform: translateY(-190%);
-        }
-    }
-
-@-webkit-keyframes scroll-up {
-    0% {
-        -webkit-transform: translateY(0%);
-        }
-
-    100% {
-        -webkit-transform: translateY(-190%);
-        }
-    }
-
 @keyframes scroll-up {
     0% {
-        -moz-transform: translateY(0%);
-        -webkit-transform: translateY(0%);
-        transform: translateY(0%);
+        -moz-transform: translateY(140px);
+        -webkit-transform: translateY(140px);
+        transform: translateY(140px);
         }
 
     100% {
-        -moz-transform: translateY(-190%);
-        -webkit-transform: translateY(-190%);
-        transform: translateY(-190%);
+        -moz-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
         }
     }
 
     /* Styles for site announcements */
 .paperBoy {
     display: block;
-    color: rgb(30, 30, 30);
+    color: #1e1e1e;
     text-align: center;
     padding: 10px 12px;
     white-space: pre;
@@ -243,6 +223,20 @@ li a:hover:not(.active) {
     margin-top: 0px;
     border-bottom: 1px solid black;
     }
+
+.cacLocked {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 0%;
+}
+
+.dodLocked {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0%;
+}
 
     /* .buglePlayer {
     position: absolute;
@@ -322,8 +316,8 @@ li a:hover:not(.active) {
     margin: auto auto 20px;
     padding: 0px 5px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 4px 8px 0px;
-    background-color: rgb(255, 193, 7);
-    background: rgb(255, 193, 7);
+    background-color: #ffc107;
+    background: #ffc107;
 	text-align: center;
 	
   }
@@ -342,23 +336,29 @@ li a:hover:not(.active) {
     width: 308px;
     }
 
+.card:hover img {
+  opacity: 0.25;
+}
+.card:hover .armyCard, .card:hover .title {
+	background: #d89606;
+}
 .card {
     box-shadow: rgba(0, 0, 0, 0.45) 0px 4px 8px 0px;
     padding: 16px;
     text-align: center;
-    background-color: rgb(255, 193, 7);
-    background: rgb(255, 193, 7);
+    background-color: #ffc107;
+    background: #ffc107;
     }
 
 .card:hover:not(.active) {
-    background-color: rgb(216, 150, 6);
-    background: rgb(216, 150, 6);
+    background-color: #d89606;
+    background: #d89606;
     cursor: pointer;
     }
 
 .armyCard {
-    background: rgb(255, 193, 7);
-    color: rgb(30, 30, 30);
+    background: #ffc107;
+    color: #1e1e1e;
     border-radius: 25px;
     text-transform: uppercase;
     text-align: center;
@@ -379,7 +379,7 @@ li a:hover:not(.active) {
     padding-right: 7px;
     padding-bottom: 13px;
     opacity: 1;
-    background: rgb(255, 193, 7);
+    background: #ffc107;
     position: absolute;
     width: 100%;
     min-width: 80px;
@@ -398,7 +398,7 @@ li a:hover:not(.active) {
     }
 
 .active {
-    background-color: rgb(216, 150, 6);
+    background-color: #d89606;
     }
 
     /* Dropdown boxes */
@@ -414,8 +414,8 @@ li a:hover:not(.active) {
     }
 
 .dropbtn {
-    background-color: rgb(255, 193, 7);
-    color: rgb(30, 30, 30);
+    background-color: #ffc107;
+    color: #1e1e1e;
     padding: 10px 12px;
     font-size: 16px;
     border: none;
@@ -424,14 +424,14 @@ li a:hover:not(.active) {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(255, 193, 7);
+    background-color: #ffc107;
     max-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     overflow: visible;
     }
 
 .dropdown-content a {
-    color: rgb(30, 30, 30);
+    color: #1e1e1e;
     padding: 6px 8px;
     text-decoration: none;
     display: block;
@@ -441,14 +441,14 @@ li a:hover:not(.active) {
     }
 
 .dropdown-content a:hover {
-    background-color: rgb(216, 150, 6);
+    background-color: #d89606;
     }
  .dropdown:hover .dropdown-content {
     display: block;
     }
 
 .dropdown:hover .dropbtn {
-    background-color: rgb(216, 150, 6);
+    background-color: #d89606;
     }
 
     /* This is for Overlays to select Quick links*/
@@ -465,7 +465,7 @@ li a:hover:not(.active) {
     margin: 60px auto 60px;
     padding: 15px;
     overflow: hidden;
-    background-color: rgb(255, 193, 7);
+    background-color: #ffc107;
     max-width: 1000px;
     text-align: justify;
     }
@@ -507,11 +507,11 @@ li a:hover:not(.active) {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(255, 193, 7);
+    background-color: #ffc107;
     -webkit-transition: .4s;
     transition: .4s;
     border-style: solid;
-    border-color: rgb(30, 30, 30);
+    border-color: #1e1e1e;
     border-width: 1px;
     }
 
@@ -522,7 +522,7 @@ li a:hover:not(.active) {
     width: 14px;
     left: 4px;
     bottom: 4px;
-    background-color: rgb(216, 150, 6);
+    background-color: #d89606;
     -webkit-transition: .4s;
     transition: .4s;
     }
@@ -540,7 +540,7 @@ input:checked + .slider:before {
   height: 100vh; 
   width: 100vw; 
   z-index: 99; 
-  background-color: rgb(255, 193, 7); 
+  background-color: #ffc107; 
   position: fixed;
   display: none;
   }
@@ -556,13 +556,13 @@ input:checked + .slider:before {
     box-shadow: rgba(0, 0, 0, 0.45) 0px 4px 8px 0px;
     padding: 8px;
     text-align: center;
-    background-color: rgb(255, 193, 7);
-    background: rgb(255, 193, 7);
+    background-color: #ffc107;
+    background: #ffc107;
     }
 
 .ssCard:hover:not(.active) {
-    background-color: rgb(216, 150, 6);
-    background: rgb(216, 150, 6);
+    background-color: #d89606;
+    background: #d89606;
     cursor: pointer;
     }
 
@@ -574,8 +574,8 @@ input:checked + .slider:before {
     }
 		
 .ssArmyCard {
-    background: rgb(255, 193, 7);
-    color: rgb(30, 30, 30);
+    background: #ffc107;
+    color: #1e1e1e;
     border-radius: 25px;
     text-transform: uppercase;
     text-align: center;
@@ -593,7 +593,7 @@ input:checked + .slider:before {
     border-radius: 15px;
     padding-bottom: 7px;
     opacity: 1;
-    background: rgb(255, 193, 7);
+    background: #ffc107;
     position: absolute;
     width: 100%;
     min-width: 60px;
@@ -624,7 +624,7 @@ input:checked + .slider:before {
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 30px; 
 }
 
 .folder .closebtn {
@@ -632,4 +632,41 @@ input:checked + .slider:before {
   top: 90px;
   right: 90px;
   font-size: 90px;
+}
+.search {
+  margin: 10px auto 0px;
+  max-width: 875px;
+  width: 80%;
+  padding: 12px 20px 12px 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  display: block;
+  font-family: Tahoma;
+}
+
+/* Site Alert */
+.alertOverlay {
+  display: none; 
+  position: fixed; 
+  z-index: 15; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.75);
+}
+
+.alertBody {
+  background-color: #ffc107;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid black;
+  width: 80%;
+	max-width: 800px;
+	top: 50%;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
