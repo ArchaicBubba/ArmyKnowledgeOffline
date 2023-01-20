@@ -698,18 +698,30 @@ function closeFolder(folder) {
   document.getElementById("folder").style.width = "0%";
 } 
 
-var notifyMe;
+var notifyMe = []
 if (localStorage.getItem("alertBlocker") != null) {
     var notifyMe = JSON.parse(localStorage.getItem("alertBlocker"));
   }
 
 function ignoreMe(lastIgnored) {
-	var notifyMe = lastIgnored;
+	if (document.getElementById("alertBanner").innerHTML == "Welcome to the Nightly!") {
+		notifyMe[1] = 'nightly';
+		localStorage.setItem("alertBlocker", JSON.stringify(notifyMe));
+		document.getElementById("ActiveSiteAlert").style.display = "none";
+	} else {
+	notifyMe[0] = lastIgnored;
 	localStorage.setItem("alertBlocker", JSON.stringify(notifyMe));
 	document.getElementById("ActiveSiteAlert").style.display = "none";
+  }
 }
 
-document.getElementById("sonic06").style.display = "none";
-if(notifyMe != "20230118") {
+if (notifyMe[0] != "20230118") {
+	if (document.getElementById("alertBanner").innerHTML == "Welcome to the Nightly!") {
+		if (notifyMe[1] != "nightly") {
+			document.getElementById("ActiveSiteAlert").style.display = "block";
+		}
+	} else {
 	document.getElementById("ActiveSiteAlert").style.display = "block";
+	}
 }
+document.getElementById("sonic06").style.display = "none";
