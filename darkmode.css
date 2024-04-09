@@ -1,0 +1,190 @@
+.darkmode {
+  color: #ffc107;
+  background-image: url("assets/Background-AKOffline-DarkMode.svg");
+  details {
+    border: 1px solid #ffc107;
+    color: #FFD042;
+		background-color:#402d01;
+		:link {
+			color: #FFD042;
+		}
+		:visited {
+			color: #FFD042;
+		}
+		details {
+			background-color: black;
+		}
+		&[open] > summary {
+			border-bottom: 1px dashed gray;
+		}
+		details:nth-child(even) {
+			background-color: #402d01;
+		}
+	}
+  aside {
+    background-color: black;
+    color: #FFD042;
+    border-left: 1px solid #ffc107;
+  }
+  ul {
+    background-color: black;
+    border-bottom: 1px solid #ffc107;
+  }
+  li {
+    border-right: 1px solid #ffc107;
+  }
+  li a {
+    color: #ffc107;
+  }
+  li a:hover:not(.active) {
+    background-color: #402d01;
+  }
+  .link {
+    color: #ffc107;
+    border: 1px solid #ffc107;
+    background-color: #402d01;
+  }
+  .link:hover:not(.active) {
+    background-color: #1e1e1e;
+  }
+  .navi {
+    background-color: black;
+    border-bottom: 1px solid #ffc107;
+  }
+  .navi a {
+    color: #ffc107;
+    border-right: 1px solid #ffc107;
+  }
+  .navi a:hover:not(.active) {
+    background-color: #402d01;
+  }
+  .naviCentered {
+    background-color: black;
+  }
+  .disclaimer {
+    color: #ffc107;
+    background-color: black;
+    border-top: 1px solid #ffc107;
+  }
+  .paperBoy {
+    color: #ffc107;
+    border-bottom: 1px solid #ffc107;
+  }
+  .dropDownBox {
+    color: #ffc107;
+  }
+  .dropDownBox > option {
+    background-color: black;
+  }
+  .dropdown > option:hover {
+    background-color: #d89606;
+  }
+  .cardSleeve {
+    background-color: black;
+    background: black;
+  }
+  .column:hover .armyCard, .column:hover .title, .column:hover .card {
+    background: #402d01;
+  }
+  .card {
+    background-color: black;
+    background: black;
+    box-shadow: #5A5A5A 0px 4px 8px 0px;
+  }
+  .card:hover:not(.active) {
+    background-color: #402d01;
+    background: #402d01;
+  }
+  .armyCard {
+    background: black;
+    color: #ffc107;
+  }
+  .title {
+    background: black;
+  }
+  .active {
+    background-color: #402d01;
+  }
+  .dropbtn {
+    background-color: black;
+    color: #ffc107;
+  }
+  .dropdown-content {
+    background-color: black;
+    box-shadow: #5A5A5A 0px 4px 8px 0px;
+  }
+  .dropdown-content a {
+    color: #ffc107;		
+  }
+  .dropdown-content a:hover {
+    background-color: #402d01;
+  }
+  .dropdown:hover .dropbtn {
+    background-color: #402d01;
+  }
+  .content {
+    background-color: black;
+    color: #ffc107;
+  }
+  .slider {
+    background-color: black;
+    border-color: #ffc107;
+  }
+  .slider:before {
+    background-color: #402d01;
+  }
+  .loading {
+    background-color: black; 
+  }
+  .ssCard {
+    background-color: black;
+    background: black;
+    box-shadow: #5A5A5A 0px 4px 8px 0px;
+  }
+  .ssCard:hover:not(.active) {
+    background-color: #402d01;
+    background: #402d01;
+  }
+  .ssArmyCard {
+    background: black;
+    color: #ffc107;
+  }
+  .ssTitle {
+    background: black;
+  }
+  .alertBody {
+    background-color: black;
+    border: 1px solid #ffc107;
+  }
+  .sandwitchElement {
+    border-bottom: 1px solid #ffc107;
+  }
+  .search {
+    background-color: #5A5A5A;
+    color: white;
+  }
+  .lightBulb {
+    fill: #FFD042;
+  }
+  .lightBulbHide {
+    display: none;
+  }
+  .darkButton {
+    background-color: black;
+    box-shadow: #5A5A5A 0px 4px 8px 0px;
+  }
+  .darkButton:hover {
+    background-color: #402d01;
+  }
+  .darkButton:hover .lightBulbHide {
+    display: block;
+  }
+  .clearButton {
+    color: #ffc107;
+    background-color: black;
+    box-shadow: #5A5A5A 0px 4px 8px 0px;
+  }
+  .clearButton:hover {
+    background-color: #402d01;
+  }
+}
