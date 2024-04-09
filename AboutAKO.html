@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AKOffline - About AKOffline</title>
+  <link rel="icon" href="./assets/icon.png">
+  <meta charset="utf-8">
+  <meta name="description" content="Army Knowledge Offline is a link hub for most U.S. Army websites. Here you are able to find quick links to easy and hard to find Army sites alike">
+  <meta name="keywords" content="AKO, Army Knowledge Offline, Army Knowledge Online, ArmyKnowledgeOffline, Army Links, AKOffline, AK-Offline">
+  <link rel="stylesheet" href="styles.css">
+  <link rel='stylesheet' href='darkmode.css'>
+  <style>
+    .Sandwiched {
+      display:none;
+    }
+    .NotSandwiched {
+      display:block;
+    }
+    @media screen and (max-width: 950px) {
+      .Sandwiched {
+        display: inline-block;
+      }
+      .NotSandwiched {
+        display:none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    switch (parseInt(localStorage.getItem("darkmode"))) {
+      case 1:
+        document.body.classList.toggle('darkmode');
+        break;
+      default:
+        break;
+    }
+    var mySettings = [];
+    if (localStorage.getItem("siteSettings") !== null) {
+      var mySettings = JSON.parse(localStorage.getItem("siteSettings"));
+    }
+    // Change Background image on load
+    switch (parseInt(mySettings[0])) {
+      case 1:  // Switch to AKOffline-UCP
+        document.body.style.backgroundImage = "url('assets/Background-AKOffline-UDP.svg')";
+        break;
+      case 2:  // Switch to AKOffline-BDU
+        document.body.style.backgroundImage = "url('assets/Background-AKOffline-BDU.svg')";
+        break;
+      case 3:  // Switch to AKOffline-Yellow
+        document.body.style.backgroundImage = "url('assets/Background-AKOffline-Yellow.svg')";
+        break;
+      case 4:  // Switch to AKOriginal
+        document.body.style.backgroundImage = "url('assets/Background-AKOriginal.jpg')";
+        break;
+      case 5:  // Switch to AKOriginal-Alt
+        document.body.style.backgroundImage = "url('assets/Background-AKOriginal-Alt.jpg')";
+        break;
+      case 0:  // Switch to OCP override
+        document.body.style.backgroundImage = "url('assets/Background-AKOffline-OCP.svg')";
+        break;
+      case 6:
+        document.body.style.backgroundImage = "url('assets/Background-AKOffline-DarkMode.svg')";
+        break;
+      default:  // Switch to AKOffline-OCP
+        break;
+    }
+  </script>
+  <div class='gridLinesNav' id='navGrid'>
+    <nav class="navi">
+      <div class='NotSandwiched'>
+      <a href="./index.html">AKO Cards</a>
+      <a href="./ListedLinks.html">Listed Links</a>
+      <a href='./TransitionAssistance.html'>Transition Assistance</a>
+      <a href="./SiteSettings.html">Site Settings</a>
+      <a class="active">About AKOffline</a>
+      </div>
+      <div class='dropdown Sandwiched' id='Sandwich'>
+        <button class='dropbtn'style='width:117px;'>&#8801 AKOffline</button>
+        <div class='dropdown-content'>
+          <a class='sandwitchElement' href='./index.html'> AKO Cards </a>
+          <a class='sandwitchElement' href='./ListedLinks.html'> Listed Links </a>
+          <a class='sandwitchElement' href='./TransitionAssistance.html'> Transition Assistance </a>
+          <a class='sandwitchElement' href='./SiteSettings.html'> Site Settings </a>
+          <a class='sandwitchElement active'> About AKOffline </a>
+        </div>
+      </div>
+      <a href="https://github.com/ArchaicBubba/ArmyKnowledgeOffline" style="float: right; padding: 3px;">
+        <img src="assets/github.png" style="height:30px; width:30px;">
+      </a>
+    </nav>
+  </div>
+  <div class='gridLines' id="bodyGrid">
+    <div class="content">
+      <img src='assets/offlineLogo.png' style='min-width:125px; max-width: 30%; margin-left: auto; margin-right: auto; display:block;'>
+      <h2>About Army Knowledge Offline</h2>
+      <p class='indent'>Welcome to <i>Army Knowledge Offline (AKOffline)</i>! Your go to source for any Army link found on <i>Army Knowledge Online</i>. While <b>most</b> (not ALL) links on this website link to Official U.S. Army/Military/Government websites; it is not endorsed or maintained by the U.S. Army. Most official Army and U.S. Government websites are hosted on ".mil" and ".gov" domains. I am SSG Roman Antonacci, I develop, maintain, and run AKOffline. This site is very much a work in progress as there are an oddly large amount of Army websites and will likely change within the coming future as a result. For further information or questions on this please feel free to email them to <a href="mailto:info@akoffline.us">info@akoffline.us</a> or find me on global. Please note while I do not respond to every email, I do read them. Always, thank you for supporting Army Knowledge Offline. 
+      <hr>
+      <h2>FAQs</h2>
+      <details ontoggle='OCD()'><summary><i>Can I add a website to AKOffline's list of links?</i></summary>
+        <p class="indent">Yes, please submit the website with the fallowing information: Name, Description, Link, Image for site card (if avalible) to the AKOffline github issues page. Once submitted the site will be reviewed. If it is a valid site; it will be added. If any information above is not included it will increase time to add the card.</p>
+      </details>
+      <details ontoggle='OCD()'><summary><i>A site link is incorrect. How do I report it?</i></summary>
+        <p class="indent">Open up an issue on the github page. In the issue, indicate which site is wrong and why the new link is correct.</p>
+      </details>
+      <details ontoggle='OCD()'><summary><i>How long will AKOffline be 'online'?</i></summary>
+        <p class="indent">Current site hosting is payed for until March of 2026.</p>
+      </details>
+      <details ontoggle='OCD()'><summary><i>Did you ever find that Policy letter stating sites like AKOffline shouldn't exist?</i></summary>
+        <p class="indent">No! I'm pretty sure it doesn't exist.</p>
+      </details>
+      <details ontoggle='OCD()'><summary><i>What additions are you planning for the future?</i></summary>
+        <p class="indent">Currently none, The website is currently just being maintained. Any future edits (if any) will be small.</p>
+      </details>
+      <details ontoggle='OCD()'><summary><i>Will you add non-profit links?</i></summary>
+        <p class="indent">No, non-profit links will be add to the site. While non-profits can do a lot of good, there are a lot of sketchy non-profits that target people like veterans. As such there is a blanket; No Non-Profits.</p>
+      </details>
+      <details ontoggle='OCD()'><summary><i>Will you add my website about Mesothelioma that target military veterans?</i></summary>
+        <p class="indent">No! Stop asking.</p>
+      </details>
+      <details ontoggle='OCD()'><summary><i>Will you come to my convention about <b>&lt;INSTERT TOPIC HERE&gt;</b>?</i></summary>
+        <p class="indent">No! Stop asking (I don't even know why I get these).</p>
+      </details>
+      <details ontoggle='OCD()'><summary><i>Did you know that AKOffline has a high bounce rate and you (I) should modify the page and hire our very needlessly expensive TikToc social media team to increase retention?</i></summary>
+        <p class="indent">Yes! That is the point. Stop asking.</p>
+      </details>
+      <hr>
+      <p>For a view of the code that makes up AKOffline please go to our <a href="https://github.com/ArchaicBubba/ArmyKnowledgeOffline">GitHub Page.</a></p>
+    </div>
+  </div>
+  <div class='gridLines footer' id='footerGrid'>
+    <div class="disclaimer">
+      <span><i><b>DISCLAIMER!</b></i> This is a <u>Third Party Site</u>. It is not endorsed or maintained by the U.S. Army.<br>Have any questions or concerns about AKOffline? Email <a href="mailto:info@akoffline.us">info@akoffline.us</a> for more info!</span>
+    </div>
+  </div>
+	<script>
+	  // Centers body on screen
+    window.addEventListener('resize', OCD);
+		function OCD() {
+			if (window.innerHeight >= document.body.offsetHeight || window.scrollbars) {
+				document.getElementById('bodyGrid').style.margin = 'auto';
+				if ((window.innerHeight - (document.getElementById('bodyGrid').offsetHeight + document.getElementById('navGrid').offsetHeight + document.getElementById('footerGrid').offsetHeight))/2 < 0) {
+				  return;
+				}
+				document.getElementById('bodyGrid').style.marginTop = ((window.innerHeight - (document.getElementById('bodyGrid').offsetHeight + document.getElementById('navGrid').offsetHeight + document.getElementById('footerGrid').offsetHeight))/2) + "px";
+				document.getElementById('bodyGrid').style.marginBottom = ((window.innerHeight - (document.getElementById('bodyGrid').offsetHeight + document.getElementById('navGrid').offsetHeight + document.getElementById('footerGrid').offsetHeight))/2) + "px";
+				return;
+			} else if (window.innerHeight <= document.body.offsetHeight || window.innerHeight >= document.getElementById('bodyGrid').offsetHeight) {
+				document.getElementById('bodyGrid').style.margin = '';
+			}
+		}
+		OCD();
+	</script>
+</body>
+ 
+</html>
