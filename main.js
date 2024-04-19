@@ -485,7 +485,7 @@ function openFolder(folder) {
 		break;
 	// IPPS-A
 	case 5:
-		document.getElementById("categoryFolder").innerHTML = ("<div class='folder-background' onclick='closeFolder()' style='z-index:-1;'></div>" + jsI06 + '<br>' + jsD22 + jsM30 + jsM27 + jsM31 + jsM32 + jsM28 + jsM33 + jsM29 + jsP06);
+		document.getElementById("categoryFolder").innerHTML = ("<div class='folder-background' onclick='closeFolder()' style='z-index:-1;'></div>" + jsI06 + '<br>' + jsD22 + jsM30 + jsM27 + jsM31 + jsM32 + jsM28 + jsM29 + jsP06);
 		break;
 	default:
 		alert('Open Folder Error, Please check folder value!')
