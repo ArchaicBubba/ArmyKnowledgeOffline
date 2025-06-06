@@ -1,8 +1,8 @@
 try {
-window.onload = phaseShift;
-window.addEventListener('resize', OCD);
-document.getElementById("DropDownBox").onchange = phaseShift;
-document.getElementById("searchbar").onchange = accio;
+window.onload = catBuilder;
+window.addEventListener('resize', centerCards);
+document.getElementById("DropDownBox").onchange = catBuilder;
+document.getElementById("searchbar").onchange = searchAKO;
 
 var mySettings = [];
 if (localStorage.getItem("siteSettings") !== null) {
@@ -15,7 +15,7 @@ if (parseInt(mySettings[17]) == 1) {
 }
 
 // Centers Cards on screen
-function OCD() {
+function centerCards() {
 	if ((window.innerHeight >= document.body.offsetHeight || window.scrollbars)) {
 		document.getElementById('cardContainer').style.margin = 'auto';
 		if ((window.innerHeight - (document.getElementById('cardContainer').offsetHeight + document.getElementById('navGrid').offsetHeight + document.getElementById('announcerGrid').offsetHeight + document.getElementById('searchGrid').offsetHeight + document.getElementById('footerGrid').offsetHeight))/2 < 0) {
@@ -32,7 +32,7 @@ function OCD() {
 // Category Selection
 const jsCategory = document.querySelectorAll('.category');
 document.getElementById('looker').style.display="block";
-function phaseShift() {
+function catBuilder() {
   document.getElementById('ddmAllSites').style.display='none';
   jsCategory.forEach(element => {
     element.style.display = 'none';
@@ -102,7 +102,7 @@ function phaseShift() {
   } else if (document.getElementById("DropDownBox").value == "searchResults") {
     document.getElementById('categorySearchResults').style.display='block';
   }
-  OCD();
+  centerCards();
 }
 
 // Declaration of site variables 
@@ -229,7 +229,7 @@ for(var i = 0; i < cat13.length; i++){
 }
 document.getElementById('categorySearchResults').innerHTML = document.getElementById('categorySearchResults').innerHTML + jsFolder00 + jsFolder01 + jsFolder02 + jsFolder03 + jsFolder04 + jsFolder05 + document.getElementById("noResults").innerHTML;
 
-// Calls the Daily Bugle when dates are specified. 
+// Calls the announcements when dates are specified. 
 function announcements() {
   const dt = new Date();
 //dt.setFullYear(2022, 4, 1); // for testing Daily Bugle (Year, Month, Day)
@@ -320,7 +320,6 @@ function announcements() {
         // Asian American Pacific Islander Heritage Month
         default:
           AOTD = "It is currently Asian American Pacific Islander Heritage Month";
-          document.getElementById("dailyBugle").style.display="none";
           break;
       }
       break;
@@ -338,7 +337,6 @@ function announcements() {
         // Army Heritage and LGBTQ+ Pride Month
         default:
           AOTD = "It is currently Army Heritage and LGBTQ+ Pride Month";
-          document.getElementById("dailyBugle").style.display="none";
           break;
       }
       break;
@@ -380,7 +378,6 @@ function announcements() {
         // Hispanic Heritage Month / Suicide Prevention Month
         default:
           if (d <= 14) {AOTD = "It is currently Suicide Prevention Month";} else {AOTD = "It is currently Hispanic Heritage and Suicide Prevention Month";}
-          document.getElementById("dailyBugle").style.display="none";
           break;
       }
       break;
@@ -500,7 +497,7 @@ function closeFolder() {
 } 
 var currentCat;
 // Enables Searchbar
-function accio() {
+function searchAKO() {
   if (document.getElementById('DropDownBox').selectedIndex == 15) {
     currentCat = 0;
   } else {
@@ -509,7 +506,7 @@ function accio() {
   document.getElementById('noResultsCard').style.display='none';
   if (document.getElementById('searchbar').value.length >= 3) {
     document.getElementById('DropDownBox').selectedIndex = 15;
-    phaseShift();
+    catBuilder();
     var input = document.getElementById('searchbar').value
     input=input.toLowerCase();
     var x = document.getElementById("categorySearchResults").getElementsByClassName('column');
@@ -531,13 +528,13 @@ function accio() {
 		console.log(x.length);
   document.getElementById('clearButton').style.display = 'inline-block';
   document.getElementById('searchbar').style.width = "calc(100% - 204px)";
-  OCD()
+  centerCards()
   }
   if (document.getElementById('searchbar').value.length == 0) {
   document.getElementById('DropDownBox').selectedIndex = currentCat;
   document.getElementById('clearButton').style.display = 'none';
   document.getElementById('searchbar').style.width = "";
-  phaseShift()
+  catBuilder()
   }
 }
 
@@ -546,7 +543,7 @@ function clearSearch() {
   document.getElementById('searchbar').style.width = "";
   document.getElementById('DropDownBox').selectedIndex = currentCat;
   document.getElementById('clearButton').style.display = 'none';
-  phaseShift();
+  catBuilder();
 }
 
 function toggleDarkMode() {
