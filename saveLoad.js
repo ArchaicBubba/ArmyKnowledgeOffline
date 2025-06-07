@@ -1,3 +1,10 @@
+//  Import Settings
+if (localStorage.getItem("siteSettings") != null) {
+  var mySettings = JSON.parse(localStorage.getItem("siteSettings"));
+}
+
+document.getElementById('importSettingsFile').addEventListener('change', readFileAsString)
+
 // Clear Settings
 function clearSettings() {
   localStorage.clear();
@@ -188,12 +195,6 @@ function setSettings() {
   alert("Settings Saved");
   } ;
 
-//  Import Settings
-if (localStorage.getItem("siteSettings") != null) {
-    var mySettings = JSON.parse(localStorage.getItem("siteSettings"));
-  }
-	
-document.getElementById('importSettingsFile').addEventListener('change', readFileAsString)
 function readFileAsString() {
   var files = this.files;
   if (files.length === 0) {

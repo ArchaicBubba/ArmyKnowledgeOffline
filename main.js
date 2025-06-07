@@ -15,7 +15,7 @@ if (parseInt(mySettings[17]) == 1) {
 }
 
 // Centers Cards on screen
-function centerCards() {
+function OCD() {
 	if ((window.innerHeight >= document.body.offsetHeight || window.scrollbars)) {
 		document.getElementById('cardContainer').style.margin = 'auto';
 		if ((window.innerHeight - (document.getElementById('cardContainer').offsetHeight + document.getElementById('navGrid').offsetHeight + document.getElementById('announcerGrid').offsetHeight + document.getElementById('searchGrid').offsetHeight + document.getElementById('footerGrid').offsetHeight))/2 < 0) {
@@ -32,7 +32,7 @@ function centerCards() {
 // Category Selection
 const jsCategory = document.querySelectorAll('.category');
 document.getElementById('looker').style.display="block";
-function catBuilder() {
+function phaseShift() {
   document.getElementById('ddmAllSites').style.display='none';
   jsCategory.forEach(element => {
     element.style.display = 'none';
@@ -102,7 +102,7 @@ function catBuilder() {
   } else if (document.getElementById("DropDownBox").value == "searchResults") {
     document.getElementById('categorySearchResults').style.display='block';
   }
-  centerCards();
+  OCD();
 }
 
 // Declaration of site variables 
@@ -229,7 +229,7 @@ for(var i = 0; i < cat13.length; i++){
 }
 document.getElementById('categorySearchResults').innerHTML = document.getElementById('categorySearchResults').innerHTML + jsFolder00 + jsFolder01 + jsFolder02 + jsFolder03 + jsFolder04 + jsFolder05 + document.getElementById("noResults").innerHTML;
 
-// Calls the announcements when dates are specified. 
+// Calls the Daily Bugle when dates are specified. 
 function announcements() {
   const dt = new Date();
 //dt.setFullYear(2022, 4, 1); // for testing Daily Bugle (Year, Month, Day)
@@ -497,7 +497,7 @@ function closeFolder() {
 } 
 var currentCat;
 // Enables Searchbar
-function searchAKO() {
+function accio() {
   if (document.getElementById('DropDownBox').selectedIndex == 15) {
     currentCat = 0;
   } else {
@@ -506,7 +506,7 @@ function searchAKO() {
   document.getElementById('noResultsCard').style.display='none';
   if (document.getElementById('searchbar').value.length >= 3) {
     document.getElementById('DropDownBox').selectedIndex = 15;
-    catBuilder();
+    phaseShift();
     var input = document.getElementById('searchbar').value
     input=input.toLowerCase();
     var x = document.getElementById("categorySearchResults").getElementsByClassName('column');
@@ -528,13 +528,13 @@ function searchAKO() {
 		console.log(x.length);
   document.getElementById('clearButton').style.display = 'inline-block';
   document.getElementById('searchbar').style.width = "calc(100% - 204px)";
-  centerCards()
+  OCD()
   }
   if (document.getElementById('searchbar').value.length == 0) {
   document.getElementById('DropDownBox').selectedIndex = currentCat;
   document.getElementById('clearButton').style.display = 'none';
   document.getElementById('searchbar').style.width = "";
-  catBuilder()
+  phaseShift()
   }
 }
 
@@ -543,7 +543,7 @@ function clearSearch() {
   document.getElementById('searchbar').style.width = "";
   document.getElementById('DropDownBox').selectedIndex = currentCat;
   document.getElementById('clearButton').style.display = 'none';
-  catBuilder();
+  phaseShift();
 }
 
 function toggleDarkMode() {

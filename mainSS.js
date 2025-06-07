@@ -78,7 +78,7 @@ document.getElementById("cardPannel").style.height = (window.innerHeight - (docu
 document.getElementById("cardForm").style.height = (window.innerHeight - (document.getElementById("topBan").offsetHeight + document.getElementById("botBan").offsetHeight + document.getElementById("toolBar").offsetHeight))+"px";
 
 // Change side pannel length
-function centerCards(){
+function OCD(){
   document.getElementById("cardPannel").style.height = (window.innerHeight - (document.getElementById("topBan").offsetHeight + document.getElementById("botBan").offsetHeight))+"px";
   document.getElementById("cardForm").style.height = (window.innerHeight - (document.getElementById("topBan").offsetHeight + document.getElementById("botBan").offsetHeight + document.getElementById("toolBar").offsetHeight))+"px";
 }
@@ -409,12 +409,12 @@ function toggleBotBan() {
     document.getElementById("botBan").style.display = "none";
     document.getElementById("botBanSwitch").innerHTML = "Display Site Disclaimer";
     document.getElementById("botBanIndicator").innerHTML = "Current Status: <red>Disclaimer Disabled</red>";
-    centerCards();
+    OCD();
     } else {
     document.getElementById("botBan").style.display = "";
     document.getElementById("botBanSwitch").innerHTML = "Hide Site Disclaimer";
     document.getElementById("botBanIndicator").innerHTML = "Current Status: <green>Disclaimer Enabled</green>";
-    centerCards();
+    OCD();
   }
 }
 
@@ -486,7 +486,7 @@ function changeSettingsPage() {
 		document.getElementById('cardPannel').style.maxWidth="100%";
 		document.getElementById('cardPannel').classList.add("expand");
 		document.getElementById('cardPannel').classList.remove("retract");
-		centerCards();
+		OCD();
 		} else if (document.getElementById('quickLinksTab').style.display=="none") { // going to Quicklinks settings
 		document.getElementById('cardForm').style.display="block";
 		document.getElementById('toolBar').style.display="block";
@@ -496,7 +496,7 @@ function changeSettingsPage() {
 		document.getElementById('cardPannel').style.maxWidth="255px";
 		document.getElementById('cardPannel').classList.add("retract");
 		document.getElementById('cardPannel').classList.remove("expand");
-		centerCards();
+		OCD();
 	}
 }
 

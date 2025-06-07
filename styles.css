@@ -1,3 +1,22 @@
+/* Global Variables used for light and dark mode */
+:root {
+  --global-color-normal: #ffc107;
+  --global-color-active: #d89606;
+  --global-color-offset: #ffd042;
+  --global-line-color: black;
+  --global-text-color: #1e1e1e;
+  --global-background-color: white;
+}
+
+.darkmode {
+  --global-color-normal: black;
+  --global-color-active: #402d01;
+  --global-color-offset: #d89606;
+  --global-line-color: #ffc107;
+  --global-text-color: #ffc107;
+  --global-background-color: black;
+}
+
 /* Main Body and text*/
 body {
   height: 100%;
@@ -9,12 +28,12 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-image: url("assets/Background-AKOffline-OCP.svg");
-	:link {
-		color: #1e1e1e;
-	}
-	:visited {
-		color: #1e1e1e;
-	}
+  :link {
+    color: var(--global-text-color);
+  }
+  :visited {
+    color: var(--global-text-color);
+  }
 }
 
 red {
@@ -34,19 +53,19 @@ aside {
   padding-left: 15px;
   float: right;
   font-style: italic;
-  background-color: #ffc107;
+  background-color: var(--global-color-normal);
   overflow-y: auto;
   max-width: 255px;
-  border-left: 1px solid black;
+  border-left: 1px solid var(--global-line-color);
 }
 
 details {
-  border: 1px black solid;
-  background-color: #d89606;
+  border: 1px var(--global-line-color) solid;
+  background-color: var(--global-color-active);
   border-radius: 5px;
   padding: 5px;
   details {
-    background-color: #ffc107;
+    background-color: var(--global-color-normal);
     border-radius: 0px;
   }
   summary {
@@ -54,10 +73,10 @@ details {
     overflow: hidden;
   }
   &[open] > summary {
-    border-bottom: 1px dashed black;
+    border-bottom: 1px dashed var(--global-line-color);
   }
   details:nth-child(even) {
-    background-color: #FFD042;
+    background-color: var(--global-color-offset);
   }
 }
 
@@ -81,9 +100,9 @@ details[open] > p {
   position:sticky;
   bottom:0px;
   left:0px;
-	width:100%;
+  width:100%;
   margin-top: 0px;
-	z-index:3;
+  z-index:3;
 }
 .gridLinesNav {
   display: inline-block;
@@ -126,8 +145,8 @@ ul {
   list-style-type: none;
   margin: 0px 0px 15px;
   padding: 0px;
-  background-color: #ffc107;
-  border-bottom: 1px solid black;
+  background-color: var(--global-color-normal);
+  border-bottom: 1px solid var(--global-line-color);
   position: fixed;
   top: 0px;
   width: 100%;
@@ -135,41 +154,41 @@ ul {
 }
 li {
   float: left;
-  border-right: 1px solid black;
+  border-right: 1px solid var(--global-line-color);
 }
 li:last-child {
   border-right: none;
 }
 li a {
   display: block;
-  color: #1e1e1e;
+  color: var(--global-text-color);
   text-align: center;
   padding: 10px 12px;
   text-decoration: none;
   z-index: 7;
 }
 li a:hover:not(.active) {
-  background-color: #d89606;
+  background-color: var(--global-color-active);
   cursor: pointer;
 }
 
 .link {
-  color: #1e1e1e;
+  color: var(--global-text-color);
   text-align: center;
   padding: 10px 12px;
   text-decoration: none;
   z-index: 7;
-  border: 1px solid black;
-  background-color: #d89606;
+  border: 1px solid var(--global-line-color);
+  background-color: var(--global-color-active);
 }
 .link:hover:not(.active) {
-  background-color: #FFD042;
+  background-color: var(--global-color-offset);
   cursor: pointer;
 }
 
 .navi {
-  background-color: #ffc107;
-  border-bottom: 1px solid black;
+  background-color: var(--global-color-normal);
+  border-bottom: 1px solid var(--global-line-color);
   position: sticky;
   top: 0px;
   width: 100%;
@@ -183,14 +202,14 @@ li a:hover:not(.active) {
   float: left;
   text-align: center;
   text-decoration: none;
-  color: #1e1e1e;
+  color: var(--global-text-color);
   padding: 10px 12px;
   text-decoration: none;
   z-index: 7;
-  border-right: 1px solid black;
+  border-right: 1px solid var(--global-line-color);
 }
 .navi a:hover:not(.active) {
-  background-color: #d89606;
+  background-color: var(--global-color-active);
   cursor: pointer;
 }
 .navi:last-child {
@@ -203,11 +222,11 @@ li a:hover:not(.active) {
   width: 100%;
   display: inline-block;
   transform: translate(-50%, -50%);
-  background-color: #ffc107;
+  background-color: var(--global-color-normal);
   top: 19px;
   font-family: Tahoma;
 }
-	
+  
 /* Text descriptions */
 .hideMarquee {
   opacity: 1;
@@ -234,10 +253,11 @@ li a:hover:not(.active) {
 }
 
 .disclaimer {
+  color: var(--global-text-color);
   text-align: center;
   font-family: Tahoma;
-  background-color: #ffc107;
-  border-top: 1px solid black;
+  background-color: var(--global-color-normal);
+  border-top: 1px solid var(--global-line-color);
   padding: 4px;
   z-index: 4;
   position: sticky;
@@ -282,13 +302,13 @@ li a:hover:not(.active) {
 /* Styles for site announcements */
 .paperBoy {
   display: block;
-  color: #1e1e1e;
+  color: var(--global-text-color);
   text-align: center;
   padding: 10px 12px;
   white-space: pre;
   margin-bottom: 0px;
   margin-top: 0px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--global-line-color);
 }
 
 .cacLocked {
@@ -318,7 +338,7 @@ li a:hover:not(.active) {
   background-color: rgba(0, 0, 0, 0);
   left: 0%;
   margin: -3px 0px;
-  border-color: black;
+  border-color: var(--global-line-color);
 }
 
 /* AKO Cards */
@@ -341,9 +361,9 @@ li a:hover:not(.active) {
   margin: auto auto 20px;
   padding: 0px 5px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 4px 8px 0px;
-  background-color: #ffc107;
-  background: #ffc107;
-	text-align: center;	
+  background-color: var(--global-color-normal);
+  background: var(--global-color-normal);
+  text-align: center;  
 }
 
 .deck {
@@ -365,17 +385,17 @@ li a:hover:not(.active) {
   margin-left: auto;
   margin-right: auto;
   width: 308px;
-  opacity: 1 !important;;
+  opacity: 1 !important;
 }
 
 .column:hover img {
   opacity: 0.25;
 }
 .column:hover .armyCard, .column:hover .title, .column:hover .card {
-	background: #d89606;
+  background: var(--global-color-active);
 }
 .column:hover .title {
-	font-weight: bold;
+  font-weight: bold;
 }
 .column:hover .card{
   box-shadow: rgba(0, 0, 0, 0.80) 0px 4px 8px 0px;
@@ -384,19 +404,19 @@ li a:hover:not(.active) {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 4px 8px 0px;
   padding: 16px;
   text-align: center;
-  background-color: #ffc107;
-  background: #ffc107;
+  background-color: var(--global-color-normal);
+  background: var(--global-color-normal);
 }
 
 .card:hover:not(.active) {
-  background-color: #d89606;
-  background: #d89606;
+  background-color: var(--global-color-active);
+  background: var(--global-color-active);
   cursor: pointer;
 }
 
 .armyCard {
-  background: #ffc107;
-  color: #1e1e1e;
+  background: var(--global-color-normal);
+  color: var(--global-text-color);
   border-radius: 25px;
   text-transform: uppercase;
   text-align: center;
@@ -415,7 +435,7 @@ li a:hover:not(.active) {
   border-top-right-radius: 15px;
   padding: 7px 7px 13px 7px;
   opacity: 1;
-  background: #ffc107;
+  background: var(--global-color-normal);
   position: absolute;
   width: 100%;
   min-width: 80px;
@@ -434,7 +454,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #d89606;
+  background-color: var(--global-color-active);
 }
 
 /* Dropdown boxes */
@@ -450,8 +470,8 @@ li a:hover:not(.active) {
 }
 
 .dropbtn {
-  background-color: #ffc107;
-  color: #1e1e1e;
+  background-color: var(--global-color-normal);
+  color: var(--global-text-color);
   padding: 10px 12px;
   font-size: 16px;
   border: none;
@@ -461,14 +481,14 @@ li a:hover:not(.active) {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ffc107;
+  background-color: var(--global-color-normal);
   max-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   overflow: visible;
 }
 
 .dropdown-content a {
-  color: #1e1e1e;
+  color: var(--global-text-color);
   padding: 6px 8px;
   text-decoration: none;
   display: block;
@@ -478,14 +498,14 @@ li a:hover:not(.active) {
 }
 
 .dropdown-content a:hover {
-  background-color: #d89606;
+  background-color: var(--global-color-active);
 }
  .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #d89606;
+  background-color: var(--global-color-active);
 }
 
 /* This is for Overlays to select Quick links*/
@@ -502,7 +522,7 @@ li a:hover:not(.active) {
   margin: 10px auto;
   padding: 15px;
   overflow: hidden;
-  background-color: #ffc107;
+  background-color: var(--global-color-normal);
   width: 90%;
   max-width: 1000px;
   text-align: justify;
@@ -533,13 +553,13 @@ li a:hover:not(.active) {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 4px 8px 0px;
   padding: 8px;
   text-align: center;
-  background-color: #ffc107;
-  background: #ffc107;
+  background-color: var(--global-color-normal);
+  background: var(--global-color-normal);
 }
 
 .ssCard:hover:not(.active) {
-  background-color: #d89606;
-  background: #d89606;
+  background-color: var(--global-color-active);
+  background: var(--global-color-active);
   cursor: pointer;
 }
 
@@ -551,8 +571,8 @@ li a:hover:not(.active) {
 }
 
 .ssArmyCard {
-  background: #ffc107;
-  color: #1e1e1e;
+  background: var(--global-color-normal);
+  color: var(--global-text-color);
   border-radius: 25px;
   text-transform: uppercase;
   text-align: center;
@@ -562,7 +582,7 @@ li a:hover:not(.active) {
   width: 100%;
   position: relative;
 }
-		
+    
 .ssTitle {
   white-space: pre-line;
   overflow-wrap: normal;
@@ -570,7 +590,7 @@ li a:hover:not(.active) {
   border-radius: 15px;
   padding-bottom: 7px;
   opacity: 1;
-  background: #ffc107;
+  background: var(--global-color-normal);
   position: absolute;
   width: 100%;
   min-width: 60px;
@@ -610,9 +630,9 @@ li a:hover:not(.active) {
   text-align: center;
   margin-top: 30px; 
   z-index:5;
-	max-width: 1920px;
-	left: 50%;
-	transform: translatex(-50%);
+  max-width: 1920px;
+  left: 50%;
+  transform: translatex(-50%);
 
 }
 
@@ -655,14 +675,14 @@ li a:hover:not(.active) {
   height:47px;
   margin-right:5px;
   border-radius:15px;
-  background-color: #ffc107;
+  background-color: var(--global-color-normal);
   border: none; 
   box-shadow: rgba(0, 0, 0, 0.45) 0px 4px 8px 0px;
   position: relative;
   top: -1px;
   :hover {
     cursor: pointer;
-    background-color: #d89606;
+    background-color: var(--global-color-active);
   }
 }
 
@@ -681,13 +701,13 @@ li a:hover:not(.active) {
 }
 
 .alertBody {
-  background-color: #ffc107;
+  background-color: var(--global-color-normal);
   margin: auto;
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid var(--global-line-color);
   width: 80%;
-	max-width: 800px;
-	top: 50%;
+  max-width: 800px;
+  top: 50%;
   position: fixed;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -696,7 +716,7 @@ li a:hover:not(.active) {
 .sandwitchElement {
   text-align: center !important;
   width: 100px !important;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--global-line-color);
 }
 
 .darkButton {
@@ -705,14 +725,14 @@ li a:hover:not(.active) {
   width: 48px;
   border-radius: 15px;
   position: absolute;
-  background-color: #ffc107;
+  background-color: var(--global-color-normal);
   border: none; 
   box-shadow: rgba(0, 0, 0, 0.45) 0px 4px 8px 0px;
 }
 
 .darkButton:hover {
   cursor: pointer;
-  background-color: #d89606;
+  background-color: var(--global-color-active);
 }
 
 .carrier {
@@ -726,7 +746,7 @@ li a:hover:not(.active) {
 }
 
 .lightBulb {
-  fill:#1e1e1e;
+  fill:var(--global-text-color);
   height: 40px;
   width: 40px;
   top: 2px;
@@ -746,14 +766,14 @@ li a:hover:not(.active) {
   height: 100vh;
   width: 100vw;
   z-index: 99;
-  background-color: #ffc107;
+  background-color: var(--global-color-normal);
   position: fixed;
   display: none;
 }
 
 @media only screen and (max-width: 1310px) {
   .column {
-		scale: 0.6;
+    scale: 0.6;
     margin: -70px -60px;
   }
   .marquee {
@@ -777,15 +797,15 @@ li a:hover:not(.active) {
     margin: 0px -5px;
     scale: 1;
   }
-	#cardDeck {
-		max-width: 1200px !important;
-		margin-top: 40px !important;
-	}
+  #cardDeck {
+    max-width: 1200px !important;
+    margin-top: 40px !important;
+  }
 }
 
 @media only screen and (max-width: 1750px) and (min-width: 1311px) {
   .column {
-		scale: 0.8;
+    scale: 0.8;
     margin: -20px -30px;
   }
   .marquee {
@@ -809,13 +829,13 @@ li a:hover:not(.active) {
     margin: 0px -5px;
     scale: 1;
   }
-	#cardDeck {
-		max-width: 1500px !important;
-	}
+  #cardDeck {
+    max-width: 1500px !important;
+  }
 }
 
 @media only screen and (max-width: 950px) {
   .disclaimer {
-		display: none;
+    display: none;
   }
 }

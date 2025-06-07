@@ -32,7 +32,7 @@ function centerCards() {
 // Category Selection
 const jsCategory = document.querySelectorAll('.category');
 document.getElementById('looker').style.display="block";
-function changeCat() {
+function phaseShift() {
   document.getElementById('ddmAllSites').style.display='none';
   jsCategory.forEach(element => {
     element.style.display = 'none';
@@ -41,53 +41,53 @@ function changeCat() {
   if (document.getElementById("DropDownBox").value == "BeforeETS") {
     document.getElementById('categoryBeforeETS').style.display='block';
     document.getElementById('searchbar').value = "";
-    centerCards();
+    OCD();
   // Switch to All Sites A-Z Category    
   } else if (document.getElementById("DropDownBox").value == "All-Sites") {
     document.getElementById('categoryAllSites').style.display='block';
     document.getElementById('ddmAllSites').style.display='block';
     document.getElementById('searchbar').value = "";
-    centerCards();
+    OCD();
   // Switch to Army Sites Category
   } else if (document.getElementById("DropDownBox").value == "Housing") {
     document.getElementById('categoryHousing').style.display='block';
     document.getElementById('searchbar').value = "";
-    centerCards();
+    OCD();
   // Switch to Army Sites Category
   } else if (document.getElementById("DropDownBox").value == "Health") {
     document.getElementById('categoryHealthPrograms').style.display='block';
     document.getElementById('searchbar').value = "";
-    centerCards();
+    OCD();
   // Switch to Combat Readiness Category
   } else if (document.getElementById("DropDownBox").value == "Mental") {
     document.getElementById('categoryMental').style.display='block';
     document.getElementById('searchbar').value = "";
-    centerCards();
+    OCD();
   // Switch to Dod Sites Category
   } else if (document.getElementById("DropDownBox").value == "Jobs") {
     document.getElementById('categoryJobs').style.display='block';
     document.getElementById('searchbar').value = "";
-    centerCards();
+    OCD();
   // Switch to Military Education Category
   } else if (document.getElementById("DropDownBox").value == "Career") {
     document.getElementById('categoryCareer').style.display='block';
     document.getElementById('searchbar').value = "";
-    centerCards();
+    OCD();
   // Switch to Civilian Educiation Category
   } else if (document.getElementById("DropDownBox").value == "Ed") {
     document.getElementById('categoryEd').style.display='block';
     document.getElementById('searchbar').value = "";
-    centerCards();
+    OCD();
   // Switch to Family Links Category
   } else if (document.getElementById("DropDownBox").value == "VA") {
     document.getElementById('categoryVA').style.display='block';
     document.getElementById('searchbar').value = "";
-    centerCards();
+    OCD();
   // Switch to Finance Category
   } else if (document.getElementById("DropDownBox").value == "Other") {
     document.getElementById('categoryOther').style.display='block';
     document.getElementById('searchbar').value = "";
-    centerCards();
+    OCD();
   // Switch to display Search Results
   } else if (document.getElementById("DropDownBox").value == "searchResults") {
     document.getElementById('categorySearchResults').style.display='block';
@@ -456,12 +456,12 @@ function closeFolder() {
 } 
 
 // Enables Searchbar
-function searchAKO() {
+function accio() {
     document.getElementById('noResultsCard').style.display='none';
 //  try {
   if (document.getElementById('searchbar').value.length >= 3) {
     document.getElementById('DropDownBox').selectedIndex = 15;
-    changeCat();
+    phaseShift();
     var input = document.getElementById('searchbar').value
     input=input.toLowerCase();
     var x = document.getElementById("categorySearchResults").getElementsByClassName('column');
