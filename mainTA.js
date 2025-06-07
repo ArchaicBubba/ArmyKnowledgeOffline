@@ -1,5 +1,5 @@
 try {
-window.onload = phaseShift;
+window.onload = changeCat;
 window.addEventListener('resize', centerCards);
 document.getElementById("DropDownBox").onchange = changeCat;
 document.getElementById("searchbar").onchange = searchAKO;
@@ -32,7 +32,7 @@ function centerCards() {
 // Category Selection
 const jsCategory = document.querySelectorAll('.category');
 document.getElementById('looker').style.display="block";
-function phaseShift() {
+function changeCat() {
   document.getElementById('ddmAllSites').style.display='none';
   jsCategory.forEach(element => {
     element.style.display = 'none';
@@ -456,12 +456,12 @@ function closeFolder() {
 } 
 
 // Enables Searchbar
-function accio() {
+function searchAKO() {
     document.getElementById('noResultsCard').style.display='none';
 //  try {
   if (document.getElementById('searchbar').value.length >= 3) {
     document.getElementById('DropDownBox').selectedIndex = 15;
-    phaseShift();
+    changeCat();
     var input = document.getElementById('searchbar').value
     input=input.toLowerCase();
     var x = document.getElementById("categorySearchResults").getElementsByClassName('column');

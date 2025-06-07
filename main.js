@@ -1,7 +1,7 @@
 try {
-window.onload = catBuilder;
+  window.onload = changeCat;
 window.addEventListener('resize', centerCards);
-document.getElementById("DropDownBox").onchange = catBuilder;
+  document.getElementById("DropDownBox").onchange = changeCat;
 document.getElementById("searchbar").onchange = searchAKO;
 
 var mySettings = [];
@@ -15,7 +15,7 @@ if (parseInt(mySettings[17]) == 1) {
 }
 
 // Centers Cards on screen
-function OCD() {
+  function centerCards() {
 	if ((window.innerHeight >= document.body.offsetHeight || window.scrollbars)) {
 		document.getElementById('cardContainer').style.margin = 'auto';
 		if ((window.innerHeight - (document.getElementById('cardContainer').offsetHeight + document.getElementById('navGrid').offsetHeight + document.getElementById('announcerGrid').offsetHeight + document.getElementById('searchGrid').offsetHeight + document.getElementById('footerGrid').offsetHeight))/2 < 0) {
@@ -32,7 +32,7 @@ function OCD() {
 // Category Selection
 const jsCategory = document.querySelectorAll('.category');
 document.getElementById('looker').style.display="block";
-function phaseShift() {
+function changeCat() {
   document.getElementById('ddmAllSites').style.display='none';
   jsCategory.forEach(element => {
     element.style.display = 'none';
@@ -102,7 +102,7 @@ function phaseShift() {
   } else if (document.getElementById("DropDownBox").value == "searchResults") {
     document.getElementById('categorySearchResults').style.display='block';
   }
-  OCD();
+  centerCards();
 }
 
 // Declaration of site variables 
@@ -497,7 +497,7 @@ function closeFolder() {
 } 
 var currentCat;
 // Enables Searchbar
-function accio() {
+function searchAKO() {
   if (document.getElementById('DropDownBox').selectedIndex == 15) {
     currentCat = 0;
   } else {
@@ -506,7 +506,7 @@ function accio() {
   document.getElementById('noResultsCard').style.display='none';
   if (document.getElementById('searchbar').value.length >= 3) {
     document.getElementById('DropDownBox').selectedIndex = 15;
-    phaseShift();
+    changeCat();
     var input = document.getElementById('searchbar').value
     input=input.toLowerCase();
     var x = document.getElementById("categorySearchResults").getElementsByClassName('column');
@@ -528,13 +528,13 @@ function accio() {
 		console.log(x.length);
   document.getElementById('clearButton').style.display = 'inline-block';
   document.getElementById('searchbar').style.width = "calc(100% - 204px)";
-  OCD()
+  centerCards()
   }
   if (document.getElementById('searchbar').value.length == 0) {
   document.getElementById('DropDownBox').selectedIndex = currentCat;
   document.getElementById('clearButton').style.display = 'none';
   document.getElementById('searchbar').style.width = "";
-  phaseShift()
+  changeCat()
   }
 }
 
@@ -543,7 +543,7 @@ function clearSearch() {
   document.getElementById('searchbar').style.width = "";
   document.getElementById('DropDownBox').selectedIndex = currentCat;
   document.getElementById('clearButton').style.display = 'none';
-  phaseShift();
+  changeCat();
 }
 
 function toggleDarkMode() {
