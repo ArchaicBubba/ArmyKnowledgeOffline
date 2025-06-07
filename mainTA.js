@@ -1,5 +1,5 @@
 try {
-window.onload = changeCat;
+window.onload = phaseShift;
 window.addEventListener('resize', centerCards);
 document.getElementById("DropDownBox").onchange = changeCat;
 document.getElementById("searchbar").onchange = searchAKO;
