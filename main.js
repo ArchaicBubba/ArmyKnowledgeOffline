@@ -258,19 +258,35 @@ function announcements() {
     // February
     case 2:
       switch (d) {
-        // African American Black History Month
-        default:
-          AOTD = "It is currently African American Black History Month";
-          break;
+				default: 
+          switch (y) {
+						// Checkes if the year is 2027, if so adds shut down message to normal annoucment
+	  				case 2027:
+		  				AOTD = "NOTICE: AKOffline will shut down on March 8th, 2027. Thank you for using AKOffline. It is currently African American Black History Month";
+			  			break;
+				  	// African American Black History Month
+         	  default:
+            	AOTD = "It is currently African American Black History Month";
+              break;
+			  	}
+				  break;
       }
       break;
     // March
     case 3:
       switch (d) {
-        // Women's History Month
-        default:
-          AOTD = "It is currently Women's History Month";
-          break;
+				default:
+  				switch (y) {
+						// Checkes if the year is 2027, if so adds shut down message to normal annoucment
+	  				case 2027:
+		  				AOTD = "NOTICE: AKOffline will shut down on March 8th, 2027. Thank you for using AKOffline. It is currently Women's History Month";
+			  			break;
+            // Women's History Month
+            default:
+              AOTD = "It is currently Women's History Month";
+              break;
+			  	}
+				  break;
       }
       break;
     // April
